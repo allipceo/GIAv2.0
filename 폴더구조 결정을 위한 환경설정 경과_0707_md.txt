@@ -1,0 +1,603 @@
+조대표님, 노팀장입니다!
+정보수집체계 구축을 위한 체계적인 폴더/브랜치 전략을 제안드리겠습니다.
+🏗️ 권장 폴더/브랜치 체계
+1. 브랜치 전략 (Git Flow 적용)
+main (배포용 안정 버전)
+├── gia-dev (개발 통합 브랜치)
+│   ├── gia-feature-infosys1 (정보수집체계 1단계)
+│   ├── gia-feature-infosys2 (정보수집체계 2단계)
+│   └── gia-feature-automation (자동화 고도화)
+└── gia-hotfix (긴급 수정용)
+브랜치 운영 방식:
+
+gia-feature-infosys1: 이번 프로젝트 전용 브랜치 ✅
+완료 후 gia-dev로 병합 → 테스트 후 main으로 병합
+각 브랜치는 독립적으로 개발, 충돌 최소화
+
+2. 로컬 폴더 구조 (D:\GI_AGENT\GIAv2.0)
+D:\GI_AGENT\GIAv2.0\
+├── 📁 src/                    # 소스 코드
+│   ├── api/                   # API 연동 코드
+│   ├── automation/            # 자동화 스크립트
+│   └── utils/                 # 유틸리티 함수
+├── 📁 docs/                   # 프로젝트 문서
+│   ├── research/              # 리서치 자료
+│   ├── specs/                 # 기능 명세서
+│   └── guides/                # 사용 가이드
+├── 📁 config/                 # 설정 파일
+│   ├── .env.example           # 환경변수 템플릿
+│   └── notion-config.json     # 노션 설정
+├── 📁 data/                   # 임시 데이터 (gitignore)
+│   ├── sample/                # 샘플 데이터
+│   └── temp/                  # 임시 파일
+├── 📁 external-resources/     # 외부 자료 (gitignore)
+│   ├── downloaded-files/      # 다운로드 파일
+│   ├── reference-docs/        # 참고 문서
+│   └── templates/             # 템플릿 파일
+└── 📁 tests/                  # 테스트 코드
+☁️ 외부 자료 관리 전략
+권장: 하이브리드 방식 (로컬 + 클라우드)
+🎯 로컬 폴더 사용 대상
+✅ 소스 코드 (.py, .js, .md)
+✅ 설정 파일 (config, .env)
+✅ 작은 참고 자료 (<10MB)
+✅ 자주 수정하는 문서
+☁️ 클라우드 사용 대상 (Google Drive 추천)
+✅ 대용량 파일 (>10MB)
+✅ 이미지, 동영상, PDF
+✅ 외부에서 받은 자료
+✅ 백업이 중요한 문서
+구체적 구현 방안
+1. Google Drive 통합 구조
+Google Drive/GI-AGENT-Resources/
+├── 📁 research-materials/      # 리서치 자료
+├── 📁 reference-docs/          # 참고 문서  
+├── 📁 templates/               # 템플릿
+├── 📁 backup/                  # 백업 파일
+└── 📁 shared-with-team/        # 팀 공유 자료
+2. 로컬-클라우드 연결 방법
+python# config/cloud-sync.json
+{
+  "google_drive": {
+    "folder_id": "1ABC...XYZ",
+    "sync_folders": [
+      "external-resources/",
+      "data/backup/"
+    ]
+  }
+}
+🔧 .gitignore 설정 (중요!)
+gitignore# 환경 설정
+.env
+*.env
+
+# 대용량/임시 파일
+data/
+external-resources/
+temp/
+*.log
+
+# API 키 등 민감정보
+config/secrets/
+tokens/
+
+# OS 생성 파일
+.DS_Store
+Thumbs.db
+
+# IDE 설정
+.vscode/
+.idea/
+📋 운영 워크플로우
+일반적인 작업 흐름
+bash# 1. 새 브랜치 생성
+git checkout -b gia-feature-infosys1
+
+# 2. 외부 자료 다운로드 → Google Drive 저장
+# 3. 로컬에는 링크/요약만 저장
+# 4. 코드 개발 및 커밋
+git add src/ docs/
+git commit -m "feat: 정보수집 API 연동 완료"
+
+# 5. 정기적 푸시
+git push origin gia-feature-infosys1
+브랜치 관리 규칙
+✅ feature 브랜치: 기능별 독립 개발
+✅ dev 브랜치: 통합 테스트
+✅ main 브랜치: 안정화된 배포 버전
+✅ 정기 병합: 주 1회 dev → main
+💡 실용적 제안
+1. Google Drive 선택 이유
+
+동기화 속도: OneDrive보다 빠름
+용량: 15GB 무료 (충분함)
+접근성: 모바일/웹 어디서나
+공유: 팀원과 쉬운 공유
+
+2. 파일 명명 규칙
+# 날짜 기반
+20250707_정보수집_API연동_가이드.pdf
+20250707_네이버뉴스_샘플데이터.json
+
+# 카테고리 기반
+[RESEARCH]_노션PKM_베스트프랙티스.md
+[TEMPLATE]_정보수집_자동화_워크플로우.py
+[CONFIG]_API키_설정가이드.md
+3. 백업 전략
+로컬 (즉시) → GitHub (자동) → Google Drive (수동)
+      ↓            ↓              ↓
+   개발용        버전관리      장기보존
+⚠️ 주의사항
+보안 관련
+❌ API 키를 GitHub에 커밋 금지
+❌ 민감한 설정을 public 저장소에 업로드 금지
+✅ .env.example로 템플릿만 제공
+✅ config/ 폴더는 gitignore 처리
+용량 관리
+❌ 10MB 이상 파일을 git에 추가 금지
+❌ 임시 파일, 로그 파일 커밋 금지
+✅ Git LFS 활용 (필요시)
+✅ 정기적 불필요 파일 정리
+🎯 추천 시작 방법
+
+브랜치 생성: gia-feature-infosys1 체크아웃
+폴더 구조 위 제안대로 생성
+Google Drive 연동 폴더 생성
+.gitignore 설정 업데이트
+첫 커밋: 기본 구조만 푸시
+
+이 체계로 시작하시면 확장성과 관리 편의성을 모두 확보할 수 있습니다!
+어떤 부분을 먼저 구현하시겠습니까?재시도조위와  같은 내용을 나와 노팀장이수동으로 하는 것이좋은 가요? 아니면 서대리에게 요청해서 가능한 부분은 코딩을통해서 처리하는 것이좋을까요? 작업환경에 대해서는 서대리도 인식을같이 할 필요는 있어 보입니다편집조대표님, 좋은 지적입니다!
+결론부터 말씀드리면: 하이브리드 방식이 최적입니다.
+🎯 작업 분담 전략
+👥 수동 작업 (조대표 + 노팀장)
+✅ 전략적 결정사항
+- 브랜치 명명 규칙 확정
+- 폴더 구조 최종 승인  
+- 보안 정책 수립
+- 백업 전략 결정
+
+✅ 초기 설정 (1회성)
+- GitHub 브랜치 생성
+- Google Drive 폴더 생성
+- .gitignore 기본 설정
+- 권한 설정
+🤖 서대리 자동화 작업
+✅ 반복적/기술적 작업
+- 폴더 구조 자동 생성
+- 템플릿 파일 자동 생성
+- 환경 설정 파일 템플릿 작성
+- Git 훅 설정 (자동 검증)
+- 클라우드 동기화 스크립트
+
+✅ 지속적 관리 도구
+- 파일 크기 체크 스크립트
+- 자동 백업 스크립트  
+- 브랜치 상태 모니터링
+- 정리 작업 자동화
+💡 구체적 실행 계획
+1단계: 서대리 환경 인식 공유 (30분)
+조대표 → 서대리 브리핑 내용:
+- 현재 작업환경 설명
+- 브랜치 전략 설명  
+- 보안 요구사항 전달
+- 자동화 범위 협의
+2단계: 서대리 자동화 작업 (2시간)
+서대리 작업 지시사항:
+"프로젝트 환경 설정 자동화 스크립트를 만들어줘"
+
+1. setup_project_structure.py
+   - 권장 폴더 구조 자동 생성
+   - .gitignore 파일 생성
+   - README.md 템플릿 생성
+
+2. file_management_tools.py  
+   - 파일 크기 체크 함수
+   - 클라우드 업로드 도우미
+   - 정리 작업 스크립트
+
+3. git_workflow_helper.py
+   - 브랜치 생성/전환 도우미
+   - 커밋 전 검증 스크립트
+   - 자동 백업 기능
+3단계: 수동 작업 (조대표 + 노팀장) (30분)
+✅ GitHub에서 gia-feature-infosys1 브랜치 생성
+✅ Google Drive 폴더 생성 및 권한 설정
+✅ 서대리 생성 스크립트 실행
+✅ 초기 커밋 및 푸시
+🔧 서대리 작업 예시
+서대리에게 줄 구체적 지시문
+"서대리! 다음 자동화 스크립트를 만들어줘:
+
+1. 프로젝트 구조 설정 스크립트
+- D:\GI_AGENT\GIAv2.0 기준으로 폴더 구조 생성
+- .gitignore, README.md 템플릿 자동 생성
+- 환경 설정 파일 템플릿 생성
+
+2. 파일 관리 도우미 스크립트  
+- 10MB 이상 파일 자동 감지
+- Google Drive 업로드 추천
+- 불필요 파일 정리 기능
+
+3. Git 워크플로우 도우미
+- 브랜치 전환 시 자동 백업
+- 커밋 전 보안 파일 체크
+- 자동 푸시 전 검증"
+⚡ 장점 분석
+하이브리드 방식의 효과
+👥 수동 작업 장점:
+✅ 전략적 통제 유지
+✅ 보안 리스크 최소화  
+✅ 즉시 의사결정 가능
+✅ 학습 효과
+
+🤖 자동화 장점:
+✅ 실수 방지
+✅ 시간 절약 (80% 단축)
+✅ 일관성 확보
+✅ 반복 작업 제거
+시간 비교
+전체 수동: 4-5시간
+하이브리드: 1-2시간 (60% 절약)
+완전 자동화: 위험성 높음
+📋 실행 체크리스트
+Phase 1: 준비 (30분)
+
+ 서대리에게 환경 설명
+ 자동화 범위 협의
+ 보안 요구사항 전달
+
+Phase 2: 자동화 (2시간)
+
+ 서대리 스크립트 개발
+ 로컬 테스트 완료
+ 안전성 검증
+
+Phase 3: 수동 설정 (30분)
+
+ GitHub 브랜치 생성
+ Google Drive 연동
+ 권한 설정 완료
+
+Phase 4: 통합 테스트 (30분)
+
+ 전체 워크플로우 테스트
+ 문제점 수정
+ 문서화 완료
+
+🎯 권장사항
+조대표님과 노팀장이 직접 하실 것:
+
+브랜치 명명 규칙 확정
+Google Drive 폴더 생성
+보안 정책 수립
+최종 승인
+
+서대리에게 맡길 것:
+
+폴더 구조 자동 생성
+템플릿 파일 작성
+자동화 스크립트 개발
+반복 작업 도구 제작
+
+이렇게 하면 효율성과 통제력을 모두 확보할 수 있습니다!
+서대리 작업부터 시작하시겠습니까?재시도조로컬 폴더를 노팀장이 제안해 둔대로 미리 생성해 두어도 깃허브 브랜치를 적용할 경우 생성했던 폴더들이 없어지거나 안보이거나 하던데... 다양한 브랜치 작업에도 불구하고 로컬폴더 구조를 지속적으로 가져 가기 위해서는 어떻게 해야 하나요?편집조대표님, 정확한 지적입니다!
+브랜치별로 폴더가 사라지는 현상은 Git의 정상 동작입니다. 이를 해결하는 3가지 전략을 제안드립니다.
+🎯 해결 전략 비교
+전략 1: 브랜치별 독립 폴더 (권장 ⭐⭐⭐⭐⭐)
+D:\GI_AGENT\
+├── GIAv2.0-main/           # main 브랜치
+├── GIAv2.0-dev/            # dev 브랜치  
+└── GIAv2.0-infosys1/       # feature 브랜치
+장점:
+
+브랜치별 완전 독립
+폴더 구조 항상 유지
+브랜치 전환 시 안전
+
+구현 방법:
+bash# 각 브랜치별로 별도 클론
+git clone https://github.com/username/GIAv2.0.git GIAv2.0-main
+git clone https://github.com/username/GIAv2.0.git GIAv2.0-dev
+git clone https://github.com/username/GIAv2.0.git GIAv2.0-infosys1
+
+# 각 폴더에서 해당 브랜치로 체크아웃
+cd GIAv2.0-infosys1
+git checkout -b gia-feature-infosys1
+전략 2: 공통 폴더 + Git Worktree (기술적 ⭐⭐⭐⭐)
+D:\GI_AGENT\
+├── GIAv2.0\                # 메인 저장소
+├── worktree-dev\           # dev 브랜치 워킹트리
+├── worktree-infosys1\      # feature 브랜치 워킹트리
+└── shared-resources\       # 공통 리소스 (브랜치 무관)
+구현 방법:
+bash# 메인 저장소에서 워킹트리 생성
+git worktree add ../worktree-infosys1 gia-feature-infosys1
+git worktree add ../worktree-dev gia-dev
+전략 3: 브랜치 무관 공통 폴더 (실용적 ⭐⭐⭐⭐⭐)
+D:\GI_AGENT\
+├── GIAv2.0\                # Git 저장소
+└── GIA_SHARED\             # 브랜치 무관 공통 폴더
+    ├── external-resources\
+    ├── data\
+    ├── backup\
+    └── temp\
+🚀 권장 솔루션: 하이브리드 방식
+최종 폴더 구조 설계
+D:\GI_AGENT\
+├── 📁 GIAv2.0-main\         # main 브랜치 전용
+│   ├── src\
+│   ├── docs\
+│   └── config\
+├── 📁 GIAv2.0-dev\          # dev 브랜치 전용  
+│   ├── src\
+│   ├── docs\
+│   └── config\
+├── 📁 GIAv2.0-infosys1\     # feature 브랜치 전용
+│   ├── src\
+│   ├── docs\
+│   └── config\
+└── 📁 GIA_SHARED\           # 브랜치 무관 공통
+    ├── external-resources\   # 외부 자료
+    ├── data\                # 데이터 파일
+    ├── backup\              # 백업
+    ├── reference\           # 참고 자료
+    └── temp\                # 임시 파일
+각 브랜치의 config 설정
+json// config/shared-paths.json (모든 브랜치 동일)
+{
+  "shared_folder": "D:/GI_AGENT/GIA_SHARED",
+  "external_resources": "../GIA_SHARED/external-resources",
+  "data_folder": "../GIA_SHARED/data",
+  "backup_folder": "../GIA_SHARED/backup"
+}
+🔧 서대리 자동화 구현
+자동화 스크립트 요청
+"서대리! 브랜치별 폴더 관리 자동화 스크립트를 만들어줘:
+
+1. setup_branch_folders.py
+   - 브랜치별 독립 폴더 자동 생성
+   - 공통 폴더(GIA_SHARED) 생성
+   - 각 브랜치에 공통 폴더 링크 설정
+
+2. branch_switcher.py  
+   - 브랜치 전환 시 해당 폴더로 자동 이동
+   - 공통 폴더 경로 자동 업데이트
+   - 현재 작업 브랜치 표시
+
+3. sync_shared_resources.py
+   - 공통 폴더와 각 브랜치 동기화
+   - 중요 파일 백업
+   - 충돌 방지 로직"
+💡 실무적 운영 방법
+일일 작업 플로우
+bash# 1. 작업할 브랜치 폴더로 이동
+cd D:\GI_AGENT\GIAv2.0-infosys1
+
+# 2. 공통 자료가 필요한 경우
+# - GIA_SHARED 폴더에서 복사
+# - 또는 심볼릭 링크 활용
+
+# 3. 개발 작업 진행
+# 4. Git 커밋/푸시
+
+# 5. 브랜치 전환이 필요한 경우
+cd D:\GI_AGENT\GIAv2.0-main
+Visual Studio Code 설정
+json// .vscode/settings.json
+{
+  "terminal.integrated.cwd": "D:/GI_AGENT/GIAv2.0-infosys1",
+  "files.watcherExclude": {
+    "**/GIA_SHARED/**": true
+  }
+}
+⚠️ 주의사항
+Git 설정
+gitignore# 각 브랜치의 .gitignore에 추가
+# 공통 폴더 제외
+../GIA_SHARED/
+shared-temp/
+*.tmp
+보안 관리
+✅ API 키: 각 브랜치별로 개별 관리
+✅ 설정 파일: 브랜치별 독립
+✅ 공통 자료: 민감하지 않은 자료만
+❌ 민감 정보: 공통 폴더에 저장 금지
+🎯 즉시 실행 방안
+1단계: 폴더 구조 생성 (10분)
+bashmkdir D:\GI_AGENT\GIA_SHARED
+mkdir D:\GI_AGENT\GIA_SHARED\external-resources
+mkdir D:\GI_AGENT\GIA_SHARED\data
+mkdir D:\GI_AGENT\GIA_SHARED\backup
+2단계: 브랜치별 저장소 생성 (20분)
+bashcd D:\GI_AGENT
+git clone [저장소URL] GIAv2.0-main
+git clone [저장소URL] GIAv2.0-infosys1
+cd GIAv2.0-infosys1
+git checkout -b gia-feature-infosys1
+3단계: 서대리 자동화 스크립트 적용 (30분)
+이 방식으로 하면 브랜치 전환과 무관하게 안정적인 폴더 구조를 유지할 수 있습니다!
+어떤 방식으로 진행하시겠습니까?재시도조그렇다면 앞에서 노팀장이말한 이 폴더 구조는 사용하지 않고 다른 구조로 가는 것인가요?편집조대표님, 아닙니다!
+기본 폴더 구조는 그대로 사용하되, 브랜치 관리 방식만 개선하는 것입니다.
+🎯 정확한 접근 방법
+현재 제안한 구조 → 그대로 유지 ✅
+D:\GI_AGENT\GIAv2.0\
+├── 📁 src/                    # 소스 코드
+│   ├── api/                   # API 연동 코드
+│   ├── automation/            # 자동화 스크립트
+│   └── utils/                 # 유틸리티 함수
+├── 📁 docs/                   # 프로젝트 문서
+├── 📁 config/                 # 설정 파일
+├── 📁 data/                   # 임시 데이터 (gitignore)
+├── 📁 external-resources/     # 외부 자료 (gitignore)
+└── 📁 tests/                  # 테스트 코드
+변경점: 브랜치별 독립성 확보
+방법 1: 현재 폴더 그대로 + 공통 폴더 분리 (권장)
+D:\GI_AGENT\
+├── GIAv2.0\                   # 현재 폴더 (그대로 사용)
+│   ├── src/
+│   ├── docs/
+│   ├── config/
+│   └── tests/
+└── GIA_SHARED\                # 브랜치 무관 공통 폴더 (추가)
+    ├── external-resources/     # 여기로 이동
+    ├── data/                  # 여기로 이동  
+    ├── backup/
+    └── reference/
+방법 2: 기존 구조 복제 (안전한 방식)
+D:\GI_AGENT\
+├── GIAv2.0-main\              # main 브랜치용
+│   ├── src/, docs/, config/   # 동일 구조
+├── GIAv2.0-infosys1\          # feature 브랜치용  
+│   ├── src/, docs/, config/   # 동일 구조
+└── GIA_SHARED\                # 공통 자료
+💡 조대표님께 권장드리는 방식
+현재 상황 그대로 시작 + 점진적 개선
+
+지금 당장: 현재 D:\GI_AGENT\GIAv2.0 폴더 그대로 사용
+브랜치 생성: gia-feature-infosys1 체크아웃
+문제 발생시: 그때 공통 폴더 분리
+
+구체적 실행 계획
+bash# 1. 현재 폴더에서 새 브랜치 생성
+cd D:\GI_AGENT\GIAv2.0
+git checkout -b gia-feature-infosys1
+
+# 2. 노팀장 제안 구조대로 폴더 생성
+mkdir src\api src\automation src\utils
+mkdir docs\research docs\specs docs\guides
+mkdir config data external-resources tests
+
+# 3. .gitignore 설정으로 문제 방지
+echo "data/" >> .gitignore
+echo "external-resources/" >> .gitignore
+🔧 서대리 자동화 요청 (수정)
+"서대리! 현재 폴더 구조 기반으로 브랜치 관리 도구를 만들어줘:
+
+1. setup_current_structure.py
+   - 현재 D:\GI_AGENT\GIAv2.0 기준
+   - 노팀장 제안 폴더 구조 자동 생성
+   - .gitignore 설정
+
+2. branch_safe_manager.py
+   - 브랜치 전환 전 중요 파일 백업
+   - 대용량 파일 자동 감지 및 경고
+   - 공통 자료 보호 로직
+
+3. folder_sync_helper.py
+   - 필요시 공통 폴더로 분리 도구
+   - 브랜치간 중요 파일 동기화
+   - 충돌 방지 및 복구 기능"
+⚡ 즉시 적용 방안
+현재 폴더 그대로 + 안전장치만 추가
+bash# .gitignore에 추가하여 브랜치 전환시 보호
+echo "# 브랜치 전환시 보존할 폴더" >> .gitignore
+echo "external-resources/" >> .gitignore
+echo "data/important/" >> .gitignore
+echo "backup/" >> .gitignore
+echo "*.local" >> .gitignore
+중요 파일만 별도 보관
+D:\GI_AGENT\
+├── GIAv2.0\                   # 현재 작업 폴더 (그대로)
+└── GIA_BACKUP\                # 중요 파일만 따로 보관
+    ├── api-keys\
+    ├── important-docs\
+    └── config-backup\
+🎯 결론
+현재 제안한 폴더 구조는 완벽합니다!
+변경할 것은:
+
+❌ 폴더 구조 변경 (불필요)
+✅ 브랜치 안전 관리만 추가
+✅ 중요 파일 보호 로직 추가
+
+조대표님, 현재 구조 그대로 진행하면서 서대리가 안전장치만 만들어주는 방식으로 하시겠습니까?
+조대표님, 완벽합니다! 🎉
+✅ 브랜치 생성 성공 확인
+Current branch: gia-feature-infosys1로 표시된 것이 보입니다!
+
+✅ 새 브랜치 생성 완료
+✅ GitHub에 자동 연동됨 ("Last fetched just now")
+✅ 깨끗한 상태 ("No local changes")
+
+🚀 이제 서대리 작업 시작 가능!
+현재 완료된 준비 작업
+✅ main 브랜치에 기본 폴더 구조 커밋
+✅ gia-feature-infosys1 브랜치 생성
+✅ GLOBAL_CODE_REPO 정리 완료
+✅ Git 상태 정상화
+✅ GIA_SHARED 공통 폴더 준비
+서대리 작업 지시 준비 완료
+조대표님이 서대리에게 다음과 같이 지시하시면 됩니다:
+"서대리! gia-feature-infosys1 브랜치에서 
+정보수집체계 구축 자동화 도구를 만들어줘.
+
+현재 상황:
+- 기본 폴더 구조는 이미 생성됨 (src, docs, config, tests)
+- GIA_SHARED 폴더는 공통 자료용으로 준비됨
+- 브랜치는 깨끗한 상태
+
+작업 요청:
+1. .gitignore 파일 생성
+2. 폴더 구조 자동 관리 도구
+3. 브랜치 전환 시 안전장치
+4. 파일 관리 도우미 스크립트
+
+작업 시간: 2-3시간 예상
+작업 환경: D:\AI_Project\GIAv2.0 (현재 브랜치)"
+📋 .gitignore 우선 생성 (선택사항)
+서대리 작업 전에 먼저 .gitignore를 만들어두시겠습니까?
+Windows 탐색기에서:
+
+D:\AI_Project\GIAv2.0 폴더 열기
+빈 공간 우클릭 → 새로 만들기 → 텍스트 문서
+파일명을 .gitignore로 변경
+기본 보안 내용 입력
+
+조대표님, 지금 바로 서대리에게 작업 지시하시겠습니까?재시도조서대리 (커서)는 폴더를 오픈해주어야 하는데 어느 폴더를 오픈한 상태에서 진행할까요?편집조대표님, 서대리(커서)가 작업할 폴더는 명확하게 한 곳이어야 합니다!
+🎯 서대리 작업 폴더: D:\AI_Project\GIAv2.0
+커서에서 오픈할 폴더
+D:\AI_Project\GIAv2.0
+이유:
+
+✅ gia-feature-infosys1 브랜치가 체크아웃된 Git 저장소
+✅ 기본 폴더 구조 (src, docs, config, tests) 존재
+✅ 모든 개발 작업이 이루어질 메인 폴더
+✅ GitHub Desktop과 연동된 폴더
+
+📂 폴더 구조 확인
+서대리가 보게 될 폴더 구조:
+D:\AI_Project\GIAv2.0\           ← 커서에서 오픈할 폴더
+├── 📁 src\
+├── 📁 docs\
+├── 📁 config\
+├── 📁 tests\
+└── (서대리가 추가로 생성할 파일들)
+GIA_SHARED 폴더는 별도 위치:
+D:\AI_Project\GIA_SHARED\        ← 공통 자료용 (Git 관리 제외)
+🔧 서대리 작업 지시문
+커서 오픈 후 서대리에게 전달할 내용:
+"서대리! 
+
+현재 작업 환경:
+- 폴더: D:\AI_Project\GIAv2.0
+- 브랜치: gia-feature-infosys1
+- 상태: 기본 폴더 구조 준비 완료
+
+작업 요청:
+1. .gitignore 파일 생성 (보안 설정)
+2. 프로젝트 구조 관리 자동화 도구
+3. 브랜치 안전 관리 스크립트
+4. 파일 관리 도우미 기능
+
+작업 시간: 2-3시간
+중요: 기존 폴더 구조는 그대로 유지하고 추가 기능만 개발"
+📋 커서 오픈 순서
+
+커서(Cursor) 실행
+File → Open Folder 클릭
+D:\AI_Project\GIAv2.0 선택
+폴더 오픈 확인 (src, docs, config, tests 폴더 보임)
+서대리에게 작업 지시
+
+조대표님, 지금 커서에서 D:\AI_Project\GIAv2.0 폴더를 오픈하시겠습니까?
