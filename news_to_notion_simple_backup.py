@@ -19,27 +19,28 @@ def upload_to_notion():
     success_count = 0
     error_count = 0
     
-    # 태그별로 5개씩만 처리
+    # 분야별로 5개씩만 처리
     categories = {}
     for news in news_data:
-        tag = news["태그"][0] if news.get("태그") and len(news["태그"]) > 0 else "기타"
-        if tag not in categories:
-            categories[tag] = []
-        if len(categories[tag]) < 5:
-            categories[tag].append(news)
+        keyword = news["keyword"]
+        if keyword not in categories:
+            categories[keyword] = []
+        if len(categories[keyword]) < 5:
+            categories[keyword].append(news)
     
     # 선별된 뉴스만 업로드
     selected_news = []
     for cat_news in categories.values():
         selected_news.extend(cat_news)
     
-    print(f"📊 태그별 5개씩 총 {len(selected_news)}개 뉴스를 업로드합니다.")
+    print(f"📊 분야별 5개씩 총 {len(selected_news)}개 뉴스를 업로드합니다.")
     
     for news in selected_news:
         try:
-            # 날짜 형식 변환 (YYYY-MM-DD -> ISO 8601)
-            if news.get("발행일"):
-                iso_date = datetime.strptime(news["발행일"], "%Y-%m-%d").isoformat()
+            # 날짜 형식 변환 (RFC 2822 -> ISO 8601)
+            if news.get("date"):
+                date_obj = parsedate_to_datetime(news["date"])
+                iso_date = date_obj.isoformat()
             else:
                 iso_date = datetime.now().isoformat()
             
@@ -48,31 +49,28 @@ def upload_to_notion():
                 parent={"database_id": DATABASE_ID},
                 properties={
                     "제목": {
-                        "title": [{"text": {"content": news["제목"]}}]
+                        "title": [{"text": {"content": news["title"]}}]
                     },
                     "링크": {
-                        "url": news["URL"]
+                        "url": news["link"]
                     },
                     "날짜": {
                         "date": {"start": iso_date}
                     },
                     "분야": {
-                        "multi_select": [{"name": news["태그"][0]}] if news.get("태그") and len(news["태그"]) > 0 else []
+                        "multi_select": [{"name": news["keyword"]}]
                     },
                     "출처": {
-                        "rich_text": [{"text": {"content": news.get("출처", "Unknown")}}]
-                    },
-                    "중요도": {
-                        "select": {"name": news.get("중요도", "보통")}
+                        "rich_text": [{"text": {"content": news.get("source", "Unknown")}}]
                     }
                 }
             )
             success_count += 1
-            print(f"✅ 성공: {news['제목'][:50]}...")
+            print(f"✅ 성공: {news['title'][:50]}...")
             
         except Exception as e:
             error_count += 1
-            print(f"❌ 실패: {news['제목'][:50]}... - {str(e)}")
+            print(f"❌ 실패: {news['title'][:50]}... - {str(e)}")
     
     print(f"\n📊 결과: 성공 {success_count}건, 실패 {error_count}건")
 
