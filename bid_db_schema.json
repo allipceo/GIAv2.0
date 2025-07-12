@@ -1,0 +1,229 @@
+{
+  "object": "database",
+  "id": "22ea613d-25ff-80b5-9bef-f3ddc38ad068",
+  "cover": null,
+  "icon": null,
+  "created_time": "2025-07-12T15:20:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "212d872b-594c-8101-8802-00024a84d0a1"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "212d872b-594c-8101-8802-00024a84d0a1"
+  },
+  "last_edited_time": "2025-07-12T15:31:00.000Z",
+  "title": [
+    {
+      "type": "text",
+      "text": {
+        "content": "입찰낙찰공고DB",
+        "link": null
+      },
+      "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+      },
+      "plain_text": "입찰낙찰공고DB",
+      "href": null
+    }
+  ],
+  "description": [],
+  "is_inline": true,
+  "properties": {
+    "주요내용": {
+      "id": "%40ipl",
+      "name": "주요내용",
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "링크": {
+      "id": "JG%60%40",
+      "name": "링크",
+      "type": "url",
+      "url": {}
+    },
+    "날짜": {
+      "id": "NB%5DL",
+      "name": "날짜",
+      "type": "date",
+      "date": {}
+    },
+    "분야": {
+      "id": "Q%5DDZ",
+      "name": "분야",
+      "type": "multi_select",
+      "multi_select": {
+        "options": [
+          {
+            "id": "|{?~",
+            "name": "재보험입찰",
+            "color": "gray",
+            "description": null
+          },
+          {
+            "id": "JItW",
+            "name": "보험입찰",
+            "color": "blue",
+            "description": null
+          },
+          {
+            "id": "dn?x",
+            "name": "방산개발",
+            "color": "orange",
+            "description": null
+          },
+          {
+            "id": "vVOY",
+            "name": "육상풍력",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "?UsS",
+            "name": "ESS",
+            "color": "red",
+            "description": null
+          },
+          {
+            "id": "WrNC",
+            "name": "해상풍력",
+            "color": "purple",
+            "description": null
+          },
+          {
+            "id": "<TD`",
+            "name": "방산수출",
+            "color": "brown",
+            "description": null
+          },
+          {
+            "id": "~@\\A",
+            "name": "신재생에너지",
+            "color": "pink",
+            "description": null
+          }
+        ]
+      }
+    },
+    "출처": {
+      "id": "QtJ%40",
+      "name": "출처",
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "선별여부": {
+      "id": "SMfV",
+      "name": "선별여부",
+      "type": "checkbox",
+      "checkbox": {}
+    },
+    "유형": {
+      "id": "adbf",
+      "name": "유형",
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "rV];",
+            "name": "관련뉴스",
+            "color": "yellow",
+            "description": null
+          },
+          {
+            "id": "f`ft",
+            "name": "계약소식",
+            "color": "red",
+            "description": null
+          },
+          {
+            "id": "YSu_",
+            "name": "낙찰결과",
+            "color": "blue",
+            "description": null
+          },
+          {
+            "id": "ndMU",
+            "name": "입찰공고",
+            "color": "gray",
+            "description": null
+          }
+        ]
+      }
+    },
+    "수정일시": {
+      "id": "b~Oi",
+      "name": "수정일시",
+      "type": "date",
+      "date": {}
+    },
+    "중요도": {
+      "id": "i%60m%5E",
+      "name": "중요도",
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "W;zt",
+            "name": "무시",
+            "color": "red",
+            "description": null
+          },
+          {
+            "id": "WiPW",
+            "name": "낮음",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "\\B~V",
+            "name": "보통",
+            "color": "pink",
+            "description": null
+          },
+          {
+            "id": "\\xWh",
+            "name": "중요",
+            "color": "purple",
+            "description": null
+          },
+          {
+            "id": "g^zy",
+            "name": "매우중요",
+            "color": "brown",
+            "description": null
+          }
+        ]
+      }
+    },
+    "관련프로젝트": {
+      "id": "~esQ",
+      "name": "관련프로젝트",
+      "type": "relation",
+      "relation": {
+        "database_id": "228a613d-25ff-818d-9bba-c1b53e19dcbd",
+        "type": "single_property",
+        "single_property": {}
+      }
+    },
+    "제목": {
+      "id": "title",
+      "name": "제목",
+      "type": "title",
+      "title": {}
+    }
+  },
+  "parent": {
+    "type": "block_id",
+    "block_id": "22ea613d-25ff-80f3-9ec5-fbb96d96c16c"
+  },
+  "url": "https://www.notion.so/22ea613d25ff80b59beff3ddc38ad068",
+  "public_url": null,
+  "archived": false,
+  "in_trash": false,
+  "request_id": "8cbb13b5-384d-4932-a2f7-546c28ee06c6"
+}

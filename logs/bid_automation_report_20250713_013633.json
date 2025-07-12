@@ -1,0 +1,18 @@
+{
+  "execution_time": {
+    "start": "2025-07-13 01:32:33",
+    "end": "2025-07-13 01:36:32",
+    "duration": "0:03:59.408733"
+  },
+  "results": {
+    "collected": 10,
+    "processed": 10,
+    "uploaded": 2,
+    "dashboard_created": true
+  },
+  "success_rate": {
+    "collection_to_processing": 100.0,
+    "processing_to_upload": 20.0,
+    "overall_success": true
+  }
+}

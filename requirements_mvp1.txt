@@ -1,0 +1,68 @@
+# GIA MVP1.0 필수 라이브러리
+# 작성일: 2025년 1월 12일
+# 작성자: 서대리 (Lead Developer)
+
+# 기본 웹 요청 및 데이터 처리
+requests>=2.31.0
+urllib3>=2.0.0
+
+# JSON 데이터 처리
+python-dateutil>=2.8.2
+
+# 노션 API 연동
+notion-client>=2.2.1
+
+# Google Generative AI (Gemini LLM)
+google-generativeai>=0.3.0
+
+# RSS 피드 파싱 (구글 뉴스 백업용)
+feedparser>=6.0.10
+
+# 로깅 및 유틸리티
+python-dotenv>=1.0.0
+
+# 웹 스크래핑 (필요시)
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+
+# 날짜 처리
+pytz>=2023.3
+
+# 문자열 처리 및 정규표현식
+regex>=2023.0.0
+
+# 파일 시스템 처리
+pathlib>=1.0.1
+
+# 인코딩 처리 (Windows 호환성)
+chardet>=5.0.0
+
+# HTTP 클라이언트 (고급 기능)
+httpx>=0.25.0
+
+# 비동기 처리 (향후 확장용)
+asyncio>=3.4.3
+
+# 데이터 검증
+pydantic>=2.0.0
+
+# 설정 관리
+configparser>=5.3.0
+
+# 에러 추적 및 모니터링
+sentry-sdk>=1.38.0
+
+# 스케줄링 (자동화용)
+schedule>=1.2.0
+
+# 메모리 효율적 JSON 처리
+orjson>=3.9.0
+
+# 진행률 표시
+tqdm>=4.66.0
+
+# 캐싱 (성능 향상)
+cachetools>=5.3.0
+
+# HTTP 세션 관리
+requests-cache>=1.1.0 

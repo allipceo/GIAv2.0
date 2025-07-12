@@ -1,0 +1,125 @@
+2025-07-13 01:14:37,511 - INFO - [BID_UPLOAD] 입찰/낙찰 뉴스 노션 DB 업로드 시작
+2025-07-13 01:14:37,514 - INFO - [BID_UPLOAD] 파일 로드: data\processed_bid_news_20250713_010928.json
+2025-07-13 01:14:50,162 - INFO - [BID_UPLOAD] 10건 입찰/낙찰 기사 업로드 시작
+2025-07-13 01:14:50,313 - INFO - [BID_UPLOAD] 배치 1/2 처리 중...
+2025-07-13 01:14:50,965 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22ea613d25ff80b59beff3ddc38ad068/query "HTTP/1.1 200 OK"
+2025-07-13 01:14:51,480 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 400 Bad Request"
+2025-07-13 01:14:51,540 - ERROR - [BID_UPLOAD] 업로드 실패: 수집일시 is not a property that exists.
+2025-07-13 01:14:52,767 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22ea613d25ff80b59beff3ddc38ad068/query "HTTP/1.1 200 OK"
+2025-07-13 01:14:53,247 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 400 Bad Request"
+2025-07-13 01:14:53,250 - ERROR - [BID_UPLOAD] 업로드 실패: 수집일시 is not a property that exists.
+2025-07-13 01:14:54,464 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22ea613d25ff80b59beff3ddc38ad068/query "HTTP/1.1 200 OK"
+2025-07-13 01:14:54,684 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 400 Bad Request"
+2025-07-13 01:14:54,687 - ERROR - [BID_UPLOAD] 업로드 실패: 수집일시 is not a property that exists.
+2025-07-13 01:14:55,915 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22ea613d25ff80b59beff3ddc38ad068/query "HTTP/1.1 200 OK"
+2025-07-13 01:14:56,136 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 400 Bad Request"
+2025-07-13 01:14:56,141 - ERROR - [BID_UPLOAD] 업로드 실패: 수집일시 is not a property that exists.
+2025-07-13 01:14:57,368 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22ea613d25ff80b59beff3ddc38ad068/query "HTTP/1.1 200 OK"
+2025-07-13 01:14:57,580 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 400 Bad Request"
+2025-07-13 01:14:57,614 - ERROR - [BID_UPLOAD] 업로드 실패: 수집일시 is not a property that exists.
+2025-07-13 01:14:58,985 - INFO - [BID_UPLOAD] 5건 처리 완료...
+2025-07-13 01:15:01,585 - INFO - [BID_UPLOAD] 배치 2/2 처리 중...
+2025-07-13 01:15:01,836 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22ea613d25ff80b59beff3ddc38ad068/query "HTTP/1.1 200 OK"
+2025-07-13 01:15:02,372 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 400 Bad Request"
+2025-07-13 01:15:02,375 - ERROR - [BID_UPLOAD] 업로드 실패: 수집일시 is not a property that exists.
+2025-07-13 01:15:03,610 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22ea613d25ff80b59beff3ddc38ad068/query "HTTP/1.1 200 OK"
+2025-07-13 01:15:03,818 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 400 Bad Request"
+2025-07-13 01:15:03,821 - ERROR - [BID_UPLOAD] 업로드 실패: 수집일시 is not a property that exists.
+2025-07-13 01:15:05,118 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22ea613d25ff80b59beff3ddc38ad068/query "HTTP/1.1 200 OK"
+2025-07-13 01:15:07,677 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 400 Bad Request"
+2025-07-13 01:15:07,680 - ERROR - [BID_UPLOAD] 업로드 실패: 수집일시 is not a property that exists.
+2025-07-13 01:15:08,904 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22ea613d25ff80b59beff3ddc38ad068/query "HTTP/1.1 200 OK"
+2025-07-13 01:15:09,886 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 400 Bad Request"
+2025-07-13 01:15:09,951 - ERROR - [BID_UPLOAD] 업로드 실패: 수집일시 is not a property that exists.
+2025-07-13 01:15:11,448 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22ea613d25ff80b59beff3ddc38ad068/query "HTTP/1.1 200 OK"
+2025-07-13 01:15:11,700 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 400 Bad Request"
+2025-07-13 01:15:11,706 - ERROR - [BID_UPLOAD] 업로드 실패: 수집일시 is not a property that exists.
+2025-07-13 01:15:12,715 - INFO - [BID_UPLOAD] 전체 업로드 완료: 성공 0건, 실패 10건
+2025-07-13 01:15:12,716 - INFO - 
+📊 입찰/낙찰 뉴스 노션 DB 업로드 결과 리포트
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📈 전체 처리: 10건
+✅ 업로드 성공: 0건
+❌ 업로드 실패: 10건
+📊 성공률: 0.0%
+
+🗂️ 타겟 DB: 입찰낙찰 공고 DB
+🆔 DB ID: 22ea613d25ff80b59beff3ddc38ad068
+
+🏷️ 유형별 업로드:
+  📋 입찰공고: 5건
+  🎯 낙찰결과: 0건
+  📝 계약소식: 0건
+  📰 관련뉴스: 5건
+
+🏢 분야별 업로드:
+  🔋 신재생에너지: 5건
+  🛡️ 방위산업: 5건
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2025-07-13 01:15:12,720 - WARNING - [BID_UPLOAD] ⚠️ 업로드된 기사가 없습니다.
+2025-07-13 01:18:28,741 - INFO - [BID_UPLOAD] 입찰/낙찰 뉴스 노션 DB 업로드 시작
+2025-07-13 01:18:28,765 - INFO - [BID_UPLOAD] 파일 로드: data\processed_bid_news_20250713_010928.json
+2025-07-13 01:18:35,112 - INFO - [BID_UPLOAD] 10건 입찰/낙찰 기사 업로드 시작
+2025-07-13 01:18:35,136 - INFO - [BID_UPLOAD] 배치 1/2 처리 중...
+2025-07-13 01:18:35,743 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22ea613d25ff80b59beff3ddc38ad068/query "HTTP/1.1 200 OK"
+2025-07-13 01:18:36,138 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 01:18:36,145 - INFO - [BID_UPLOAD] 성공: 정부 상반기 풍력·태양광 경쟁입찰 공고, 안보와 공공성...
+2025-07-13 01:18:38,073 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22ea613d25ff80b59beff3ddc38ad068/query "HTTP/1.1 200 OK"
+2025-07-13 01:18:38,448 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 01:18:38,457 - INFO - [BID_UPLOAD] 성공: 풍력·태양광 상반기 입찰공고해상풍력에 안보평가 첫 적용...
+2025-07-13 01:18:39,721 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22ea613d25ff80b59beff3ddc38ad068/query "HTTP/1.1 200 OK"
+2025-07-13 01:18:40,083 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 01:18:40,084 - INFO - [BID_UPLOAD] 성공: 풍력 1.25GW·태양광 1GW 규모 경쟁입찰 공고평가...
+2025-07-13 01:18:41,290 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22ea613d25ff80b59beff3ddc38ad068/query "HTTP/1.1 200 OK"
+2025-07-13 01:18:41,675 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 01:18:41,679 - INFO - [BID_UPLOAD] 성공: 2025 상반기 재생에너지 경쟁입찰풍력 1.25GW, ...
+2025-07-13 01:18:43,156 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22ea613d25ff80b59beff3ddc38ad068/query "HTTP/1.1 200 OK"
+2025-07-13 01:18:43,580 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 01:18:43,584 - INFO - [BID_UPLOAD] 성공: 풍력 1.25GW, 태양광 1.0GW ··· 상반기 경...
+2025-07-13 01:18:44,588 - INFO - [BID_UPLOAD] 5건 처리 완료...
+2025-07-13 01:18:46,597 - INFO - [BID_UPLOAD] 배치 2/2 처리 중...
+2025-07-13 01:18:46,860 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22ea613d25ff80b59beff3ddc38ad068/query "HTTP/1.1 200 OK"
+2025-07-13 01:18:48,899 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 01:18:48,902 - INFO - [BID_UPLOAD] 성공: 입찰까지 단 사흘국방과학연구소, 깜깜이 입찰 논란에 공...
+2025-07-13 01:18:50,124 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22ea613d25ff80b59beff3ddc38ad068/query "HTTP/1.1 200 OK"
+2025-07-13 01:18:50,533 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 01:18:50,535 - INFO - [BID_UPLOAD] 성공: 국방전자조달시스템 동가 낙찰자 선정 '자동 추첨'으로 ...
+2025-07-13 01:18:51,769 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22ea613d25ff80b59beff3ddc38ad068/query "HTTP/1.1 200 OK"
+2025-07-13 01:18:52,314 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 01:18:52,318 - INFO - [BID_UPLOAD] 성공: AAR 모빌리티 시스템즈, 8500만 달러 규모 국방 ...
+2025-07-13 01:18:53,555 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22ea613d25ff80b59beff3ddc38ad068/query "HTTP/1.1 200 OK"
+2025-07-13 01:18:53,971 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 01:18:53,973 - INFO - [BID_UPLOAD] 성공: 정부 방위산업 계약 시 재하도급 금지"방산브로커 폐해 ...
+2025-07-13 01:18:56,333 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22ea613d25ff80b59beff3ddc38ad068/query "HTTP/1.1 200 OK"
+2025-07-13 01:18:56,678 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 01:18:56,687 - INFO - [BID_UPLOAD] 성공: 방위산업 계약, 브로커 개입 철퇴정부, 일괄양도 금지 ...
+2025-07-13 01:18:57,690 - INFO - [BID_UPLOAD] 전체 업로드 완료: 성공 10건, 실패 0건
+2025-07-13 01:18:57,692 - INFO - 
+📊 입찰/낙찰 뉴스 노션 DB 업로드 결과 리포트
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📈 전체 처리: 10건
+✅ 업로드 성공: 10건
+❌ 업로드 실패: 0건
+📊 성공률: 100.0%
+
+🗂️ 타겟 DB: 입찰낙찰 공고 DB
+🆔 DB ID: 22ea613d25ff80b59beff3ddc38ad068
+
+🏷️ 유형별 업로드:
+  📋 입찰공고: 5건
+  🎯 낙찰결과: 0건
+  📝 계약소식: 0건
+  📰 관련뉴스: 5건
+
+🏢 분야별 업로드:
+  🔋 신재생에너지: 5건
+  🛡️ 방위산업: 0건
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2025-07-13 01:18:57,708 - INFO - [BID_UPLOAD] ✅ 업로드 완료: 10건 성공
+2025-07-13 01:18:57,709 - INFO - [BID_UPLOAD] 📊 노션 DB URL: https://www.notion.so/22ea613d25ff80b59beff3ddc38ad068

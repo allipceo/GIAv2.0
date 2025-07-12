@@ -504,3 +504,4115 @@
 2025-07-12 10:41:24,540 - INFO - [DUPLICATE] 중복 제거: 흥국생명 건강할수록 혜택 강화 보험상품 출시 - 이코노미사이언스
 2025-07-12 10:41:24,540 - INFO - [INFO] 중복 제거 후: 0건
 2025-07-12 10:41:24,540 - INFO - [INFO] 새로운 뉴스가 없습니다. (모두 중복)
+2025-07-13 00:43:22,607 - ERROR - google-generativeai 라이브러리가 설치되지 않았습니다. pip install google-generativeai 실행해주세요.
+2025-07-13 00:48:26,764 - ERROR - ❌ 치명적 오류: type object 'APIConfig' has no attribute 'LLM_API_KEY'
+2025-07-13 00:53:40,472 - INFO - 🚀 GIA MVP1.0 자동화 파이프라인 시작
+2025-07-13 00:53:40,475 - INFO - 📋 설정 정보: 
+📋 GIA MVP1.0 설정 요약
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎯 타겟 키워드: 27개
+📰 뉴스 소스: 구글 뉴스 (RSS/웹 스크래핑)
+📊 대시보드: 조대표님 맞춤 (9시 브리핑, 18시 정리)
+🔄 수집 주기: 60분마다
+🤖 LLM 모델: gemini-2.0-flash-exp
+📱 모바일 최적화: 활성화
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2025-07-13 00:53:40,487 - INFO - ============================================================
+2025-07-13 00:53:40,508 - INFO - 🔥 1단계: 구글 뉴스 수집 시작
+2025-07-13 00:53:40,571 - INFO - ============================================================
+2025-07-13 00:53:40,628 - INFO - [NEWS] 방위산업 카테고리 뉴스 수집 시작
+2025-07-13 00:53:40,642 - INFO - [SEARCH] 키워드 '방위산업' 검색 중...
+2025-07-13 00:53:44,832 - INFO - [SUCCESS] '방위산업' 키워드: 3건 수집 완료
+2025-07-13 00:53:44,841 - INFO - [SEARCH] 키워드 '국방' 검색 중...
+2025-07-13 00:53:48,102 - INFO - [SUCCESS] '국방' 키워드: 3건 수집 완료
+2025-07-13 00:53:48,117 - INFO - [SEARCH] 키워드 'K-방산' 검색 중...
+2025-07-13 00:53:51,267 - INFO - [SUCCESS] 'K-방산' 키워드: 3건 수집 완료
+2025-07-13 00:53:51,269 - INFO - [SEARCH] 키워드 '군수산업' 검색 중...
+2025-07-13 00:53:53,611 - INFO - [SUCCESS] '군수산업' 키워드: 3건 수집 완료
+2025-07-13 00:53:53,615 - INFO - [NEWS] 신재생에너지 카테고리 뉴스 수집 시작
+2025-07-13 00:53:53,616 - INFO - [SEARCH] 키워드 '신재생에너지' 검색 중...
+2025-07-13 00:53:56,403 - INFO - [SUCCESS] '신재생에너지' 키워드: 3건 수집 완료
+2025-07-13 00:53:56,404 - INFO - [SEARCH] 키워드 '태양광' 검색 중...
+2025-07-13 00:53:58,943 - INFO - [SUCCESS] '태양광' 키워드: 3건 수집 완료
+2025-07-13 00:53:58,946 - INFO - [SEARCH] 키워드 '풍력' 검색 중...
+2025-07-13 00:54:02,941 - INFO - [SUCCESS] '풍력' 키워드: 3건 수집 완료
+2025-07-13 00:54:02,943 - INFO - [SEARCH] 키워드 'ESS' 검색 중...
+2025-07-13 00:54:05,297 - INFO - [SUCCESS] 'ESS' 키워드: 3건 수집 완료
+2025-07-13 00:54:05,301 - INFO - [NEWS] 보험중개 카테고리 뉴스 수집 시작
+2025-07-13 00:54:05,303 - INFO - [SEARCH] 키워드 '보험중개' 검색 중...
+2025-07-13 00:54:07,535 - INFO - [SUCCESS] '보험중개' 키워드: 3건 수집 완료
+2025-07-13 00:54:07,536 - INFO - [SEARCH] 키워드 '보험대리점' 검색 중...
+2025-07-13 00:54:10,488 - INFO - [SUCCESS] '보험대리점' 키워드: 3건 수집 완료
+2025-07-13 00:54:10,490 - INFO - [SEARCH] 키워드 '보험영업' 검색 중...
+2025-07-13 00:54:12,753 - INFO - [SUCCESS] '보험영업' 키워드: 3건 수집 완료
+2025-07-13 00:54:12,754 - INFO - [SEARCH] 키워드 '보험상품' 검색 중...
+2025-07-13 00:54:15,694 - INFO - [SUCCESS] '보험상품' 키워드: 3건 수집 완료
+2025-07-13 00:54:15,696 - INFO - [COMPLETE] 전체 수집 완료: 총 36건
+2025-07-13 00:54:15,812 - INFO - ✅ 1단계 완료: 36건 수집
+2025-07-13 00:54:15,877 - INFO - ============================================================
+2025-07-13 00:54:15,906 - INFO - 🤖 2단계: LLM 처리 시작
+2025-07-13 00:54:15,921 - INFO - ============================================================
+2025-07-13 00:54:15,928 - INFO - [LLM] 36건 기사 처리 시작 (배치 크기: 5)
+2025-07-13 00:54:15,929 - INFO - [LLM] 배치 1/8 처리 중...
+2025-07-13 00:54:15,944 - INFO - [LLM] 처리 중: [게시판] 방사청, 방위산업 혁신기업 투자설명회 - 연...
+2025-07-13 00:54:18,907 - INFO - [LLM] 완료: 방위산업 | 높음 | 150자
+2025-07-13 00:54:19,911 - INFO - [LLM] 처리 중: 방위산업의 날 시민 페스티벌블랙이글스 서울 상공에서 1...
+2025-07-13 00:54:22,212 - INFO - [LLM] 완료: 방위산업 | 보통 | 98자
+2025-07-13 00:54:23,216 - INFO - [LLM] 처리 중: 방위산업의 날 기념 에어쇼 펼치는 블랙이글스 - 뉴스1...
+2025-07-13 00:54:25,544 - INFO - [LLM] 완료: 방위산업 | 보통 | 92자
+2025-07-13 00:54:26,547 - INFO - [LLM] 처리 중: [단독]윤석열, 국방비서관 종이 전달받고 언성 높였다·...
+2025-07-13 00:54:28,053 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 32
+}
+]
+2025-07-13 00:54:29,486 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 31
+}
+]
+2025-07-13 00:54:32,723 - INFO - [LLM] 완료: 방위산업 | 보통 | 146자
+2025-07-13 00:54:33,729 - INFO - [LLM] 처리 중: 국방 장비관리, 민·관·군이 첨단기술로 함께 그린다 -...
+2025-07-13 00:54:33,930 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 26
+}
+]
+2025-07-13 00:54:35,158 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 25
+}
+]
+2025-07-13 00:54:37,399 - ERROR - [LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 23
+}
+]
+2025-07-13 00:54:37,414 - ERROR - [LLM] 최종 실패 - 기본값 반환
+2025-07-13 00:54:38,091 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 22
+}
+]
+2025-07-13 00:54:39,317 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 21
+}
+]
+2025-07-13 00:54:41,575 - ERROR - [LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 19
+}
+]
+2025-07-13 00:54:41,582 - ERROR - [LLM] 최종 실패 - 기본값 반환
+2025-07-13 00:54:41,805 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 18
+}
+]
+2025-07-13 00:54:43,036 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 17
+}
+]
+2025-07-13 00:54:45,257 - ERROR - [LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 15
+}
+]
+2025-07-13 00:54:45,287 - ERROR - [LLM] 최종 실패 - 기본값 반환
+2025-07-13 00:54:45,289 - INFO - [LLM] 완료: 신재생에너지 | 보통 | 9자
+2025-07-13 00:54:49,291 - INFO - [LLM] 배치 2/8 처리 중...
+2025-07-13 00:54:49,292 - INFO - [LLM] 처리 중: 박정훈 무죄 확정된 날, 기소한 국방부 검찰단장 직무정...
+2025-07-13 00:54:49,491 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 11
+}
+]
+2025-07-13 00:54:50,699 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 9
+}
+]
+2025-07-13 00:54:52,943 - ERROR - [LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 7
+}
+]
+2025-07-13 00:54:52,950 - ERROR - [LLM] 최종 실패 - 기본값 반환
+2025-07-13 00:54:53,198 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 7
+}
+]
+2025-07-13 00:54:54,683 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 6
+}
+]
+2025-07-13 00:54:56,954 - ERROR - [LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 3
+}
+]
+2025-07-13 00:54:56,983 - ERROR - [LLM] 최종 실패 - 기본값 반환
+2025-07-13 00:54:57,621 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 3
+}
+]
+2025-07-13 00:54:58,885 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 1
+}
+]
+2025-07-13 00:55:01,201 - ERROR - [LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 59
+}
+]
+2025-07-13 00:55:01,217 - ERROR - [LLM] 최종 실패 - 기본값 반환
+2025-07-13 00:55:01,218 - INFO - [LLM] 완료: 신재생에너지 | 보통 | 9자
+2025-07-13 00:55:02,220 - INFO - [LLM] 처리 중: [단독] "잠수함 수출 위해 G7 갔다"K방산 세일즈맨...
+2025-07-13 00:55:02,416 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 58
+}
+]
+2025-07-13 00:55:03,643 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 57
+}
+]
+2025-07-13 00:55:05,873 - ERROR - [LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 54
+}
+]
+2025-07-13 00:55:05,877 - ERROR - [LLM] 최종 실패 - 기본값 반환
+2025-07-13 00:55:06,091 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 54
+}
+]
+2025-07-13 00:55:07,373 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 53
+}
+]
+2025-07-13 00:55:09,573 - ERROR - [LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 51
+}
+]
+2025-07-13 00:55:09,577 - ERROR - [LLM] 최종 실패 - 기본값 반환
+2025-07-13 00:55:10,266 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 50
+}
+]
+2025-07-13 00:55:11,479 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 49
+}
+]
+2025-07-13 00:55:13,684 - ERROR - [LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 46
+}
+]
+2025-07-13 00:55:13,704 - ERROR - [LLM] 최종 실패 - 기본값 반환
+2025-07-13 00:55:13,705 - INFO - [LLM] 완료: 신재생에너지 | 보통 | 9자
+2025-07-13 00:55:14,710 - INFO - [LLM] 처리 중: 美·유럽 신뢰 잃은 K-방산에 일본만 어부지리 - 주간...
+2025-07-13 00:55:14,920 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 45
+}
+]
+2025-07-13 00:55:16,137 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 44
+}
+]
+2025-07-13 00:55:20,033 - INFO - [LLM] 완료: 방위산업 | 높음 | 100자
+2025-07-13 00:55:21,036 - INFO - [LLM] 처리 중: K-방산, 자부심을 넘어 미래로 도약합니다! - 카드/...
+2025-07-13 00:55:23,046 - INFO - [LLM] 완료: 방위산업 | 보통 | 144자
+2025-07-13 00:55:24,047 - INFO - [LLM] 처리 중: K방산 커지자'24년 분업 구도' 흔들 - 한국경제...
+2025-07-13 00:55:26,214 - INFO - [LLM] 완료: 방위산업 | 높음 | 111자
+2025-07-13 00:55:30,219 - INFO - [LLM] 배치 3/8 처리 중...
+2025-07-13 00:55:30,220 - INFO - [LLM] 처리 중: 조선·방산으로 산업화 열망 "한국과 남미 군수 생산거점...
+2025-07-13 00:55:32,282 - INFO - [LLM] 완료: 방위산업 | 높음 | 88자
+2025-07-13 00:55:33,284 - INFO - [LLM] 처리 중: 우크라, 전쟁 3년만에 군수산업 35배 팽창무기 40%...
+2025-07-13 00:55:33,499 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 27
+}
+]
+2025-07-13 00:55:34,705 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 25
+}
+]
+2025-07-13 00:55:36,926 - ERROR - [LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 23
+}
+]
+2025-07-13 00:55:36,937 - ERROR - [LLM] 최종 실패 - 기본값 반환
+2025-07-13 00:55:37,609 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 23
+}
+]
+2025-07-13 00:55:38,944 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 21
+}
+]
+2025-07-13 00:55:41,254 - ERROR - [LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 19
+}
+]
+2025-07-13 00:55:41,310 - ERROR - [LLM] 최종 실패 - 기본값 반환
+2025-07-13 00:55:41,947 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 18
+}
+]
+2025-07-13 00:55:43,165 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 17
+}
+]
+2025-07-13 00:55:45,370 - ERROR - [LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 15
+}
+]
+2025-07-13 00:55:45,392 - ERROR - [LLM] 최종 실패 - 기본값 반환
+2025-07-13 00:55:45,394 - INFO - [LLM] 완료: 신재생에너지 | 보통 | 9자
+2025-07-13 00:55:46,398 - INFO - [LLM] 처리 중: 100% 신재생에너지 산단 만든다李 "규제 제로" 검토...
+2025-07-13 00:55:46,594 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 14
+}
+]
+2025-07-13 00:55:48,037 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 12
+}
+]
+2025-07-13 00:55:50,338 - ERROR - [LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 10
+}
+]
+2025-07-13 00:55:50,357 - ERROR - [LLM] 최종 실패 - 기본값 반환
+2025-07-13 00:55:50,584 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 10
+}
+]
+2025-07-13 00:55:51,809 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 8
+}
+]
+2025-07-13 00:55:54,042 - ERROR - [LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 6
+}
+]
+2025-07-13 00:55:54,076 - ERROR - [LLM] 최종 실패 - 기본값 반환
+2025-07-13 00:55:54,291 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 6
+}
+]
+2025-07-13 00:55:55,725 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 4
+}
+]
+2025-07-13 00:55:58,001 - ERROR - [LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 2
+}
+]
+2025-07-13 00:55:58,008 - ERROR - [LLM] 최종 실패 - 기본값 반환
+2025-07-13 00:55:58,009 - INFO - [LLM] 완료: 신재생에너지 | 보통 | 9자
+2025-07-13 00:55:59,012 - INFO - [LLM] 처리 중: 고려아연, 지난해 사상 최대 신재생에너지 투자5600億...
+2025-07-13 00:55:59,256 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 1
+}
+]
+2025-07-13 00:56:00,749 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 59
+}
+]
+2025-07-13 00:56:03,290 - ERROR - [LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 57
+}
+]
+2025-07-13 00:56:03,301 - ERROR - [LLM] 최종 실패 - 기본값 반환
+2025-07-13 00:56:03,497 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 57
+}
+]
+2025-07-13 00:56:04,733 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 55
+}
+]
+2025-07-13 00:56:06,947 - ERROR - [LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 53
+}
+]
+2025-07-13 00:56:06,952 - ERROR - [LLM] 최종 실패 - 기본값 반환
+2025-07-13 00:56:07,154 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 53
+}
+]
+2025-07-13 00:56:08,373 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 52
+}
+]
+2025-07-13 00:56:10,574 - ERROR - [LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 50
+}
+]
+2025-07-13 00:56:10,595 - ERROR - [LLM] 최종 실패 - 기본값 반환
+2025-07-13 00:56:10,596 - INFO - [LLM] 완료: 신재생에너지 | 보통 | 9자
+2025-07-13 00:56:11,607 - INFO - [LLM] 처리 중: 고려아연, 지난해 신재생 에너지 5600억 투자 '사상...
+2025-07-13 00:56:12,810 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 48
+}
+]
+2025-07-13 00:56:14,028 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 46
+}
+]
+2025-07-13 00:56:16,254 - ERROR - [LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 44
+}
+]
+2025-07-13 00:56:16,264 - ERROR - [LLM] 최종 실패 - 기본값 반환
+2025-07-13 00:56:18,280 - INFO - [LLM] 완료: 신재생에너지 | 높음 | 161자
+2025-07-13 00:56:22,283 - INFO - [LLM] 배치 4/8 처리 중...
+2025-07-13 00:56:22,285 - INFO - [LLM] 처리 중: 고수들 태양광 이익개선 기대 한화솔루션 집중 매수 - ...
+2025-07-13 00:56:24,292 - INFO - [LLM] 완료: 신재생에너지 | 보통 | 118자
+2025-07-13 00:56:25,293 - INFO - [LLM] 처리 중: 미국, 태양광 세액공제 20년 만에 폐지패널 설치 85...
+2025-07-13 00:56:27,225 - INFO - [LLM] 완료: 신재생에너지 | 매우중요 | 113자
+2025-07-13 00:56:28,227 - INFO - [LLM] 처리 중: 현대건설, 미국 태양광 'LUCY 프로젝트' 7500억...
+2025-07-13 00:56:30,215 - INFO - [LLM] 완료: 신재생에너지 | 높음 | 131자
+2025-07-13 00:56:31,265 - INFO - [LLM] 처리 중: 바람 불자 돈 들어온다해상풍력 '제로'→세계 5위 된 ...
+2025-07-13 00:56:31,985 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 28
+}
+]
+2025-07-13 00:56:33,195 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 27
+}
+]
+2025-07-13 00:56:35,434 - ERROR - [LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 25
+}
+]
+2025-07-13 00:56:35,453 - ERROR - [LLM] 최종 실패 - 기본값 반환
+2025-07-13 00:56:35,696 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 24
+}
+]
+2025-07-13 00:56:36,988 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 23
+}
+]
+2025-07-13 00:56:39,239 - ERROR - [LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 21
+}
+]
+2025-07-13 00:56:39,254 - ERROR - [LLM] 최종 실패 - 기본값 반환
+2025-07-13 00:56:39,302 - INFO - [LLM] 완료: 신재생에너지 | 보통 | 9자
+2025-07-13 00:56:40,324 - INFO - [LLM] 처리 중: 한전-한국해상풍력, 서남해 400MW 시범단지 성공 추...
+2025-07-13 00:56:40,537 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 20
+}
+]
+2025-07-13 00:56:41,748 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 18
+}
+]
+2025-07-13 00:56:44,000 - ERROR - [LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 16
+}
+]
+2025-07-13 00:56:44,040 - ERROR - [LLM] 최종 실패 - 기본값 반환
+2025-07-13 00:56:44,276 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 16
+}
+]
+2025-07-13 00:56:45,489 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 15
+}
+]
+2025-07-13 00:56:47,742 - ERROR - [LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 12
+}
+]
+2025-07-13 00:56:47,825 - ERROR - [LLM] 최종 실패 - 기본값 반환
+2025-07-13 00:56:48,044 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 12
+}
+]
+2025-07-13 00:56:49,498 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 11
+}
+]
+2025-07-13 00:56:51,700 - ERROR - [LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 8
+}
+]
+2025-07-13 00:56:51,778 - ERROR - [LLM] 최종 실패 - 기본값 반환
+2025-07-13 00:56:51,779 - INFO - [LLM] 완료: 신재생에너지 | 보통 | 9자
+2025-07-13 00:56:55,807 - INFO - [LLM] 배치 5/8 처리 중...
+2025-07-13 00:56:55,823 - INFO - [LLM] 처리 중: 김태균 한국전력기술 사장, 제주한림해상풍력 준공 후 시...
+2025-07-13 00:56:56,414 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 4
+}
+]
+2025-07-13 00:56:57,653 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 2
+}
+]
+2025-07-13 00:57:00,195 - ERROR - [LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+}
+]
+2025-07-13 00:57:00,228 - ERROR - [LLM] 최종 실패 - 기본값 반환
+2025-07-13 00:57:00,535 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+}
+]
+2025-07-13 00:57:01,753 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 58
+}
+]
+2025-07-13 00:57:04,055 - ERROR - [LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 56
+}
+]
+2025-07-13 00:57:04,060 - ERROR - [LLM] 최종 실패 - 기본값 반환
+2025-07-13 00:57:04,264 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 56
+}
+]
+2025-07-13 00:57:05,497 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 55
+}
+]
+2025-07-13 00:57:07,782 - ERROR - [LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 52
+}
+]
+2025-07-13 00:57:07,852 - ERROR - [LLM] 최종 실패 - 기본값 반환
+2025-07-13 00:57:07,882 - INFO - [LLM] 완료: 신재생에너지 | 보통 | 9자
+2025-07-13 00:57:08,912 - INFO - [LLM] 처리 중: SK온, ESS용 배터리소재 북미 공급망 확보 - 에너...
+2025-07-13 00:57:09,112 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 51
+}
+]
+2025-07-13 00:57:10,350 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 50
+}
+]
+2025-07-13 00:57:12,609 - ERROR - [LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 48
+}
+]
+2025-07-13 00:57:12,618 - ERROR - [LLM] 최종 실패 - 기본값 반환
+2025-07-13 00:57:12,977 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 47
+}
+]
+2025-07-13 00:57:14,215 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 46
+}
+]
+2025-07-13 00:57:17,132 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 43
+}
+]
+2025-07-13 00:57:19,056 - INFO - [LLM] 완료: 신재생에너지 | 높음 | 107자
+2025-07-13 00:57:20,060 - INFO - [LLM] 처리 중: SK온, 엘앤에프와 북미 ESS용 LFP 배터리 시장 ...
+2025-07-13 00:57:22,415 - INFO - [LLM] 완료: 신재생에너지 | 높음 | 162자
+2025-07-13 00:57:23,416 - INFO - [LLM] 처리 중: 에너지저장장치(ESS)가 뭐길래···공급 소식에 11%...
+2025-07-13 00:57:25,469 - INFO - [LLM] 완료: 신재생에너지 | 보통 | 141자
+2025-07-13 00:57:26,483 - INFO - [LLM] 처리 중: 보험중개사, 어디로, 어떻게 가야 하나? - 한국공제보...
+2025-07-13 00:57:28,614 - INFO - [LLM] 완료: 보험중개 | 보통 | 133자
+2025-07-13 00:57:32,618 - INFO - [LLM] 배치 6/8 처리 중...
+2025-07-13 00:57:32,619 - INFO - [LLM] 처리 중: LK보험중개, A&G코리아보험중개 인수 - 해양한국...
+2025-07-13 00:57:32,816 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 27
+}
+]
+2025-07-13 00:57:34,025 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 26
+}
+]
+2025-07-13 00:57:36,323 - ERROR - [LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 24
+}
+]
+2025-07-13 00:57:36,332 - ERROR - [LLM] 최종 실패 - 기본값 반환
+2025-07-13 00:57:36,726 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 23
+}
+]
+2025-07-13 00:57:37,936 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 22
+}
+]
+2025-07-13 00:57:40,153 - ERROR - [LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 20
+}
+]
+2025-07-13 00:57:40,172 - ERROR - [LLM] 최종 실패 - 기본값 반환
+2025-07-13 00:57:40,858 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 19
+}
+]
+2025-07-13 00:57:42,073 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 18
+}
+]
+2025-07-13 00:57:45,203 - INFO - [LLM] 완료: 신재생에너지 | 보통 | 97자
+2025-07-13 00:57:46,205 - INFO - [LLM] 처리 중: 보험중개사 통해 일반보험 활성화해야보험학회, 보험중개제...
+2025-07-13 00:57:46,441 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 14
+}
+]
+2025-07-13 00:57:47,645 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 12
+}
+]
+2025-07-13 00:57:49,882 - ERROR - [LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 10
+}
+]
+2025-07-13 00:57:49,887 - ERROR - [LLM] 최종 실패 - 기본값 반환
+2025-07-13 00:57:50,086 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 10
+}
+]
+2025-07-13 00:57:51,309 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 9
+}
+]
+2025-07-13 00:57:53,528 - ERROR - [LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 7
+}
+]
+2025-07-13 00:57:53,548 - ERROR - [LLM] 최종 실패 - 기본값 반환
+2025-07-13 00:57:53,755 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 6
+}
+]
+2025-07-13 00:57:55,213 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 5
+}
+]
+2025-07-13 00:57:57,435 - ERROR - [LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 3
+}
+]
+2025-07-13 00:57:57,449 - ERROR - [LLM] 최종 실패 - 기본값 반환
+2025-07-13 00:57:57,450 - INFO - [LLM] 완료: 신재생에너지 | 보통 | 9자
+2025-07-13 00:57:58,452 - INFO - [LLM] 처리 중: 독립 보험대리점 2025년 7월 브랜드평판...인카금융...
+2025-07-13 00:57:58,664 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 1
+}
+]
+2025-07-13 00:57:59,899 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+}
+]
+2025-07-13 00:58:02,205 - ERROR - [LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 58
+}
+]
+2025-07-13 00:58:02,270 - ERROR - [LLM] 최종 실패 - 기본값 반환
+2025-07-13 00:58:02,534 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 58
+}
+]
+2025-07-13 00:58:04,030 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 56
+}
+]
+2025-07-13 00:58:06,229 - ERROR - [LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 54
+}
+]
+2025-07-13 00:58:06,241 - ERROR - [LLM] 최종 실패 - 기본값 반환
+2025-07-13 00:58:06,456 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 54
+}
+]
+2025-07-13 00:58:07,661 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 52
+}
+]
+2025-07-13 00:58:09,887 - ERROR - [LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 50
+}
+]
+2025-07-13 00:58:09,893 - ERROR - [LLM] 최종 실패 - 기본값 반환
+2025-07-13 00:58:09,894 - INFO - [LLM] 완료: 신재생에너지 | 보통 | 9자
+2025-07-13 00:58:10,896 - INFO - [LLM] 처리 중: 인카금융서비스, 독립 보험대리점 (GA) 브랜드평판 2...
+2025-07-13 00:58:11,100 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 49
+}
+]
+2025-07-13 00:58:12,334 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 48
+}
+]
+2025-07-13 00:58:14,551 - ERROR - [LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 46
+}
+]
+2025-07-13 00:58:14,563 - ERROR - [LLM] 최종 실패 - 기본값 반환
+2025-07-13 00:58:15,248 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 45
+}
+]
+2025-07-13 00:58:16,486 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 44
+}
+]
+2025-07-13 00:58:18,707 - ERROR - [LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 41
+}
+]
+2025-07-13 00:58:18,723 - ERROR - [LLM] 최종 실패 - 기본값 반환
+2025-07-13 00:58:19,389 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 41
+}
+]
+2025-07-13 00:58:21,452 - INFO - [LLM] 완료: 신재생에너지 | 보통 | 142자
+2025-07-13 00:58:22,454 - INFO - [LLM] 처리 중: 한화생명금융서비스 법인보험대리점 IFC그룹 인수, 영남...
+2025-07-13 00:58:24,762 - INFO - [LLM] 완료: 보험중개 | 높음 | 157자
+2025-07-13 00:58:28,772 - INFO - [LLM] 배치 7/8 처리 중...
+2025-07-13 00:58:28,776 - INFO - [LLM] 처리 중: [금융人사이드]'N잡러' 보험설계사에 도전하세요...'...
+2025-07-13 00:58:31,118 - INFO - [LLM] 완료: 보험중개 | 높음 | 106자
+2025-07-13 00:58:32,133 - INFO - [LLM] 처리 중: 삼성 턱밑까지 치고 온 한화불붙은 생보사 '설계사 유치...
+2025-07-13 00:58:34,816 - INFO - [LLM] 완료: 보험중개 | 높음 | 162자
+2025-07-13 00:58:35,818 - INFO - [LLM] 처리 중: 보험硏 "생명·손해·GA '통합 상호협정' 도입해 영업...
+2025-07-13 00:58:36,531 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 24
+}
+]
+2025-07-13 00:58:37,772 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 22
+}
+]
+2025-07-13 00:58:40,011 - ERROR - [LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 20
+}
+]
+2025-07-13 00:58:40,061 - ERROR - [LLM] 최종 실패 - 기본값 반환
+2025-07-13 00:58:40,343 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 20
+}
+]
+2025-07-13 00:58:41,603 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 19
+}
+]
+2025-07-13 00:58:44,596 - INFO - [LLM] 완료: 보험중개 | 보통 | 121자
+2025-07-13 00:58:45,597 - INFO - [LLM] 처리 중: 와이즈엔컨설팅, KB라이프에 보험상품 기초서류 통합 관...
+2025-07-13 00:58:45,794 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 14
+}
+]
+2025-07-13 00:58:47,000 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 13
+}
+]
+2025-07-13 00:58:49,267 - ERROR - [LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 11
+}
+]
+2025-07-13 00:58:49,271 - ERROR - [LLM] 최종 실패 - 기본값 반환
+2025-07-13 00:58:49,504 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 11
+}
+]
+2025-07-13 00:58:50,725 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 9
+}
+]
+2025-07-13 00:58:52,935 - ERROR - [LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 7
+}
+]
+2025-07-13 00:58:52,938 - ERROR - [LLM] 최종 실패 - 기본값 반환
+2025-07-13 00:58:53,156 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 7
+}
+]
+2025-07-13 00:58:54,385 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 6
+}
+]
+2025-07-13 00:58:56,598 - ERROR - [LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 4
+}
+]
+2025-07-13 00:58:56,638 - ERROR - [LLM] 최종 실패 - 기본값 반환
+2025-07-13 00:58:56,640 - INFO - [LLM] 완료: 신재생에너지 | 보통 | 9자
+2025-07-13 00:58:57,642 - INFO - [LLM] 처리 중: 아이지넷, '보닥'으로 보험 인기상품 데이터 매주 제공...
+2025-07-13 00:58:57,854 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 2
+}
+]
+2025-07-13 00:58:59,057 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 1
+}
+]
+2025-07-13 00:59:01,297 - ERROR - [LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 59
+}
+]
+2025-07-13 00:59:01,366 - ERROR - [LLM] 최종 실패 - 기본값 반환
+2025-07-13 00:59:01,599 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 59
+}
+]
+2025-07-13 00:59:02,844 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 57
+}
+]
+2025-07-13 00:59:05,036 - ERROR - [LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 55
+}
+]
+2025-07-13 00:59:05,053 - ERROR - [LLM] 최종 실패 - 기본값 반환
+2025-07-13 00:59:05,259 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 55
+}
+]
+2025-07-13 00:59:06,486 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 54
+}
+]
+2025-07-13 00:59:08,730 - ERROR - [LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 51
+}
+]
+2025-07-13 00:59:08,749 - ERROR - [LLM] 최종 실패 - 기본값 반환
+2025-07-13 00:59:08,750 - INFO - [LLM] 완료: 신재생에너지 | 보통 | 9자
+2025-07-13 00:59:12,757 - INFO - [LLM] 배치 8/8 처리 중...
+2025-07-13 00:59:12,759 - INFO - [LLM] 처리 중: 전쟁 위험 보험사들, 보험상품 대거 '철회' - 해양통...
+2025-07-13 00:59:12,984 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 47
+}
+]
+2025-07-13 00:59:14,178 - ERROR - [LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 46
+}
+]
+2025-07-13 00:59:17,444 - ERROR - [LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 43
+}
+]
+2025-07-13 00:59:20,148 - INFO - [LLM] 완료: 보험중개 | 높음 | 116자
+2025-07-13 00:59:21,149 - INFO - [LLM] 전체 처리 완료: 36건
+2025-07-13 00:59:21,149 - INFO - 
+📊 LLM 처리 결과 리포트
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📈 전체 처리: 36건
+
+🏷️ 카테고리별 분류:
+  🛡️ 방위산업: 8건
+  🔋 신재생에너지: 22건
+  🏢 보험중개: 6건
+
+⭐ 중요도별 분포:
+  🟠 높음: 12건
+  🟢 보통: 23건
+  🔴 매우중요: 1건
+
+✨ 요약 품질:
+  🔥 높음: 23건
+  ❄️ 낮음: 13건
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2025-07-13 00:59:21,186 - INFO - ✅ 2단계 완료: 36건 처리
+2025-07-13 00:59:21,189 - INFO - ============================================================
+2025-07-13 00:59:21,191 - INFO - 📊 3단계: 노션 DB 업로드 시작
+2025-07-13 00:59:21,192 - INFO - ============================================================
+2025-07-13 00:59:21,983 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 00:59:22,343 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 00:59:22,701 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 00:59:24,214 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 00:59:24,654 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 00:59:25,054 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 00:59:25,379 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 00:59:25,702 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 00:59:26,088 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 00:59:27,058 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 00:59:27,065 - INFO - [UPLOAD] 10건 업로드 완료...
+2025-07-13 00:59:28,251 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 00:59:28,613 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 00:59:29,533 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 00:59:33,546 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 00:59:33,916 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 00:59:34,282 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 00:59:36,541 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 00:59:36,889 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 00:59:37,467 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 00:59:37,809 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 00:59:37,818 - INFO - [UPLOAD] 20건 업로드 완료...
+2025-07-13 00:59:53,025 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 00:59:55,276 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 00:59:56,414 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 00:59:56,768 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 00:59:59,085 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 00:59:59,546 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 01:00:02,463 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 01:00:02,827 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 01:00:03,210 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 01:00:03,776 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 01:00:03,786 - INFO - [UPLOAD] 30건 업로드 완료...
+2025-07-13 01:00:04,195 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 01:00:05,158 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 01:00:05,527 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 01:00:06,500 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 01:00:06,969 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 01:00:07,355 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 01:00:07,363 - INFO - ✅ 3단계 완료: 36건 업로드, 0건 실패
+2025-07-13 01:00:07,364 - INFO - ============================================================
+2025-07-13 01:00:07,365 - INFO - 📊 4단계: 대시보드 생성 시작
+2025-07-13 01:00:07,370 - INFO - ============================================================
+2025-07-13 01:00:07,766 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22aa613d25ff80888257c652d865f85a/query "HTTP/1.1 200 OK"
+2025-07-13 01:00:07,774 - INFO - [DASHBOARD] 오늘의 뉴스 0건 로드 완료
+2025-07-13 01:00:08,245 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 01:00:08,249 - INFO - [DASHBOARD] 대시보드 페이지 생성 완료: https://www.notion.so/2025-07-13-22ea613d25ff81a8bd5acf5f8703aeb2
+2025-07-13 01:00:08,255 - INFO - ✅ 4단계 완료: 대시보드 생성 완료
+2025-07-13 01:00:08,259 - INFO - 
+🎯 GIA MVP1.0 자동화 실행 완료 보고서
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📅 실행 시간: 2025-07-13 00:53:40 - 01:00:08
+⏱️ 소요 시간: 6분 27초
+
+📊 처리 결과:
+┌─────────────────────────────────────────────────────┐
+│ 🔥 구글 뉴스 수집      │  36건 │
+│ 🤖 LLM 처리           │  36건 │
+│ 📊 노션 업로드         │  36건 │
+│ 🎨 대시보드 생성       │  완료  │
+└─────────────────────────────────────────────────────┘
+
+🎨 대시보드 URL: https://www.notion.so/2025-07-13-22ea613d25ff81a8bd5acf5f8703aeb2
+
+✅ 성공적으로 완료
+모든 단계가 성공적으로 완료되었습니다.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2025-07-13 01:00:08,278 - INFO - 🎉 GIA MVP1.0 자동화 파이프라인 성공 완료!
+2025-07-13 01:00:08,280 - INFO - 🎉 프로그램 정상 종료
+2025-07-13 01:03:47,840 - INFO - [BID_MAIN] 입찰/낙찰 뉴스 수집 시작
+2025-07-13 01:03:48,116 - INFO - [BID_START] 입찰/낙찰 뉴스 수집 시작
+2025-07-13 01:03:48,368 - INFO - [BID_SEARCH] 신재생에너지 카테고리 입찰/낙찰 뉴스 검색 시작
+2025-07-13 01:03:48,853 - INFO - [BID_SEARCH] 키워드 '신재생에너지 입찰' 검색 중...
+2025-07-13 01:03:52,413 - INFO - [BID_SUCCESS] '신재생에너지 입찰' 키워드: 3건 수집
+2025-07-13 01:03:53,567 - INFO - [BID_SEARCH] 키워드 '신재생에너지 낙찰' 검색 중...
+2025-07-13 01:03:57,290 - INFO - [BID_SUCCESS] '신재생에너지 낙찰' 키워드: 3건 수집
+2025-07-13 01:03:58,322 - INFO - [BID_SEARCH] 키워드 '신재생에너지 공고' 검색 중...
+2025-07-13 01:04:00,498 - INFO - [BID_SUCCESS] '신재생에너지 공고' 키워드: 3건 수집
+2025-07-13 01:04:01,615 - INFO - [BID_SEARCH] 키워드 '신재생에너지 계약' 검색 중...
+2025-07-13 01:04:03,759 - INFO - [BID_SUCCESS] '신재생에너지 계약' 키워드: 3건 수집
+2025-07-13 01:04:04,849 - INFO - [BID_SEARCH] 키워드 '신재생에너지 조달' 검색 중...
+2025-07-13 01:04:06,636 - INFO - [BID_SUCCESS] '신재생에너지 조달' 키워드: 3건 수집
+2025-07-13 01:04:07,734 - INFO - [BID_SEARCH] 키워드 '태양광 입찰' 검색 중...
+2025-07-13 01:04:11,948 - INFO - [BID_SUCCESS] '태양광 입찰' 키워드: 3건 수집
+2025-07-13 01:04:13,568 - INFO - [BID_SEARCH] 키워드 '태양광 낙찰' 검색 중...
+2025-07-13 01:04:15,711 - INFO - [BID_SUCCESS] '태양광 낙찰' 키워드: 3건 수집
+2025-07-13 01:04:16,825 - INFO - [BID_SEARCH] 키워드 '태양광 공고' 검색 중...
+2025-07-13 01:04:19,229 - INFO - [BID_SUCCESS] '태양광 공고' 키워드: 3건 수집
+2025-07-13 01:04:20,333 - INFO - [BID_SEARCH] 키워드 '태양광 계약' 검색 중...
+2025-07-13 01:04:22,897 - INFO - [BID_SUCCESS] '태양광 계약' 키워드: 3건 수집
+2025-07-13 01:04:23,922 - INFO - [BID_SEARCH] 키워드 '태양광 조달' 검색 중...
+2025-07-13 01:04:25,968 - INFO - [BID_SUCCESS] '태양광 조달' 키워드: 3건 수집
+2025-07-13 01:04:27,019 - INFO - [BID_SEARCH] 키워드 '풍력 입찰' 검색 중...
+2025-07-13 01:04:29,042 - INFO - [BID_SUCCESS] '풍력 입찰' 키워드: 3건 수집
+2025-07-13 01:04:30,185 - INFO - [BID_SEARCH] 키워드 '풍력 낙찰' 검색 중...
+2025-07-13 01:04:32,997 - INFO - [BID_SUCCESS] '풍력 낙찰' 키워드: 3건 수집
+2025-07-13 01:04:34,377 - INFO - [BID_SEARCH] 키워드 '풍력 공고' 검색 중...
+2025-07-13 01:04:36,566 - INFO - [BID_SUCCESS] '풍력 공고' 키워드: 3건 수집
+2025-07-13 01:04:37,615 - INFO - [BID_SEARCH] 키워드 '풍력 계약' 검색 중...
+2025-07-13 01:04:42,940 - INFO - [BID_SUCCESS] '풍력 계약' 키워드: 0건 수집
+2025-07-13 01:04:43,987 - INFO - [BID_SEARCH] 키워드 '풍력 조달' 검색 중...
+2025-07-13 01:04:45,604 - INFO - [BID_SUCCESS] '풍력 조달' 키워드: 3건 수집
+2025-07-13 01:04:46,660 - INFO - [BID_COMPLETE] 신재생에너지 카테고리: 총 42건 수집
+2025-07-13 01:04:46,694 - INFO - [BID_SEARCH] 방위산업 카테고리 입찰/낙찰 뉴스 검색 시작
+2025-07-13 01:04:46,761 - INFO - [BID_SEARCH] 키워드 '방위산업 입찰' 검색 중...
+2025-07-13 01:04:49,120 - INFO - [BID_SUCCESS] '방위산업 입찰' 키워드: 3건 수집
+2025-07-13 01:04:50,142 - INFO - [BID_SEARCH] 키워드 '방위산업 낙찰' 검색 중...
+2025-07-13 01:04:51,766 - INFO - [BID_SUCCESS] '방위산업 낙찰' 키워드: 3건 수집
+2025-07-13 01:04:52,809 - INFO - [BID_SEARCH] 키워드 '방위산업 공고' 검색 중...
+2025-07-13 01:04:55,083 - INFO - [BID_SUCCESS] '방위산업 공고' 키워드: 3건 수집
+2025-07-13 01:04:56,174 - INFO - [BID_SEARCH] 키워드 '방위산업 계약' 검색 중...
+2025-07-13 01:04:58,151 - INFO - [BID_SUCCESS] '방위산업 계약' 키워드: 3건 수집
+2025-07-13 01:04:59,187 - INFO - [BID_SEARCH] 키워드 '방위산업 조달' 검색 중...
+2025-07-13 01:05:01,689 - INFO - [BID_SUCCESS] '방위산업 조달' 키워드: 3건 수집
+2025-07-13 01:05:02,719 - INFO - [BID_SEARCH] 키워드 '국방 입찰' 검색 중...
+2025-07-13 01:05:04,568 - INFO - [BID_SUCCESS] '국방 입찰' 키워드: 3건 수집
+2025-07-13 01:05:05,612 - INFO - [BID_SEARCH] 키워드 '국방 낙찰' 검색 중...
+2025-07-13 01:05:07,009 - INFO - [BID_SUCCESS] '국방 낙찰' 키워드: 3건 수집
+2025-07-13 01:05:08,116 - INFO - [BID_SEARCH] 키워드 '국방 공고' 검색 중...
+2025-07-13 01:05:09,667 - INFO - [BID_SUCCESS] '국방 공고' 키워드: 3건 수집
+2025-07-13 01:05:11,015 - INFO - [BID_SEARCH] 키워드 '국방 계약' 검색 중...
+2025-07-13 01:05:15,530 - INFO - [BID_SUCCESS] '국방 계약' 키워드: 3건 수집
+2025-07-13 01:05:16,587 - INFO - [BID_SEARCH] 키워드 '국방 조달' 검색 중...
+2025-07-13 01:05:19,422 - INFO - [BID_SUCCESS] '국방 조달' 키워드: 3건 수집
+2025-07-13 01:05:20,437 - INFO - [BID_SEARCH] 키워드 'K-방산 입찰' 검색 중...
+2025-07-13 01:05:21,887 - INFO - [BID_SUCCESS] 'K-방산 입찰' 키워드: 3건 수집
+2025-07-13 01:05:22,906 - INFO - [BID_SEARCH] 키워드 'K-방산 낙찰' 검색 중...
+2025-07-13 01:05:24,779 - INFO - [BID_SUCCESS] 'K-방산 낙찰' 키워드: 3건 수집
+2025-07-13 01:05:25,797 - INFO - [BID_SEARCH] 키워드 'K-방산 공고' 검색 중...
+2025-07-13 01:05:27,541 - INFO - [BID_SUCCESS] 'K-방산 공고' 키워드: 3건 수집
+2025-07-13 01:05:28,613 - INFO - [BID_SEARCH] 키워드 'K-방산 계약' 검색 중...
+2025-07-13 01:05:30,455 - INFO - [BID_SUCCESS] 'K-방산 계약' 키워드: 3건 수집
+2025-07-13 01:05:31,487 - INFO - [BID_SEARCH] 키워드 'K-방산 조달' 검색 중...
+2025-07-13 01:05:33,068 - INFO - [BID_SUCCESS] 'K-방산 조달' 키워드: 3건 수집
+2025-07-13 01:05:34,113 - INFO - [BID_COMPLETE] 방위산업 카테고리: 총 45건 수집
+2025-07-13 01:05:34,205 - INFO - [BID_DEDUP] 중복 제거: 87건 → 71건
+2025-07-13 01:05:34,456 - INFO - [BID_SELECT] 신재생에너지: 5건 선별 (총 28건 중)
+2025-07-13 01:05:34,489 - INFO - [BID_SELECT] 방위산업: 5건 선별 (총 43건 중)
+2025-07-13 01:05:34,506 - INFO - [BID_FINAL] 최종 선별: 10건 (목표: 10건)
+2025-07-13 01:05:34,576 - INFO - [BID_SAVE] data/bid_news_20250713_010534.json에 10건 저장 완료
+2025-07-13 01:05:34,603 - INFO - [BID_SUCCESS] 입찰/낙찰 뉴스 수집 완료: 10건
+2025-07-13 01:05:34,631 - INFO - 
+============================================================
+2025-07-13 01:05:34,657 - INFO - [BID_SUMMARY] 입찰/낙찰 뉴스 수집 결과
+2025-07-13 01:05:34,691 - INFO - ============================================================
+2025-07-13 01:05:34,740 - INFO - 1. [신재생에너지][입찰공고] 정부 상반기 풍력·태양광 경쟁입찰 공고, 안보와 공공성 강화 요건 신설 - 비즈니스포스트
+2025-07-13 01:05:34,834 - INFO -    중요도: 매우중요 | 날짜: 2025-05-26
+2025-07-13 01:05:34,862 - INFO - 
+2025-07-13 01:05:34,887 - INFO - 2. [신재생에너지][입찰공고] 풍력·태양광 상반기 입찰공고해상풍력에 안보평가 첫 적용 - 마켓인
+2025-07-13 01:05:34,907 - INFO -    중요도: 높음 | 날짜: 2025-05-26
+2025-07-13 01:05:34,932 - INFO - 
+2025-07-13 01:05:34,951 - INFO - 3. [신재생에너지][입찰공고] 풍력 1.25GW·태양광 1GW 규모 경쟁입찰 공고평가에 안보지표 첫 반영 - 전기신문
+2025-07-13 01:05:34,976 - INFO -    중요도: 높음 | 날짜: 2025-05-26
+2025-07-13 01:05:35,003 - INFO - 
+2025-07-13 01:05:35,037 - INFO - 4. [신재생에너지][입찰공고] 2025 상반기 재생에너지 경쟁입찰풍력 1.25GW, 태양광 1.0GW - 에너지데일리
+2025-07-13 01:05:35,059 - INFO -    중요도: 보통 | 날짜: 2025-05-26
+2025-07-13 01:05:35,090 - INFO - 
+2025-07-13 01:05:35,108 - INFO - 5. [신재생에너지][입찰공고] 풍력 1.25GW, 태양광 1.0GW ··· 상반기 경쟁입찰 - 에너지신문
+2025-07-13 01:05:35,135 - INFO -    중요도: 보통 | 날짜: 2025-05-26
+2025-07-13 01:05:35,151 - INFO - 
+2025-07-13 01:05:35,178 - INFO - 6. [방위산업][관련뉴스] 입찰까지 단 사흘국방과학연구소, 깜깜이 입찰 논란에 공고 번복 - 대한경제
+2025-07-13 01:05:35,206 - INFO -    중요도: 높음 | 날짜: 2025-02-21
+2025-07-13 01:05:35,224 - INFO - 
+2025-07-13 01:05:35,355 - INFO - 7. [방위산업][낙찰결과] 국방전자조달시스템 동가 낙찰자 선정 '자동 추첨'으로 바뀐다 - 소셜타임스
+2025-07-13 01:05:35,421 - INFO -    중요도: 높음 | 날짜: 2021-04-12
+2025-07-13 01:05:35,472 - INFO - 
+2025-07-13 01:05:35,527 - INFO - 8. [방위산업][낙찰결과] AAR 모빌리티 시스템즈, 8500만 달러 규모 국방 계약 체결 By Investing.com - Investing.com 한국어
+2025-07-13 01:05:35,570 - INFO -    중요도: 보통 | 날짜: 2025-07-08
+2025-07-13 01:05:35,608 - INFO - 
+2025-07-13 01:05:35,629 - INFO - 9. [방위산업][관련뉴스] 정부 방위산업 계약 시 재하도급 금지"방산브로커 폐해 근절" - MBC 뉴스
+2025-07-13 01:05:35,656 - INFO -    중요도: 높음 | 날짜: 2025-07-07
+2025-07-13 01:05:35,671 - INFO - 
+2025-07-13 01:05:35,694 - INFO - 10. [방위산업][관련뉴스] 방위산업 계약, 브로커 개입 철퇴정부, 일괄양도 금지 규정 신설 - 공감신문
+2025-07-13 01:05:35,742 - INFO -    중요도: 높음 | 날짜: 2025-07-07
+2025-07-13 01:05:35,873 - INFO - 
+2025-07-13 01:05:35,920 - INFO - [BID_FINAL] 총 10건의 입찰/낙찰 뉴스가 수집되었습니다!
+2025-07-13 01:32:33,453 - INFO - 🚀 입찰/낙찰 뉴스 통합 자동화 시스템 시작
+2025-07-13 01:32:33,510 - INFO - ============================================================
+2025-07-13 01:32:33,567 - INFO - 📊 1단계: 입찰/낙찰 뉴스 수집 시작
+2025-07-13 01:32:33,610 - INFO - [BID_START] 입찰/낙찰 뉴스 수집 시작
+2025-07-13 01:32:33,828 - INFO - [BID_SEARCH] 신재생에너지 카테고리 입찰/낙찰 뉴스 검색 시작
+2025-07-13 01:32:34,173 - INFO - [BID_SEARCH] 키워드 '신재생에너지 입찰' 검색 중...
+2025-07-13 01:32:36,561 - INFO - [BID_SUCCESS] '신재생에너지 입찰' 키워드: 3건 수집
+2025-07-13 01:32:37,579 - INFO - [BID_SEARCH] 키워드 '신재생에너지 낙찰' 검색 중...
+2025-07-13 01:32:40,482 - INFO - [BID_SUCCESS] '신재생에너지 낙찰' 키워드: 3건 수집
+2025-07-13 01:32:41,511 - INFO - [BID_SEARCH] 키워드 '신재생에너지 공고' 검색 중...
+2025-07-13 01:32:43,511 - INFO - [BID_SUCCESS] '신재생에너지 공고' 키워드: 3건 수집
+2025-07-13 01:32:44,555 - INFO - [BID_SEARCH] 키워드 '신재생에너지 계약' 검색 중...
+2025-07-13 01:32:46,562 - INFO - [BID_SUCCESS] '신재생에너지 계약' 키워드: 3건 수집
+2025-07-13 01:32:47,573 - INFO - [BID_SEARCH] 키워드 '신재생에너지 조달' 검색 중...
+2025-07-13 01:32:51,020 - INFO - [BID_SUCCESS] '신재생에너지 조달' 키워드: 3건 수집
+2025-07-13 01:32:52,159 - INFO - [BID_SEARCH] 키워드 '태양광 입찰' 검색 중...
+2025-07-13 01:32:54,241 - INFO - [BID_SUCCESS] '태양광 입찰' 키워드: 3건 수집
+2025-07-13 01:32:55,347 - INFO - [BID_SEARCH] 키워드 '태양광 낙찰' 검색 중...
+2025-07-13 01:32:57,796 - INFO - [BID_SUCCESS] '태양광 낙찰' 키워드: 3건 수집
+2025-07-13 01:32:58,932 - INFO - [BID_SEARCH] 키워드 '태양광 공고' 검색 중...
+2025-07-13 01:33:00,928 - INFO - [BID_SUCCESS] '태양광 공고' 키워드: 3건 수집
+2025-07-13 01:33:02,484 - INFO - [BID_SEARCH] 키워드 '태양광 계약' 검색 중...
+2025-07-13 01:33:06,176 - INFO - [BID_SUCCESS] '태양광 계약' 키워드: 3건 수집
+2025-07-13 01:33:11,243 - INFO - [BID_SEARCH] 키워드 '태양광 조달' 검색 중...
+2025-07-13 01:33:14,657 - INFO - [BID_SUCCESS] '태양광 조달' 키워드: 3건 수집
+2025-07-13 01:33:15,796 - INFO - [BID_SEARCH] 키워드 '풍력 입찰' 검색 중...
+2025-07-13 01:33:17,731 - INFO - [BID_SUCCESS] '풍력 입찰' 키워드: 3건 수집
+2025-07-13 01:33:18,771 - INFO - [BID_SEARCH] 키워드 '풍력 낙찰' 검색 중...
+2025-07-13 01:33:21,295 - INFO - [BID_SUCCESS] '풍력 낙찰' 키워드: 3건 수집
+2025-07-13 01:33:22,500 - INFO - [BID_SEARCH] 키워드 '풍력 공고' 검색 중...
+2025-07-13 01:33:25,528 - INFO - [BID_SUCCESS] '풍력 공고' 키워드: 3건 수집
+2025-07-13 01:33:26,974 - INFO - [BID_SEARCH] 키워드 '풍력 계약' 검색 중...
+2025-07-13 01:33:28,865 - INFO - [BID_SUCCESS] '풍력 계약' 키워드: 3건 수집
+2025-07-13 01:33:29,892 - INFO - [BID_SEARCH] 키워드 '풍력 조달' 검색 중...
+2025-07-13 01:33:31,876 - INFO - [BID_SUCCESS] '풍력 조달' 키워드: 3건 수집
+2025-07-13 01:33:32,912 - INFO - [BID_COMPLETE] 신재생에너지 카테고리: 총 45건 수집
+2025-07-13 01:33:32,992 - INFO - [BID_SEARCH] 방위산업 카테고리 입찰/낙찰 뉴스 검색 시작
+2025-07-13 01:33:33,098 - INFO - [BID_SEARCH] 키워드 '방위산업 입찰' 검색 중...
+2025-07-13 01:33:36,744 - INFO - [BID_SUCCESS] '방위산업 입찰' 키워드: 3건 수집
+2025-07-13 01:33:37,823 - INFO - [BID_SEARCH] 키워드 '방위산업 낙찰' 검색 중...
+2025-07-13 01:33:39,657 - INFO - [BID_SUCCESS] '방위산업 낙찰' 키워드: 3건 수집
+2025-07-13 01:33:40,686 - INFO - [BID_SEARCH] 키워드 '방위산업 공고' 검색 중...
+2025-07-13 01:33:42,476 - INFO - [BID_SUCCESS] '방위산업 공고' 키워드: 3건 수집
+2025-07-13 01:33:43,685 - INFO - [BID_SEARCH] 키워드 '방위산업 계약' 검색 중...
+2025-07-13 01:33:45,965 - INFO - [BID_SUCCESS] '방위산업 계약' 키워드: 3건 수집
+2025-07-13 01:33:47,074 - INFO - [BID_SEARCH] 키워드 '방위산업 조달' 검색 중...
+2025-07-13 01:33:50,110 - INFO - [BID_SUCCESS] '방위산업 조달' 키워드: 3건 수집
+2025-07-13 01:33:51,617 - INFO - [BID_SEARCH] 키워드 '국방 입찰' 검색 중...
+2025-07-13 01:33:54,219 - INFO - [BID_SUCCESS] '국방 입찰' 키워드: 3건 수집
+2025-07-13 01:33:55,417 - INFO - [BID_SEARCH] 키워드 '국방 낙찰' 검색 중...
+2025-07-13 01:33:57,392 - INFO - [BID_SUCCESS] '국방 낙찰' 키워드: 3건 수집
+2025-07-13 01:33:58,436 - INFO - [BID_SEARCH] 키워드 '국방 공고' 검색 중...
+2025-07-13 01:34:00,589 - INFO - [BID_SUCCESS] '국방 공고' 키워드: 3건 수집
+2025-07-13 01:34:01,688 - INFO - [BID_SEARCH] 키워드 '국방 계약' 검색 중...
+2025-07-13 01:34:04,248 - INFO - [BID_SUCCESS] '국방 계약' 키워드: 0건 수집
+2025-07-13 01:34:05,267 - INFO - [BID_SEARCH] 키워드 '국방 조달' 검색 중...
+2025-07-13 01:34:08,213 - INFO - [BID_SUCCESS] '국방 조달' 키워드: 3건 수집
+2025-07-13 01:34:09,288 - INFO - [BID_SEARCH] 키워드 'K-방산 입찰' 검색 중...
+2025-07-13 01:34:11,968 - INFO - [BID_SUCCESS] 'K-방산 입찰' 키워드: 3건 수집
+2025-07-13 01:34:12,983 - INFO - [BID_SEARCH] 키워드 'K-방산 낙찰' 검색 중...
+2025-07-13 01:34:14,744 - INFO - [BID_SUCCESS] 'K-방산 낙찰' 키워드: 3건 수집
+2025-07-13 01:34:16,044 - INFO - [BID_SEARCH] 키워드 'K-방산 공고' 검색 중...
+2025-07-13 01:34:18,045 - INFO - [BID_SUCCESS] 'K-방산 공고' 키워드: 3건 수집
+2025-07-13 01:34:19,060 - INFO - [BID_SEARCH] 키워드 'K-방산 계약' 검색 중...
+2025-07-13 01:34:20,543 - INFO - [BID_SUCCESS] 'K-방산 계약' 키워드: 3건 수집
+2025-07-13 01:34:21,565 - INFO - [BID_SEARCH] 키워드 'K-방산 조달' 검색 중...
+2025-07-13 01:34:22,825 - INFO - [BID_SUCCESS] 'K-방산 조달' 키워드: 3건 수집
+2025-07-13 01:34:23,865 - INFO - [BID_COMPLETE] 방위산업 카테고리: 총 42건 수집
+2025-07-13 01:34:23,897 - INFO - [BID_DEDUP] 중복 제거: 87건 → 72건
+2025-07-13 01:34:23,917 - INFO - [BID_SELECT] 신재생에너지: 5건 선별 (총 31건 중)
+2025-07-13 01:34:23,944 - INFO - [BID_SELECT] 방위산업: 5건 선별 (총 41건 중)
+2025-07-13 01:34:23,962 - INFO - [BID_FINAL] 최종 선별: 10건 (목표: 10건)
+2025-07-13 01:34:23,998 - INFO - ✅ 1단계 완료: 10건 수집
+2025-07-13 01:34:24,017 - INFO - 🤖 2단계: LLM 기반 분류/요약 처리 시작
+2025-07-13 01:34:24,033 - INFO - [BID_LLM] 10건 입찰/낙찰 기사 처리 시작 (배치 크기: 3)
+2025-07-13 01:34:24,049 - INFO - [BID_LLM] 배치 1/4 처리 중...
+2025-07-13 01:34:24,065 - INFO - [BID_LLM] 처리 중: 정부 상반기 풍력·태양광 경쟁입찰 공고, 안보와 공공성...
+2025-07-13 01:34:26,567 - INFO - [BID_LLM] 완료: 신재생에너지 | 입찰공고 | 높음
+2025-07-13 01:34:28,786 - INFO - [BID_LLM] 처리 중: 풍력·태양광 상반기 입찰공고해상풍력에 안보평가 첫 적용...
+2025-07-13 01:34:30,976 - INFO - [BID_LLM] 완료: 신재생에너지 | 입찰공고 | 높음
+2025-07-13 01:34:32,987 - INFO - [BID_LLM] 처리 중: 풍력 1.25GW·태양광 1GW 규모 경쟁입찰 공고평가...
+2025-07-13 01:34:35,178 - INFO - [BID_LLM] 완료: 신재생에너지 | 입찰공고 | 매우중요
+2025-07-13 01:34:40,259 - INFO - [BID_LLM] 배치 2/4 처리 중...
+2025-07-13 01:34:40,298 - INFO - [BID_LLM] 처리 중: LS전선·마린솔루션, 안마해상풍력 관련 2550억원 수...
+2025-07-13 01:34:41,578 - ERROR - [BID_LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 19
+}
+]
+2025-07-13 01:34:43,157 - ERROR - [BID_LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 17
+}
+]
+2025-07-13 01:34:45,993 - ERROR - [BID_LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 14
+}
+]
+2025-07-13 01:34:46,176 - ERROR - [BID_LLM] 최종 실패 - 기본값 반환
+2025-07-13 01:34:46,227 - INFO - [BID_LLM] 완료: 신재생에너지 | 계약소식 | 중요
+2025-07-13 01:34:48,290 - INFO - [BID_LLM] 처리 중: 2025 상반기 재생에너지 경쟁입찰풍력 1.25GW, ...
+2025-07-13 01:34:52,325 - ERROR - [BID_LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 8
+}
+]
+2025-07-13 01:34:58,068 - ERROR - [BID_LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 2
+}
+]
+2025-07-13 01:34:59,447 - ERROR - [BID_LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 1
+}
+]
+2025-07-13 01:35:02,279 - ERROR - [BID_LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 58
+}
+]
+2025-07-13 01:35:02,390 - ERROR - [BID_LLM] 최종 실패 - 기본값 반환
+2025-07-13 01:35:02,633 - ERROR - [BID_LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 57
+}
+]
+2025-07-13 01:35:04,122 - ERROR - [BID_LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 56
+}
+]
+2025-07-13 01:35:06,660 - ERROR - [BID_LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 54
+}
+]
+2025-07-13 01:35:08,698 - ERROR - [BID_LLM] 최종 실패 - 기본값 반환
+2025-07-13 01:35:08,997 - INFO - [BID_LLM] 완료: 신재생에너지 | 입찰공고 | 보통
+2025-07-13 01:35:12,516 - INFO - [BID_LLM] 처리 중: 입찰까지 단 사흘국방과학연구소, 깜깜이 입찰 논란에 공...
+2025-07-13 01:35:12,740 - ERROR - [BID_LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 47
+}
+]
+2025-07-13 01:35:14,294 - ERROR - [BID_LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 46
+}
+]
+2025-07-13 01:35:16,570 - ERROR - [BID_LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 44
+}
+]
+2025-07-13 01:35:16,719 - ERROR - [BID_LLM] 최종 실패 - 기본값 반환
+2025-07-13 01:35:16,954 - ERROR - [BID_LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 43
+}
+]
+2025-07-13 01:35:18,242 - ERROR - [BID_LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 42
+}
+]
+2025-07-13 01:35:20,705 - ERROR - [BID_LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 40
+}
+]
+2025-07-13 01:35:20,839 - ERROR - [BID_LLM] 최종 실패 - 기본값 반환
+2025-07-13 01:35:21,240 - ERROR - [BID_LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 39
+}
+]
+2025-07-13 01:35:22,544 - ERROR - [BID_LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 38
+}
+]
+2025-07-13 01:35:25,999 - INFO - [BID_LLM] 완료: 방위산업 | 관련뉴스 | 보통
+2025-07-13 01:35:31,067 - INFO - [BID_LLM] 배치 3/4 처리 중...
+2025-07-13 01:35:31,184 - INFO - [BID_LLM] 처리 중: 국방전자조달시스템 동가 낙찰자 선정 '자동 추첨'으로 ...
+2025-07-13 01:35:33,643 - INFO - [BID_LLM] 완료: 방위산업 | 관련뉴스 | 높음
+2025-07-13 01:35:35,667 - INFO - [BID_LLM] 처리 중: 정부 방위산업 계약 시 재하도급 금지"방산브로커 폐해 ...
+2025-07-13 01:35:37,943 - INFO - [BID_LLM] 완료: 방위산업 | 관련뉴스 | 매우중요
+2025-07-13 01:35:40,006 - INFO - [BID_LLM] 처리 중: 방위산업 계약, 브로커 개입 철퇴정부, 일괄양도 금지 ...
+2025-07-13 01:35:42,929 - INFO - [BID_LLM] 완료: 방위산업 | 관련뉴스 | 높음
+2025-07-13 01:35:48,169 - INFO - [BID_LLM] 배치 4/4 처리 중...
+2025-07-13 01:35:48,250 - INFO - [BID_LLM] 처리 중: [샌디 리 리포트] 정부 조달에 관한 캐나다 국방 장관...
+2025-07-13 01:35:49,679 - ERROR - [BID_LLM] API 호출 실패 (시도 1/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 10
+}
+]
+2025-07-13 01:35:51,528 - ERROR - [BID_LLM] API 호출 실패 (시도 2/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 9
+}
+]
+2025-07-13 01:35:53,917 - ERROR - [BID_LLM] API 호출 실패 (시도 3/3): 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 6
+}
+]
+2025-07-13 01:35:54,361 - ERROR - [BID_LLM] 최종 실패 - 기본값 반환
+2025-07-13 01:35:54,610 - INFO - [BID_LLM] 완료: 방위산업 | 관련뉴스 | 높음
+2025-07-13 01:35:56,781 - INFO - [BID_LLM] 전체 처리 완료: 10건
+2025-07-13 01:35:56,978 - INFO - ✅ 2단계 완료: 10건 처리
+2025-07-13 01:35:57,324 - INFO - 📤 3단계: 노션 입찰낙찰 공고 DB 업로드 시작
+2025-07-13 01:35:57,420 - INFO - [BID_UPLOAD] 10건 입찰/낙찰 기사 업로드 시작
+2025-07-13 01:35:57,577 - INFO - [BID_UPLOAD] 배치 1/2 처리 중...
+2025-07-13 01:35:58,159 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22ea613d25ff80b59beff3ddc38ad068/query "HTTP/1.1 200 OK"
+2025-07-13 01:35:59,345 - INFO - [BID_UPLOAD] 중복 건너뛰기: 정부 상반기 풍력·태양광 경쟁입찰 공고, 안보와 공공성...
+2025-07-13 01:36:00,854 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22ea613d25ff80b59beff3ddc38ad068/query "HTTP/1.1 200 OK"
+2025-07-13 01:36:00,959 - INFO - [BID_UPLOAD] 중복 건너뛰기: 풍력·태양광 상반기 입찰공고해상풍력에 안보평가 첫 적용...
+2025-07-13 01:36:02,776 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22ea613d25ff80b59beff3ddc38ad068/query "HTTP/1.1 200 OK"
+2025-07-13 01:36:03,496 - INFO - [BID_UPLOAD] 중복 건너뛰기: 풍력 1.25GW·태양광 1GW 규모 경쟁입찰 공고평가...
+2025-07-13 01:36:05,064 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22ea613d25ff80b59beff3ddc38ad068/query "HTTP/1.1 200 OK"
+2025-07-13 01:36:05,507 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 01:36:05,634 - INFO - [BID_UPLOAD] 성공: LS전선·마린솔루션, 안마해상풍력 관련 2550억원 수...
+2025-07-13 01:36:07,758 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22ea613d25ff80b59beff3ddc38ad068/query "HTTP/1.1 200 OK"
+2025-07-13 01:36:13,928 - INFO - [BID_UPLOAD] 중복 건너뛰기: 2025 상반기 재생에너지 경쟁입찰풍력 1.25GW, ...
+2025-07-13 01:36:15,631 - INFO - [BID_UPLOAD] 5건 처리 완료...
+2025-07-13 01:36:17,694 - INFO - [BID_UPLOAD] 배치 2/2 처리 중...
+2025-07-13 01:36:17,950 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22ea613d25ff80b59beff3ddc38ad068/query "HTTP/1.1 200 OK"
+2025-07-13 01:36:18,003 - INFO - [BID_UPLOAD] 중복 건너뛰기: 입찰까지 단 사흘국방과학연구소, 깜깜이 입찰 논란에 공...
+2025-07-13 01:36:20,304 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22ea613d25ff80b59beff3ddc38ad068/query "HTTP/1.1 200 OK"
+2025-07-13 01:36:20,598 - INFO - [BID_UPLOAD] 중복 건너뛰기: 국방전자조달시스템 동가 낙찰자 선정 '자동 추첨'으로 ...
+2025-07-13 01:36:22,267 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22ea613d25ff80b59beff3ddc38ad068/query "HTTP/1.1 200 OK"
+2025-07-13 01:36:22,780 - INFO - [BID_UPLOAD] 중복 건너뛰기: 정부 방위산업 계약 시 재하도급 금지"방산브로커 폐해 ...
+2025-07-13 01:36:24,055 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22ea613d25ff80b59beff3ddc38ad068/query "HTTP/1.1 200 OK"
+2025-07-13 01:36:24,297 - INFO - [BID_UPLOAD] 중복 건너뛰기: 방위산업 계약, 브로커 개입 철퇴정부, 일괄양도 금지 ...
+2025-07-13 01:36:25,973 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22ea613d25ff80b59beff3ddc38ad068/query "HTTP/1.1 200 OK"
+2025-07-13 01:36:26,890 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 01:36:27,037 - INFO - [BID_UPLOAD] 성공: [샌디 리 리포트] 정부 조달에 관한 캐나다 국방 장관...
+2025-07-13 01:36:28,059 - INFO - [BID_UPLOAD] 전체 업로드 완료: 성공 2건, 실패 0건
+2025-07-13 01:36:28,242 - INFO - ✅ 3단계 완료: 2건 업로드 성공, 0건 실패
+2025-07-13 01:36:28,276 - INFO - 📊 4단계: 대시보드 업데이트 시작
+2025-07-13 01:36:28,611 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22aa613d25ff80888257c652d865f85a/query "HTTP/1.1 200 OK"
+2025-07-13 01:36:28,694 - INFO - [DASHBOARD] 오늘의 뉴스 0건 로드 완료
+2025-07-13 01:36:29,974 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22ea613d25ff80b59beff3ddc38ad068/query "HTTP/1.1 200 OK"
+2025-07-13 01:36:30,153 - INFO - [DASHBOARD] 입찰/낙찰 정보 5건 로드 완료
+2025-07-13 01:36:31,011 - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 01:36:32,197 - INFO - [DASHBOARD] 대시보드 페이지 생성 완료: https://www.notion.so/2025-07-13-22ea613d25ff819698ccf55e84b650c8
+2025-07-13 01:36:32,347 - INFO - ✅ 4단계 완료: 대시보드 생성 완료
+2025-07-13 01:36:32,445 - INFO - 🔗 대시보드 URL: https://www.notion.so/2025-07-13-22ea613d25ff819698ccf55e84b650c8
+2025-07-13 01:36:33,956 - INFO - 📄 실행 리포트 저장: logs/bid_automation_report_20250713_013633.json
