@@ -4,7 +4,9 @@
     "URL": "https://news.example.com/1",
     "발행일": "2025-07-08",
     "요약": "",
-    "태그": ["신재생에너지정책"],
+    "태그": [
+      "신재생에너지정책"
+    ],
     "중요도": "높음",
     "요약 품질 평가": ""
   },
@@ -13,7 +15,9 @@
     "URL": "https://news.example.com/2",
     "발행일": "2025-07-08",
     "요약": "",
-    "태그": ["풍력발전"],
+    "태그": [
+      "풍력발전"
+    ],
     "중요도": "중간",
     "요약 품질 평가": ""
   },
@@ -22,8 +26,632 @@
     "URL": "https://news.example.com/3",
     "발행일": "2025-07-08",
     "요약": "",
-    "태그": ["BESS(배터리ESS)"],
+    "태그": [
+      "BESS(배터리ESS)"
+    ],
     "중요도": "낮음",
     "요약 품질 평가": ""
+  },
+  {
+    "제목": "2025년 7월 11일 주요 방위산업 뉴스: K-방산 수출 신기록 경신",
+    "URL": "https://news.naver.com/article/20250711_defense",
+    "발행일": "2025-07-11",
+    "요약": "K-방산이 2025년 상반기 수출 신기록을 달성했다는 소식.",
+    "태그": [
+      "방위산업",
+      "수출",
+      "기술개발"
+    ],
+    "중요도": "중간",
+    "요약 품질 평가": ""
+  },
+  {
+    "제목": "2025년 7월 11일 신재생에너지 정책 동향: 태양광 지원 확대",
+    "URL": "https://news.naver.com/article/20250711_renewable",
+    "발행일": "2025-07-11",
+    "요약": "정부가 태양광 발전소 지원 정책을 대폭 확대한다는 발표.",
+    "태그": [
+      "신재생에너지",
+      "정책",
+      "시장동향"
+    ],
+    "중요도": "중간",
+    "요약 품질 평가": ""
+  },
+  {
+    "제목": "2025년 7월 11일 보험중개 시장 분석: 디지털 전환 가속화",
+    "URL": "https://news.naver.com/article/20250711_insurance",
+    "발행일": "2025-07-11",
+    "요약": "보험중개 산업에서 디지털 전환이 빠르게 진행되고 있다는 분석.",
+    "태그": [
+      "보험중개",
+      "시장분석",
+      "기업전략"
+    ],
+    "중요도": "중간",
+    "요약 품질 평가": ""
+  },
+  {
+    "제목": "방위산업의 날 토론회 - 사진 | 멀티미디어 - 대한민국 정책브리핑",
+    "URL": "https://news.google.com/rss/articles/CBMiakFVX3lxTE15WXN3OTJfall0V2gxX2V6Z3ZvMGJyUHo4UU5RTGtWZnFQOFNzZ2NVTHE5UmdNNTZyeEF1Sklub3BKbUZuamQwS2QyaF9UYVhhbF9KaVVuMTU0X3cxWVZzUnNWaXdubkhGanc?oc=5",
+    "발행일": "2025-07-10",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "방위산업"
+    ],
+    "중요도": "높음",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "[게시판] 방사청, 방위산업 혁신기업 투자설명회 - 연합뉴스",
+    "URL": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBMMDhveHJCcG5SSTJmZW9NbTRWZC1oeWlWNkZ2YzhoM0NnSzdDQjh1eHhVT0tkd19wQjVIMnVZTWdsdjBCZ1BTQ1lUcnlTRTVZTlB2NUF1SjFZUTjSAWBBVV95cUxQdmdnZkRjTUJKSkFDdWQyQkNzQXJ3WThELW4tVEVyYTRsbDhzdzgxMjliWThSY0xGZ3BBc3YxQy1NeDBfOFRmTFFQSzEzaUY1bHFxUWtBS0JKNUVVYzBxY2k?oc=5",
+    "발행일": "2025-07-10",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "방위산업"
+    ],
+    "중요도": "높음",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "‘방위산업의 날’ 시민 페스티벌…블랙이글스 서울 상공에서 10∼12일 에어쇼 연습 - KBS 뉴스",
+    "URL": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1TNV90VGFxNWtVN3B0MkFRdnp3QlltNUU4STJYUEt1MTI1RWJFbDN2V1ZGWXBmdUdDQWFjMWI4SlBVenJSa0pVcTgyTzRXUVlkNEFzaHdOeHlvTk0?oc=5",
+    "발행일": "2025-07-10",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "방위산업"
+    ],
+    "중요도": "보통",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "'尹격노설' 조준한 해병특검, 신범철 전 국방차관도 압수수색 - 연합뉴스",
+    "URL": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0ybVdaS2FMZ1B2RFAxN1l4dXlXRHV6ajhFWXFhTmNnOVBITlNXaXg3SHVRbUZabmxzcW5sdFVqeHhkcVRDaGJSR1FfQVhXMGpObVBjS0tNcXpfREHSAWBBVV95cUxQeEdFTmlPRUZvQjRvbnNJd01wUDRsdFFEeWlORXVYU3RPMVBFQkFlcUtOUm5iLVM0QnlWUU43SnBWTG1lN00tREJfQ1UzMWxWdGNGeFhhRm1NUVd4TFprTVI?oc=5",
+    "발행일": "2025-07-10",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "방위산업"
+    ],
+    "중요도": "보통",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "트럼프 승인 없이 우크라 무기지원 중단… 우방을 흔드는 美국방정책 ‘일방통행 맨’[지금, 이 사람] - 동아일보",
+    "URL": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5CcGFLMjl2TkpSUHBXckZkMGdjZ1VKbUtrb3RNQW9xTktXck44bVBDZkFnd1FEanJqY25RQUhVNDFSeFZFV2plZ283aExNRFYyUnI5SkI5ci14Z3NvVkZsbWpVX05xczJHbVNEb1ptanBGOG_SAWZBVV95cUxQSzlrblkxXy10MC0wMHlOcmI4dzBLQmQ0bk15Q01aNzRKdlZVSnlHRkdadU52UTdnOHBfaVhQNHQ0dlJ6VmJpZ2YzcjZrZXhwcVBLRXBQYTdlMzBUcU1MUnZYdnRDbnc?oc=5",
+    "발행일": "2025-07-10",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "방위산업"
+    ],
+    "중요도": "높음",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "민관군이 첨단기술로 함께 그리는 국방 장비관리의 미래 - 서울Pn",
+    "URL": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5nYWxxQzgwX1Azd2NsMC1ucG8tMzBzR3NrbUxCYU5fanZleTRpRDZKMm5UdDhraExpNDZGUHhFc21zbzhBRWtXZkVEUjJZaU81dlM3cEdqVjFIQTdPYnBLNjN3?oc=5",
+    "발행일": "2025-07-10",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "방위산업"
+    ],
+    "중요도": "보통",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "[단독] \"잠수함 수출 위해 G7 갔다\"…K방산 세일즈맨 자처한 李 - 중앙일보",
+    "URL": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBzMEpZeUZXZ24ycmF1MHBOZ04xcl82UkRlbTVTenVKbXhlQWVUX3hJc1oxb2xlMXpEbzltUnBmdDFWTlA3clBaT3E1Nkw2aWtQSVhZN2V3?oc=5",
+    "발행일": "2025-07-08",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "방위산업"
+    ],
+    "중요도": "보통",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "우리곁의 K-방산템 'FA-50' - 전체 | 카드/한컷 | 멀티미디어 - 대한민국 정책브리핑",
+    "URL": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9tM1NPNmtOVm91RThKQy1WRUZpX2xZZ0JCQVJ4SEFWU3hrVmZoVkdtVUJ0eHAxUWhOempBZ0lJU1lkMW5tUkZCVkdfS2F0NEwzeGNiSnpfNUtSVXB0dXo5Wkg2MmlxWjRxdl9CR0dR?oc=5",
+    "발행일": "2025-07-10",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "방위산업"
+    ],
+    "중요도": "높음",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "김종일 삼양컴텍 대표, K방산 리더십 공로로 '동탑산업훈장' 영예 - 한국경제",
+    "URL": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE96TUJhSGowU0F6X0FCdlJDUGlHSGlJV21ndGFXWEF5VVpEVDJ1eFZqd0daREJqbUcweHJoLVNKblpyWDFXRU9nUFdaYTF0ekdqdU1RZng3YTBVUdIBVEFVX3lxTE9MSTJKWnpvSkdNMXdxRno3Y2Rxalk3MU92VEdFbGl1NUtNTEpTc3dydktjaWtWc25pYTluTGItTzVaMDJLVzdHSW1iSHM4Y3hRZ2Q0MA?oc=5",
+    "발행일": "2025-07-09",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "방위산업"
+    ],
+    "중요도": "보통",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "조선·방산으로 산업화 열망 …\"한국과 남미 군수 생산거점 만들길 원해\" - 머니투데이",
+    "URL": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5WSDNuWDRMTU9nSzNSV0N2LU4yZ1JETHk5VzBPSTR5bDc5QlFDM1pZcnljYmxVS2hpWUNtM21tRy1WUm1CWWE4TE9hazNpUHV4ZkMxZm9nbmphbVNpRnk3bEI0SEFDQdIBbkFVX3lxTE5hQlN6UTlRMlB6a3ZyY3JLOWhteUd2UmtZS3lFZERtVF9iZzgxdV9ILXBzRXlzeW9fejFwS2RmQ2dNVjM0Y2lsMWdrMWtyS0RtbUhnak1DMTFOQ2lHLTFHdUFMYmdIMGpkcnIyM2pR?oc=5",
+    "발행일": "2025-06-24",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "방위산업"
+    ],
+    "중요도": "보통",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "[기자회견] 새 정부는 ‘방위산업의 날’ 폐지하고 평화정책으로 전환하라 - 참여연대",
+    "URL": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE01SGVqN0ZBY0xqMWxhWmtwWExvZElNT181RFFoNFZraFlfSnpOejdDWFNEb1VfVVFUdkJkWUhpbGpiRllVLTZZN3JmSlZTSmU5OGtydE5n?oc=5",
+    "발행일": "2025-07-09",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "방위산업"
+    ],
+    "중요도": "높음",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "우크라, 전쟁 3년만에 군수산업 35배 팽창…무기 40% 자체 조달 - 연합뉴스",
+    "URL": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE45bEpDc3VBcW5iUmp3YjBBcndqaWdOQ1dPLUhnTEF3U3Z3dnpwWjdlQjVwemE0aHpja1dteTRTRExadDNoTEphTUQ0RjFNSFk1bUxrdEtCdnE5ZUXSAWBBVV95cUxPSEczQVYwSHFxX0dCVlg3cVlEZmJFencyRUFuVlA2VllrUEtXZXVKdXRTTmNERWt5UDFDM0ptbTA3YmhSelhwaHJwNGxSRHNCZmVtdm5LTjE4ZWE0U2JDVDQ?oc=5",
+    "발행일": "2025-05-19",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "방위산업"
+    ],
+    "중요도": "보통",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "100% 신재생에너지 산단 만든다…李 \"규제 제로\" 검토 지시 - 중앙일보",
+    "URL": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBheTZNSU5sTWd2R2RSdXlZVlQ5ZTJZRGNpb1dPRXdJUFFaOGFsMDNnU1BnbnNwNkE4U3VDdjdvMDRrcDU1MnV2TVBlLWFGTFRqSUd5TUFn?oc=5",
+    "발행일": "2025-07-10",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "신재생에너지"
+    ],
+    "중요도": "보통",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "“추자해상풍력, 제주 본섬 신재생에너지 확대 계획에 부정적 영향” - 제주의소리",
+    "URL": "https://news.google.com/rss/articles/CBMia0FVX3lxTE00Sy02Ti1QeFBidG8tQjBldUkxNzZOWmpGTW1Zby12LXc2UUZxUkV6Tldxc3hqWVhyVHFLM2RLME80STU1NlpVajdOQW84NVB5dzlNVzFpSUdxc21kVjZHX0tCYU50aWNiR0hN?oc=5",
+    "발행일": "2025-07-11",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "신재생에너지"
+    ],
+    "중요도": "중간",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "[특징주] ‘RE100’ 시동거나… 신재생에너지株 강세 - Chosunbiz",
+    "URL": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQeWNBUnJDaUlGM0RCT3JCenBrWV85YVA2YTJNMTlRTDFfMFFSMi1KUDVwVmtQQmhqOFNxU0wwYlZ6UW9nb2NBX0xyUll5dDVLV1JkemRSRnIycWRFLVNscGJNWmVqaGp5b3ZDQUo2eWRpQ29PNjlaSHZiMG9jZEtxbUxHRFZ4azhK?oc=5",
+    "발행일": "2025-07-11",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "신재생에너지"
+    ],
+    "중요도": "보통",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "7월 초순에 역대 4번째 최대전력피크…태양광에 구름끼면 블랙아웃 올 수도 - 에너지경제신문",
+    "URL": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5lNmN5TEZpenJncW8zMGl0R2hTNHEyNi1rdkdGM21IdnVkNkpEeDhoa1JCSlJjSERhZTAyekdQTHNOVXVWcFpTbWhSaTBjV2ljXzlWMkpxbFJkRDQ?oc=5",
+    "발행일": "2025-07-08",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "신재생에너지"
+    ],
+    "중요도": "보통",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "정책 수혜 기대에 태양광 관련주 '들썩'…OCI홀딩스 14%↑ - 마켓인",
+    "URL": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9nNlJPVTc1UWlPZnBvUGZnbDJhMnIyZndQcHdWZFpBNFk5THdNR3NudW1YX29VLVlxS0R6a1c4V3dpc0xhU1BFMkhVdUctcUczdlIxVnUwRzR6WDdpYWZUeWlDc3RPcXg2anZPYkhtR2trN0k?oc=5",
+    "발행일": "2025-07-11",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "신재생에너지"
+    ],
+    "중요도": "높음",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "경북도, 600㎿ 규모 영농형 태양광발전 단지 조성 - 뉴스1",
+    "URL": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFA0eVFjNWktbmpZQUJoNUVQbXVmRWpZTWxVbHllRWtzUFYwdEljRXJmWmVsV0tPTTA3bEZYR0hMSGlNTEl0WXhfVnQxRGl2V19BSEl1Tm1IZS1xTkNjc2Fv?oc=5",
+    "발행일": "2025-07-10",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "신재생에너지"
+    ],
+    "중요도": "보통",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "트럼프가 막아도 구글이 산다…TSMC 위해 해상풍력 늘리는 대만 - 머니투데이",
+    "URL": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1SajVsbEdTTnk2a0VwRTNBbktwQVJoRThacDJtQXkxNlNjVGcxM0h2MW5wQW5yXzdyVTFfZDN4VGsxZGpLZDNtc3ZBN3djMFFoekdCVk1WalBFY0pKM0dUWmFkSGFMQdIBbkFVX3lxTE9fcm1haHlSXzVGQ1VRcExpZy1ucXZfTHBtY2k4TUhDdVppR2FEQmtGczE2NmZwRFljQk5ZTUNZTzdnVThhYURJdW1IakVZYm5PVnkydExxUks5RXV6WTVsbDRYd2xxWXpDcGFmTkRR?oc=5",
+    "발행일": "2025-07-09",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "신재생에너지"
+    ],
+    "중요도": "보통",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "한전-한국해상풍력, ‘서남해 400MW 시범단지’ 성공 추진 위한 기술협력 - 전기신문",
+    "URL": "https://news.google.com/rss/articles/CBMibEFVX3lxTE11bnZFenBheWpQd215cUEwallNTVhxYlp3cTRNbDZSUHRpT0MzVEFMLUItS0Fyd0tvTUo4R0J0SmxfRWd3Qmw3U21KbDZXSVdUbGFvZlNSVTM4WEZ2VnYzd1RNZzdxMXN5bW5GctIBcEFVX3lxTE5BSTFRWS1wZE5zbF9fQlQxN3dvelc4bHhEV0haQkRUUTJwZld3X2NYM09oRUg1NjBNU245UFNnWlFlbThIVlRobG9aQXJXckRfLXFhQnVmTzRUczZ2TFNnSk0xTDdwNjl2R0dyMWUxd2g?oc=5",
+    "발행일": "2025-07-11",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "신재생에너지"
+    ],
+    "중요도": "보통",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "한전기술, 제주한림해상풍력 준공 후 현장 점검 - 네이트",
+    "URL": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE4xYm12Q0I1RjI0bWhRc19aajV6YmVsbldqWV9PYUU0bmpwYVhkZzRrMHYyR3BsUHZRS0s4dUI0WjVQcnhSX1JYMjZiY2tFVHRYckhZ?oc=5",
+    "발행일": "2025-07-11",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "신재생에너지"
+    ],
+    "중요도": "보통",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "‘윤곽 드러난 ESS 중앙계약시장’…韓 배터리 3사 경쟁 구도로 - 전기신문",
+    "URL": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB6WElqcFNwMmZZZi1NOHhTQll6RktqVkc5VmlsYXFfWmZad1JBQjVKbDNmdVFaQTJma0tEOFJJWV9RRXRkQzNKeS1janh3QXM3bXRrLWRRSkJDaWFkc3l0SjFEQjRnZk15alZWNNIBcEFVX3lxTFA3WHFqeGtELWdFU3JrdXItN0JFWEtBYVhpRVNnX0N4YVprRVlXZHlqV1R0U2JrMHl5M3JsaVY0Zm15XzJYS2UtcjhQVTY5ZHJvakFXRV9lejlHc1lKeVBGV09WWXo1alRncUtRNDBrazY?oc=5",
+    "발행일": "2025-07-10",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "신재생에너지"
+    ],
+    "중요도": "중간",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "SK온, '북미 ESS용 LFP 배터리' 사업 본격화 - 네이트",
+    "URL": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1wN0R5d2RoY2NkTDg0NlNkX2pVVUF2WDBKaU9seGhKS0NaRUxhb3pnYktIWW9Fa2hTdXRaSEFhRENubU5lemtEZ0piOVBfRlJQSHFn?oc=5",
+    "발행일": "2025-07-11",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "신재생에너지"
+    ],
+    "중요도": "보통",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "SK온, 북미 ESS용 LFP 배터리에 엘앤에프 양극재 쓴다 - 지디넷코리아",
+    "URL": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1ERjMxX1NFN3h3MW1BdnBBb25MeklsVUtnUjNTZWw4MUtvUUlQY0taOHVCSUpSMlBwMHJiNE9XZjM0dVgxSjhCREQ0Wjdfb1htdENSV1hn?oc=5",
+    "발행일": "2025-07-10",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "신재생에너지"
+    ],
+    "중요도": "보통",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "보험중개사, 어디로, 어떻게 가야 하나? - 한국공제보험신문",
+    "URL": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBTbE13cW5XbWdqVnJla0JWM21POVRmb01GTUM3OExnQmxwZDFzd09ETm9TMHhjNHdDYTdZWGR2c1ltZG9WRXhGWXFBaUM4QTJ2WWNxS1I1SXZ5VFRyQ3VPODJnRHIzQmF4?oc=5",
+    "발행일": "2025-04-28",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "보험중개"
+    ],
+    "중요도": "보통",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "“보험중개사 통해 일반보험 활성화해야”…보험학회, 보험중개제도 보완점 논의 - 청년일보",
+    "URL": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE02Qk9aamREOVppa005ZERfaVVGdEpXaFpkM2tWSUI1SElGZ2ZUT3V6Z180ODlNMU5rM3hEZ1lUMWdCb1dlSU4yU3VTUVRqT3E0aWFhaEg2R3JxcEExY0VrYndZNVU4N2M?oc=5",
+    "발행일": "2025-04-25",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "보험중개"
+    ],
+    "중요도": "보통",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "LK보험중개, ‘A&G코리아보험중개’ 인수 - 해양한국",
+    "URL": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5QcUdQRGVCM2dHUG1qVmJ0MFBseTlOTnJReDFSaEV3Z2htdFRaMXVHQWE2OFRFSnpUdEJadXdpZ0RVMmpnVzg2Qm9yMkhKejJ1VjZxQk5ZZVpNTDczQjZmbTIzTGNTT2xhTlZaZk1uMWcxRDV0aEZuQlRB?oc=5",
+    "발행일": "2025-06-02",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "보험중개"
+    ],
+    "중요도": "보통",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "디지털 마케팅 기업 '쇼엠', 보험 대리점 영역 확장 나서 - 네이트",
+    "URL": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBLOTZkR25uNl9sMEcyQmxaWFBCSHF5LTQ4TG9CWXdwOUx5cnA5Yzh6X3p2RFAxN2dUcU5tS3J5UThjTnNLRHc0MWdfclpzQXAxa0sw?oc=5",
+    "발행일": "2025-07-10",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "보험중개"
+    ],
+    "중요도": "보통",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "보험판매전문회사 첫발...GA설계사 자격시험 도입 추진 - 파이낸셜투데이",
+    "URL": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBXWTk2a1N4cXhJdWwxdW5JTFpibXFDQXg1OTJXX08yVFZ6VTRiMUVWTHQyQWI4b3g0U3dCLVNlR09rWVczcjFTeHZrQkc2SVh3NGhMdXppZXMxamdtY1p5SGdDUjhVdVUzdHfSAW5BVV95cUxNTUxCWG14RDBKVkRTVk5IakVrYTZWbE05UnJMb3BGX3Q0dlM4X29zeXEtZGpsckltOW5sNXB3UEJyZjlkM3R6VHRoT0M4bHFoOEctajBlMWVCbTZfVnFJdjg1NGpwQ292U09uVzE2Zw?oc=5",
+    "발행일": "2025-07-11",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "보험중개"
+    ],
+    "중요도": "보통",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "인카금융서비스, 독립 보험대리점 (GA) 브랜드평판 2025년 7월...1위 - 비욘드포스트",
+    "URL": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5IekduYTVqYUh4SkZXV0VrNDg1V3kyZXdzcF9sWXdYRjRjZGtZajVPT19pVnc2TkdsVmhFXzJiWGllZkl5X0RwRFhkSGJmczVxdF9oNXBoa1ZXc2h0Ukp0M3YzNUcwMFNCUjhNWU40QkZiQWcxZVIzdndnWnU?oc=5",
+    "발행일": "2025-07-10",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "보험중개"
+    ],
+    "중요도": "보통",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "[금융人사이드]'N잡러' 보험설계사에 도전하세요...'원더'가 도와줘요 - 아시아경제",
+    "URL": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOaDBOb2NwMGRuaU1mV0s1bERPSGVhUC1oVHExei1BS1o1VExZQlVneW8zem5uLUt1R1M2Ymg0U3V1cUxqbDFlT3pEMS1raF9oeHNxQm1nMU45OE0xSDRjd2NJeXRoNC1XalJlZlNlTkdWblRQMGxqRFJuOEY5aFJZRS1KVS1mRndhc1BMUVhVOWRmWFMzVE9UREtqUXRSZ0F4SmZKd2ZseUlUWUtvQ0RIYU5FRWlwYUdNMVNDWlJEMTN3TXJJNlN5UlBKb0dNVmRfc2hsZ0QwZVJEeFE?oc=5",
+    "발행일": "2025-07-10",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "보험중개"
+    ],
+    "중요도": "보통",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "삼성 턱밑까지 치고 온 한화…불붙은 생보사 '설계사 유치' 경쟁 - 전자신문",
+    "URL": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1MWDVMaHVtN245QzMwSmU0MHM4dHNDWTRwQUV4UXJFWk54TEVOUVZXcmxYSUNmd3ZGUWQ5T1Q0QWlpSk1QS2ZjSDhZX2xlUQ?oc=5",
+    "발행일": "2025-07-08",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "보험중개"
+    ],
+    "중요도": "보통",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "보험硏 \"생명·손해·GA '통합 상호협정' 도입해 영업질서 확립해야\" - 연합인포맥스",
+    "URL": "https://news.google.com/rss/articles/CBMicEFVX3lxTFB0bi14eHZXSklYUllFX2ZyOUR6Vno0dTRtc3ZMbGVpR3lvekVfaUhDMVpSUUNfVDVBYmhnTXNORENOdHpfZTBpVXp1WDNfcS1INUtVY1dDMEFSdHF6UVpIYm8yRm1SUDQ5SXZsU0dQeTPSAXRBVV95cUxOVF9jYXEwSml6Ym15b2FGNFRURXlsQ0QyRWxhbUZRMjRjejVoUGk2Vjg4V1AwWHUwWjRNUWhoZUNkTDZGdlE2dFJVWk0xVTV0dzQ0U1VGSVRhLUR0SnZlRHdFNFVyZWt0ck5zT3VNUXlVbWRVUA?oc=5",
+    "발행일": "2025-07-06",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "보험중개"
+    ],
+    "중요도": "보통",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "[게시판] 롯데손보, 이륜차 '대물 최대 1억원' 시간제 보험 출시 - 연합뉴스",
+    "URL": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE83MkdhcnIyc2FkRjdoMVVKQ0xjczRYOWNKVXMwSFl2MGNreVViUjBEOHgzN0swTlloeFNsNDZ3SEx1TDNzZXBKZU90MnIxOHdQVkxrdzZQUDg3RFXSAWBBVV95cUxNZ2Vlb3JQRW9fZlRUeXhUTi1YcDIyeFZlZkVKZ1pfMnRST1RQcF9RYW8yRVcyWmc4akxpNjhjRFppaXphOWRnVndBRWpuN3ExMHY0VVhsZktuaW5rZWlxSU8?oc=5",
+    "발행일": "2025-07-11",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "보험중개"
+    ],
+    "중요도": "보통",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "와이즈엔컨설팅, KB라이프에 보험상품 기초서류 통합 관리 시스템 공급 - 뉴스와이어",
+    "URL": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9mX3JxWUVBVW1HWWFPbW16NmZ3eVV2M3Z6djlRS1JTRXBGU0FrVGwzVUZOdmh3UG51V1MyNnRya29DVUdXR3ZmMzdTY0lCazN5NmxIRWxPMWVlUE5adTZj?oc=5",
+    "발행일": "2025-07-09",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "보험중개"
+    ],
+    "중요도": "보통",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "롯데손해보험 쿠팡이츠와 제휴, 배달파트너 대상 '고보장 시간제 보험' 출시 - 비즈니스포스트",
+    "URL": "https://news.google.com/rss/articles/CBMic0FVX3lxTFAxT0hKQktfd19aYVRZd0ptNm1ycFJsbVMxYzdjbGpaVWNSNzNDeG9FZEpUdlg3WjR0MGYyTC1kZ293Zl9rSmxxUldOc2ZSTFN3WVI4Q1E1MmhERG4tZF9za2QweTl6Qm5ja1d5WjdEZkUtdjg?oc=5",
+    "발행일": "2025-07-11",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "보험중개"
+    ],
+    "중요도": "보통",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "대통령이 지시한 '방산 4대 강국' 총괄할 컨트롤타워 구성은? - 뉴스1",
+    "URL": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE92a2d5dFlKOFUybVFmZnRxclQ2ZjVMNXlBUGZJdFMzNlJETnBBTF9nNlE3czRmaUtQQWhURE5BaUZQdFZ2bm1rbUpRLTdWWjU1cXNSMzhvSXVnSFJYY0JXVUxJbmI4emM?oc=5",
+    "발행일": "2025-07-11",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "방위산업"
+    ],
+    "중요도": "보통",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "국방 장비관리, 민·관·군이 첨단기술로 함께 그린다 - 뉴스1",
+    "URL": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE0zVENLdHcxYW5IZUdRRWRiaDdUMmdHb1l4QkFNNW9sWWNqTXgzV0JTSDNlcGl3WXNLbE5KZWV3V2N1dmdEOVA1bE5xS3l6cml3NXl4akRzMGVwVWR1OXc0SmRvMFNnZVU?oc=5",
+    "발행일": "2025-07-10",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "방위산업"
+    ],
+    "중요도": "보통",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "‘박정훈 무죄’ 확정된 날, 기소한 국방부 검찰단장 직무정지 - 한겨레",
+    "URL": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5oMGhWN001WmIxbm5ieGxCVV9qSkFzcE5iSzZqVExCekp0bks2T1ZxOEo3ZlJucF9aUVdKa0Exd3k3YlBKT2JPdEpLQVVrUFI5NU5xMXZOd0RfTlQxWGxQNTZYdFV6akgz?oc=5",
+    "발행일": "2025-07-09",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "방위산업"
+    ],
+    "중요도": "보통",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "국방장관 직무대행, “수사 자료 폐기 금지…특검에 협조” 지시 - KBS 뉴스",
+    "URL": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9BNGczR3FEc25Hd3ljYmwxazdhSlI0dnV5TURNaGItVTY2Y2ZaUDNlak9DU0Z4RWpJOVRYNURtZWNOSTdST1AyX1BvVmEydnRsMUREZzhQeFBDTzA?oc=5",
+    "발행일": "2025-07-11",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "방위산업"
+    ],
+    "중요도": "보통",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "美·유럽 신뢰 잃은 K-방산에 일본만 어부지리 - 주간동아",
+    "URL": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE91Q1NfbmV4ZGw1UHpGbXVtajdiN1hpeHkwVDBZRFd4Y1pFQ19fRUVrVThWMlpUb09tM3BaS2hSMzdkUE5pVjF6WHFGeUVfY0RkTEhJTnJuQUEya1otbHUwQkdtcUhOdw?oc=5",
+    "발행일": "2025-07-09",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "방위산업"
+    ],
+    "중요도": "보통",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "K-방산, 자부심을 넘어 미래로 도약합니다! - 전체 | 카드/한컷 - 정책브리핑",
+    "URL": "https://news.google.com/rss/articles/CBMibkFVX3lxTE45OXp6Ym83a0VGMTVIZ2pYU0VrX0JjejIxT3FuNmFST3p1TjZ5aTlGVTZsT1djZXByT080X0otVHVrbko5S2ZvelpQc28yWVRGVFpKbTNQOF90Z2ljRWRQYnQtZmpDZERmejF4VDFB?oc=5",
+    "발행일": "2025-07-09",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "방위산업"
+    ],
+    "중요도": "높음",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "고려아연, 지난해 사상 최대 신재생에너지 투자…5600億 - 페로타임즈",
+    "URL": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1CS2dXM01CZ2ZtY3hzWnUwc0RFVTFDbjhmamNoV0VfUjQ3aDQ5eEZNLVBnYUpuak5SSVBOMHZIcGtDbFE1NlZQN1pocHhpVkhVLUFoSkczYXFFZFVDZVltUVJaRVl6dzhyVjJ2VA?oc=5",
+    "발행일": "2025-07-09",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "신재생에너지"
+    ],
+    "중요도": "보통",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "미국, 태양광 세액공제 20년 만에 폐지…패널 설치 85% 줄어든다 - 글로벌이코노믹",
+    "URL": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQczNOS1FiUlYydW9ibTN6emdYTXc2eTRzVEZ1V1l4N1c4SHB1Z0xHY3BlVzZzTXlqak5Tb290MFVlMTJ4MkVuWjBNZ2UtcnVsOTcteDhfUEN6blFBbk9fVVB1QUFBbkJuRjJWVC1zWmlPaVlwSFloSzVxTGhRSU4xRk9mS0s5VnBU?oc=5",
+    "발행일": "2025-07-11",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "신재생에너지"
+    ],
+    "중요도": "보통",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "고수들 ‘태양광 이익개선 기대’ 한화솔루션 집중 매수 - 한국경제",
+    "URL": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9DTE9RSmRrcHFDYXZraXFFbFVKb1BYR2VfQmZsVkhhTTZsQmotVHNTeDNwMDVUS3J4cmxma1E1bTNHZkxvTld0RDRvMFctM1dfRVNMNkhpV1Rod9IBVEFVX3lxTE5JQTJuSGZEMDQwMW1SOEVYZkdkaFdFY0J1ekluYS1zSVliSUZBX2V0bnI0ZW1mcUQ4Ym1MZ1NZdnJucHZPUHg0Q0dOTVJPVjYyTk1WUg?oc=5",
+    "발행일": "2025-07-11",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "신재생에너지"
+    ],
+    "중요도": "보통",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "폭염에 전력수요 폭증…태양광 발전이 ‘블랙아웃’ 방어 - 경향신문",
+    "URL": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE55S29FRkREdFFlQmJILWh6RF9fcnZDUjdldVZfR0pfQmE0NU1XMGJQc19JTUZuSUlOOGRnOVFXbGpmVmtLR0hfdWpfc2ZmSk00U0FqbHk2REg4UdIBX0FVX3lxTFB1YzNQTjlLdTVPNVJJWTVuUjdyRDM0dVQ0Q2VYQjBPTk9wMzc4eDJ2aUhkZGlieHYtRkVxYW50aVNqWmdzQ0RQcDF3RFE0enJrSFdVbXZKajVzMEx4cWxN?oc=5",
+    "발행일": "2025-07-10",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "신재생에너지"
+    ],
+    "중요도": "보통",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "SK온, 엘앤에프와 맞손…북미 ESS용 LFP 배터리 사업 시동 - ebn.co.kr",
+    "URL": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1VWTJqeFRjOU52dld3bkJuRDYzUHNMOGxoLUZJQzFvVjl5ajRpWDFaTUVGal9rVHE2N0dEbmJGa0hPeEpNeHRxRkVJaEN1NnRoSUhEYlRwUUpmdEt0MUJWM2hUYzR0d3g4?oc=5",
+    "발행일": "2025-07-10",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "신재생에너지"
+    ],
+    "중요도": "보통",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "한화생명금융서비스 법인보험대리점 IFC그룹 인수, 영남권 영업망 확대 - 비즈니스포스트",
+    "URL": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9seW5Ec19ldHlyVnFCVU53aEZEcV9LUjNKWHg0TmVSaGdRaW15bUR3eWpDSTdzSU1XczZMTmRjaGFsaXR3ME1SZ2otRkVkZ0JwVjJBUmZZSW52dlMyLVZMZU1SZjdnNnI3UFQzRGsxb1NCdFE?oc=5",
+    "발행일": "2025-07-07",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "보험중개"
+    ],
+    "중요도": "중간",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "[금융人사이드]'N잡러' 보험설계사에 도전하세요...'원더'가 도와줘요 - 아시아경제",
+    "URL": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOV0NjR2E5cXdDS0U1b0N0ektjMV9Rcy1ZeHVZYlNkSG0xRERsRzVwSWs5ellRaldVbTRhTk1PNmlZX3RrdmNuTWhRU3dMUEhnQTZzQi0wOFVRSFpuMHlWR2xldzFUWVZyZzI2dTYyZzFUZ0U4VndnT1lyMFBGdkpJUkNXbzZCc21HLWM4d2FxSnl1V0M3ZVdGSUhUcmY1YUNUemtlYnlTeUJmSWU3QnVDYWJGWkJ5d0tzRWNrM3hNMllzdXJsb3E3OHJqb3ZtRDVmVVM4TU1RU1pTQ3c?oc=5",
+    "발행일": "2025-07-11",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "보험중개"
+    ],
+    "중요도": "보통",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "아이지넷, '보닥'으로 보험 인기상품 데이터 매주 제공 - 톱데일리",
+    "URL": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE52YVRqblNJX1pHZjR2Wll5VHFBM05abFhtcmdYSlNWQnB5OUxiXy1jRlppdGJrR2lwWGhIbVpWYWVUNXkyR2s4bml6NmVFdWtu?oc=5",
+    "발행일": "2025-07-09",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "보험중개"
+    ],
+    "중요도": "보통",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "흥국생명 “건강할수록 혜택 강화 보험상품 출시” - 이코노미사이언스",
+    "URL": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBkZEFiUUl6NEJrbXJMRUF1WHQ3VVZ2cng1WkdodzRhUFQ0WTV0ZkZxYU9OZUdtR2tIeWFLNXhKalJpMTZTbUpvclIyYXVTSGhyNUgtY1UtdHRxQ3RQZVFkVnhtUkdnZzVmRTJtWDVsVQ?oc=5",
+    "발행일": "2025-07-10",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "보험중개"
+    ],
+    "중요도": "보통",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "보령시, 탄소중립 에너지전환 정책 실행력 강화 - 뉴시스",
+    "URL": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9VSmduX2QzRUg1RTZFVmlyemNVR21VNy13UElGQWhpUk90OTZaLW9PVEhWWHN6NnExQkxyc0h3b0VWR2JfdUdzSmtSNWZ0a3pUMlR5MXFsRHFVSzNPY01KS9IBeEFVX3lxTE1jUWNEd0N0NTBuLS0wQncwajUwLUdRLWZOdS1DWEctMk1GaGRnUmRDT1Iya2FhTjBLYkVCRHZhaG01ODY2OUZURzZqS1JoWldTU3dQRXJHSDlBOVlmaURvQXVVTmE3RU9KYzBvTFBsdGhGSkhhM1paaw?oc=5",
+    "발행일": "2025-07-11",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "신재생에너지"
+    ],
+    "중요도": "높음",
+    "요약 품질 평가": "보통"
+  },
+  {
+    "제목": "독립 보험대리점 2025년 7월 브랜드평판...인카금융서비스, 에이플러스에셋, 굿리치 順 - 에너지신문",
+    "URL": "https://news.google.com/rss/articles/CBMickFVX3lxTE5obk9KX2F6R0E3UEFIemtpcDJoWjhZd3BFU2RxaUhyVWlKT0Q1cXNoQTM0SGlFY0d5eGpOYnUxZEhjS2xWNDFORGpyVkhWOGt1QldKRGkxMzg1WFc5VkhYZExvMllrdktNbjlIeUJfd3lwUQ?oc=5",
+    "발행일": "2025-07-09",
+    "요약": "자동 수집된 뉴스",
+    "태그": [
+      "보험중개"
+    ],
+    "중요도": "보통",
+    "요약 품질 평가": "보통"
   }
-] 
+]

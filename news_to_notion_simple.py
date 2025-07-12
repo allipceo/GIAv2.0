@@ -12,9 +12,24 @@ def upload_to_notion():
     # 노션 클라이언트 초기화
     notion = Client(auth=NOTION_TOKEN)
     
-    # news_data.json 파일 읽기
-    with open('news_data.json', 'r', encoding='utf-8') as f:
-        news_data = json.load(f)
+    # news_data.json 파일 읽기 (강화된 인코딩 처리)
+    try:
+        with open('news_data.json', 'r', encoding='utf-8') as f:
+            news_data = json.load(f)
+        print(f"[INFO] news_data.json 파일 로드 완료: {len(news_data)}건")
+    except FileNotFoundError:
+        print("[ERROR] news_data.json 파일을 찾을 수 없습니다.")
+        return
+    except json.JSONDecodeError as e:
+        print(f"[ERROR] news_data.json 파일 형식 오류: {e}")
+        return
+    except UnicodeDecodeError as e:
+        print(f"[ERROR] news_data.json 파일 인코딩 오류: {e}")
+        print("UTF-8로 저장되었는지 확인하십시오.")
+        return
+    except Exception as e:
+        print(f"[ERROR] 파일 읽기 중 예상치 못한 오류: {e}")
+        return
     
     success_count = 0
     error_count = 0
@@ -33,7 +48,7 @@ def upload_to_notion():
     for cat_news in categories.values():
         selected_news.extend(cat_news)
     
-    print(f"📊 태그별 5개씩 총 {len(selected_news)}개 뉴스를 업로드합니다.")
+    print(f"[INFO] 태그별 5개씩 총 {len(selected_news)}개 뉴스를 업로드합니다.")
     
     for news in selected_news:
         try:
@@ -43,38 +58,50 @@ def upload_to_notion():
             else:
                 iso_date = datetime.now().isoformat()
             
-            # 노션 페이지 생성
+            # 문자열 데이터 UTF-8 안전성 확보
+            safe_title = str(news["제목"]).encode('utf-8').decode('utf-8')
+            safe_url = str(news["URL"]).encode('utf-8').decode('utf-8')
+            safe_tag = str(news["태그"][0]).encode('utf-8').decode('utf-8') if news.get("태그") and len(news["태그"]) > 0 else "기타"
+            safe_importance = str(news.get("중요도", "보통")).encode('utf-8').decode('utf-8')
+            
+            # 노션 페이지 생성 (강화된 인코딩 처리)
             response = notion.pages.create(
                 parent={"database_id": DATABASE_ID},
                 properties={
                     "제목": {
-                        "title": [{"text": {"content": news["제목"]}}]
+                        "title": [{"text": {"content": safe_title}}]
                     },
                     "링크": {
-                        "url": news["URL"]
+                        "url": safe_url
                     },
                     "날짜": {
                         "date": {"start": iso_date}
                     },
                     "분야": {
-                        "multi_select": [{"name": news["태그"][0]}] if news.get("태그") and len(news["태그"]) > 0 else []
+                        "multi_select": [{"name": safe_tag}]
                     },
                     "출처": {
-                        "rich_text": [{"text": {"content": news.get("출처", "Unknown")}}]
+                        "rich_text": [{"text": {"content": "Google News"}}]
                     },
                     "중요도": {
-                        "select": {"name": news.get("중요도", "보통")}
+                        "select": {"name": safe_importance}
                     }
                 }
             )
             success_count += 1
-            print(f"✅ 성공: {news['제목'][:50]}...")
+            print(f"[SUCCESS] {safe_title[:50]}...")
             
+        except UnicodeEncodeError as e:
+            error_count += 1
+            print(f"[ERROR] 인코딩 실패: {news['제목'][:30]}... - {str(e)}")
+        except UnicodeDecodeError as e:
+            error_count += 1
+            print(f"[ERROR] 디코딩 실패: {news['제목'][:30]}... - {str(e)}")
         except Exception as e:
             error_count += 1
-            print(f"❌ 실패: {news['제목'][:50]}... - {str(e)}")
+            print(f"[ERROR] 실패: {news['제목'][:30]}... - {str(e)}")
     
-    print(f"\n📊 결과: 성공 {success_count}건, 실패 {error_count}건")
+    print(f"\n[RESULT] 성공 {success_count}건, 실패 {error_count}건")
 
 if __name__ == "__main__":
     upload_to_notion()
