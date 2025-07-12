@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Chosen Palette: "Calm Neutrals with a Touch of Tech" - A base of warm grays (bg-stone-100, bg-stone-200) creates a calm, professional backdrop. A sophisticated dark slate blue (bg-slate-800, text-slate-100) is used for headers and primary navigation, providing a sense of stability and focus. A subtle, energetic accent color (indigo-500, indigo-600) is used for interactive elements like buttons and active states, guiding the user's attention without being distracting. This palette feels modern, trustworthy, and supportive of a high-level strategic project. -->
+    <!-- Application Structure Plan: A single-page dashboard layout was chosen over a linear report structure to provide immediate, at-a-glance understanding and non-linear exploration. The user flow is designed around a fixed top navigation bar ('개요', '로드맵', '핵심성과지표', '위험관리') that allows users to jump to any key section instantly. This task-oriented structure enables users to quickly access the information most relevant to them (e.g., checking KPIs, reviewing a specific phase of the roadmap) without scrolling through irrelevant sections. This design facilitates better synthesis of information and supports ongoing project monitoring, which is more effective than a static, read-once report format. -->
+    <!-- Visualization & Content Choices: 
+        - Report Info: Project Roadmap (3 Phases) -> Goal: Show progress and sequence -> Viz/Method: Interactive Tabbed Timeline (HTML/CSS/JS) -> Interaction: Clicking a phase tab instantly reveals its detailed goals and plans. -> Justification: More engaging and less overwhelming than a long text description. Allows for focused review of each phase. -> Library/Method: Vanilla JS, Tailwind CSS.
+        - Report Info: Key Performance Indicators (KPIs) -> Goal: Compare targets and show status -> Viz/Method: Bar Charts and Donut Charts (Chart.js) -> Interaction: Hovering over chart segments reveals detailed values and labels. -> Justification: Visualizes quantitative goals clearly, making it easy to track progress and success metrics. -> Library/Method: Chart.js.
+        - Report Info: Team Roles -> Goal: Organize and inform -> Viz/Method: Grid-based profile cards (HTML/CSS) -> Interaction: Static, clear presentation of roles and responsibilities. -> Justification: A simple, scannable format is best for presenting team structure. -> Library/Method: Tailwind CSS.
+        - Report Info: Risk Management -> Goal: Inform and categorize -> Viz/Method: Accordion component (HTML/CSS/JS) -> Interaction: Clicking a risk category expands to show details. -> Justification: Organizes complex information neatly, preventing cognitive overload and allowing users to focus on specific risk areas. -> Library/Method: Vanilla JS, Tailwind CSS.
+        -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <title>GIA 프로젝트 인터랙티브 대시보드</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 350px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+                max-height: 400px;
+            }
+        }
+        .nav-link {
+            transition: all 0.3s;
+            border-bottom: 2px solid transparent;
+        }
+        .nav-link.active, .nav-link:hover {
+            color: #4f46e5;
+            border-bottom-color: #4f46e5;
+        }
+        .phase-tab.active {
+            background-color: #4f46e5;
+            color: white;
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800">
+
+    <header class="bg-white/80 backdrop-blur-lg shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center space-x-3">
+                     <div class="bg-indigo-500 p-2 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h1 class="text-2xl font-bold text-slate-800">GIA 프로젝트 대시보드</h1>
+                </div>
+                <nav class="hidden md:flex items-center space-x-6">
+                    <a href="#overview" class="nav-link font-medium text-stone-600 pb-1">개요</a>
+                    <a href="#roadmap" class="nav-link font-medium text-stone-600 pb-1">로드맵</a>
+                    <a href="#kpi" class="nav-link font-medium text-stone-600 pb-1">핵심성과지표</a>
+                    <a href="#risk" class="nav-link font-medium text-stone-600 pb-1">위험 관리</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-4 md:p-8">
+
+        <section id="overview" class="mb-16 scroll-mt-24">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2">프로젝트 개요</h2>
+            <p class="text-stone-600 mb-8 max-w-3xl">GIA(지능형 정보 에이전트) 프로젝트는 조대표님 전용 '아이언맨 자비스'급 정보 비서를 구축하는 것을 목표로 합니다. 본 대시보드는 프로젝트의 핵심 계획, 목표, 진행 상황을 한눈에 파악할 수 있도록 설계되었습니다.</p>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-md border border-stone-200">
+                    <h3 class="font-bold text-xl text-indigo-600 mb-3">🎯 비전</h3>
+                    <p class="text-stone-700">신재생에너지, 방위산업, 보험중개 분야의 방대한 정보를 즉시 분석하고 맥락을 이해하며, 능동적으로 필요한 지식을 제공하는 **"살아있는 지식 시스템"**을 구축합니다.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md border border-stone-200">
+                    <h3 class="font-bold text-xl text-indigo-600 mb-3">📜 핵심 원칙</h3>
+                    <ul class="list-disc list-inside space-y-2 text-stone-700">
+                        <li>**실용성 우선:** 즉시 활용 가능한 기능부터 구현</li>
+                        <li>**협업 최적화:** 팀원별 강점의 유기적 결합</li>
+                        <li>**지속적 업그레이드:** MVP 기반의 빠른 피드백 및 발전</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md border border-stone-200">
+                    <h3 class="font-bold text-xl text-indigo-600 mb-3">👥 협업 체계</h3>
+                    <p class="text-stone-700">**조대표님(Owner)**의 비즈니스 통찰을 중심으로 **나실장(PM)**의 전략, **노팀장(TA)**의 자문, **서대리(Developer)**의 구현이 유기적으로 결합된 팀입니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="roadmap" class="mb-16 scroll-mt-24">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2">구축 로드맵</h2>
+            <p class="text-stone-600 mb-8 max-w-3xl">프로젝트는 총 3단계로 구성되며, 각 단계는 명확한 목표와 세부 계획을 가집니다. 아래 탭을 클릭하여 각 단계별 상세 내용을 확인하세요.</p>
+            
+            <div class="bg-white rounded-xl shadow-md border border-stone-200 p-6">
+                <div class="flex justify-center border-b border-stone-200 mb-6">
+                    <button class="phase-tab py-3 px-6 font-medium text-stone-600 rounded-t-lg" data-phase="phase1">단계 1: MVP 구축</button>
+                    <button class="phase-tab py-3 px-6 font-medium text-stone-600 rounded-t-lg" data-phase="phase2">단계 2: 지능형 확장</button>
+                    <button class="phase-tab py-3 px-6 font-medium text-stone-600 rounded-t-lg" data-phase="phase3">단계 3: '자비스' 고도화</button>
+                </div>
+
+                <div id="phase-content" class="min-h-[300px]">
+                </div>
+            </div>
+        </section>
+
+        <section id="kpi" class="mb-16 scroll-mt-24">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2">핵심성과지표 (KPI)</h2>
+             <p class="text-stone-600 mb-8 max-w-3xl">프로젝트의 성공을 측정하기 위한 정량적/정성적 지표입니다. 이 지표들은 시스템의 가치를 객관적으로 증명하고 지속적인 개선의 기반을 마련합니다.</p>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-md border border-stone-200">
+                    <h3 class="font-bold text-xl text-center text-slate-700 mb-4">의사결정 품질 향상</h3>
+                    <div class="chart-container">
+                        <canvas id="decisionQualityChart"></canvas>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md border border-stone-200">
+                    <h3 class="font-bold text-xl text-center text-slate-700 mb-4">비즈니스 기회 포착 능력</h3>
+                    <div class="chart-container">
+                        <canvas id="opportunityChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="risk" class="mb-16 scroll-mt-24">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2">위험 관리 및 품질 보증</h2>
+            <p class="text-stone-600 mb-8 max-w-3xl">프로젝트 진행 중 발생할 수 있는 잠재적 위험 요소와 이에 대한 대응 전략, 그리고 시스템의 품질을 보증하기 위한 체계입니다.</p>
+
+            <div id="accordion-container" class="space-y-4">
+                <div class="accordion-item bg-white rounded-xl shadow-md border border-stone-200">
+                    <button class="accordion-header w-full text-left p-6 flex justify-between items-center">
+                        <span class="text-xl font-bold text-slate-700">LLM 환각 및 편향</span>
+                        <span class="accordion-icon text-indigo-500 text-2xl font-bold transform transition-transform">+</span>
+                    </button>
+                    <div class="accordion-content px-6 pb-6">
+                        <p class="text-stone-600">초기에는 RAG(검색 증강 생성) 도입을 최우선으로 하여 LLM의 답변을 검증된 정보에 기반하도록 합니다. 중요한 인사이트는 조대표님과 나실장이 직접 교차 검증하는 Human-in-the-Loop 방식을 적용하며, 개발 단계부터 샘플 검증을 병행합니다.</p>
+                    </div>
+                </div>
+                 <div class="accordion-item bg-white rounded-xl shadow-md border border-stone-200">
+                    <button class="accordion-header w-full text-left p-6 flex justify-between items-center">
+                        <span class="text-xl font-bold text-slate-700">데이터 품질</span>
+                        <span class="accordion-icon text-indigo-500 text-2xl font-bold transform transition-transform">+</span>
+                    </button>
+                    <div class="accordion-content px-6 pb-6">
+                        <p class="text-stone-600">각 API 연동 시 데이터 정제 및 유효성 검사 로직을 구현하고, 주기적으로 샘플 데이터를 검토하여 품질을 확인합니다. 코드에 데이터 정제 및 유효성 검증 로직을 내장하여 관리합니다.</p>
+                    </div>
+                </div>
+                <div class="accordion-item bg-white rounded-xl shadow-md border border-stone-200">
+                    <button class="accordion-header w-full text-left p-6 flex justify-between items-center">
+                        <span class="text-xl font-bold text-slate-700">노션 API 한계</span>
+                        <span class="accordion-icon text-indigo-500 text-2xl font-bold transform transition-transform">+</span>
+                    </button>
+                    <div class="accordion-content px-6 pb-6">
+                        <p class="text-stone-600">초기에는 노션의 기본 기능과 Make.com/Pipedream 연동을 최대한 활용합니다. 대량 데이터의 경우 요약본만 노션에 저장하고 원본은 외부 스토리지에 보관하는 방식을 고려합니다. 외부 연동을 통해 속도/쿼터 한계를 보완합니다.</p>
+                    </div>
+                </div>
+                 <div class="accordion-item bg-white rounded-xl shadow-md border border-stone-200">
+                    <button class="accordion-header w-full text-left p-6 flex justify-between items-center">
+                        <span class="text-xl font-bold text-slate-700">품질 보증 체계</span>
+                        <span class="accordion-icon text-indigo-500 text-2xl font-bold transform transition-transform">+</span>
+                    </button>
+                    <div class="accordion-content px-6 pb-6">
+                        <ul class="list-disc list-inside space-y-2 text-stone-600">
+                            <li>**코드 리뷰:** 서대리의 코드에 대해 노팀장이 주기적으로 리뷰를 진행합니다.</li>
+                            <li>**사용자 테스트:** 조대표님이 직접 시스템을 사용하며 피드백을 제공하는 테스트를 상시 진행합니다.</li>
+                            <li>**정기 리뷰:** 매주 금요일 종합 리뷰, 월간 시스템 성능 평가, 분기별 확장 방향 재검토를 통해 품질을 관리합니다.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-800 text-slate-400 mt-16">
+        <div class="container mx-auto p-8 text-center">
+            <p>&copy; 2025 GIA Project. All rights reserved.</p>
+            <p class="text-sm mt-2">본 대시보드는 GIA_기본계획_V1.4를 기반으로 생성되었습니다.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const phaseData = {
+                phase1: {
+                    title: "단계 1: 핵심 기능 MVP 구축 (1주차 목표)",
+                    description: "조대표님께 가장 시급한 정보 채널(뉴스)의 자동 수집 및 노션 대시보드 연동을 통해 정보 과부하를 즉시 경감하고, 시스템의 효용성을 체감하게 합니다.",
+                    details: [
+                        { icon: '📂', title: "노션 DB 구조 최종 확정", desc: "샘플 데이터 입력을 완료하고, 마스터 태그 체계 및 관계형 연결을 최종 확정하여 시스템의 뼈대를 완성합니다." },
+                        { icon: '🖥️', title: "핵심 정보 대시보드 구축", desc: "매일 아침 10분 내 핵심 정보를 파악할 수 있는 맞춤형 대시보드를 생성합니다. (중요 뉴스, 낙찰 정보 요약, LLM 요약, 빠른 액션 버튼 포함)" },
+                        { icon: '🔗', title: "네이버 뉴스 API 연동", desc: "뉴스 API를 연동하고 LLM을 통해 자동 분류 및 요약 기능을 구현하여 수동 작업을 제거합니다." },
+                        { icon: '📊', title: "추가 채널 연동 우선순위 확립", desc: "1주차 뉴스, 2주차 낙찰정보, 3주차 통계/정책 순으로 채널 연동을 진행합니다." }
+                    ]
+                },
+                phase2: {
+                    title: "단계 2: 지능형 확장 및 피드백 루프 구축 (2-4주차 목표)",
+                    description: "단순 수집/분류를 넘어 정보 간 연관성을 파악하고, 조대표님의 피드백을 학습하여 시스템을 고도화합니다.",
+                    details: [
+                        { icon: '➕', title: "추가 정보 채널 연동", desc: "비즈니스 우선순위에 따라 '논문/보고서', '통계/정책' 등 다음으로 중요한 채널의 API 연동을 진행하여 정보 커버리지를 확대합니다." },
+                        { icon: '🔄', title: "'프로젝트-정보' 관계형 연결", desc: "수집된 정보를 진행 중인 프로젝트와 자동으로 연결하고, 프로젝트 DB에서 관련 정보를 롤업하여 관리 효율성을 증대시킵니다." },
+                        { icon: '💡', title: "LLM 기반 연관성 분석 및 알림", desc: "정보 간 키워드, 주제, 개체 유사성을 분석하여 잠재적 기회/위험 알림을 제공하고 선제적 의사결정을 지원합니다." },
+                        { icon: '💬', title: "조대표님 피드백 시스템 구축", desc: "대시보드 내에 '유용함', '관련 없음' 등 간단한 피드백 버튼을 추가하여 시스템이 사용자 선호도를 학습하도록 합니다." }
+                    ]
+                },
+                phase3: {
+                    title: "단계 3: '자비스' 수준 고도화 (중장기 목표)",
+                    description: "시스템이 스스로 학습하고 예측하며, 조대표님께 능동적으로 인사이트를 제안하는 '자비스' 수준으로 발전합니다.",
+                    details: [
+                        { icon: '📈', title: "예측 모델링 및 시나리오 분석", desc: "축적된 데이터를 기반으로 시장 동향, 정책 변화 등을 예측하고, 다양한 비즈니스 시나리오를 생성 및 분석합니다." },
+                        { icon: '🤖', title: "멀티 에이전트 시스템 도입", desc: "수집, 분류, 분석, 통합 등 역할을 분리한 전문 에이전트들을 구축하여 시스템의 견고성, 확장성, 정확도를 향상시킵니다." },
+                        { icon: '🧠', title: "강화 학습 기반 알림 시스템", desc: "사용자 피드백을 지속적으로 학습하여 알림의 우선순위, 형식, 시점을 개인화하고 최적화합니다." },
+                        { icon: '🌐', title: "데이터 소스 확장 및 지식 그래프", desc: "고가치 데이터 소스를 추가 연동하고, 지식 그래프를 구축하여 정보 간의 복잡한 의미론적 연관성을 파악합니다." }
+                    ]
+                }
+            };
+
+            const phaseContent = document.getElementById('phase-content');
+            const phaseTabs = document.querySelectorAll('.phase-tab');
+
+            function renderPhase(phaseKey) {
+                const data = phaseData[phaseKey];
+                let detailsHtml = '<div class="grid md:grid-cols-2 gap-6">';
+                data.details.forEach(item => {
+                    detailsHtml += `
+                        <div class="flex items-start space-x-4">
+                            <div class="text-3xl">${item.icon}</div>
+                            <div>
+                                <h4 class="font-bold text-lg text-slate-700">${item.title}</h4>
+                                <p class="text-stone-600">${item.desc}</p>
+                            </div>
+                        </div>
+                    `;
+                });
+                detailsHtml += '</div>';
+
+                phaseContent.innerHTML = `
+                    <h3 class="text-2xl font-bold text-slate-800 mb-2">${data.title}</h3>
+                    <p class="text-stone-600 mb-8">${data.description}</p>
+                    ${detailsHtml}
+                `;
+            }
+
+            phaseTabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    phaseTabs.forEach(t => t.classList.remove('active'));
+                    tab.classList.add('active');
+                    renderPhase(tab.dataset.phase);
+                });
+            });
+
+            phaseTabs[0].click();
+
+            const decisionCtx = document.getElementById('decisionQualityChart').getContext('2d');
+            new Chart(decisionCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['의사결정 성공률', '시간 단축률', '자신감 지수'],
+                    datasets: [{
+                        label: '현재 상태 (목표 대비)',
+                        data: [75, 60, 85],
+                        backgroundColor: ['rgba(79, 70, 229, 0.7)', 'rgba(30, 64, 175, 0.7)', 'rgba(129, 140, 248, 0.7)'],
+                        borderColor: ['#4f46e5', '#1e40af', '#818cf8'],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: { y: { beginAtZero: true, max: 100 } },
+                    plugins: { legend: { display: false }, title: { display: false } }
+                }
+            });
+
+            const opportunityCtx = document.getElementById('opportunityChart').getContext('2d');
+            new Chart(opportunityCtx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['신규 기회 채택률', '매출/수익 기여도', '시장 변화 감지 선행성'],
+                    datasets: [{
+                        label: '달성도',
+                        data: [65, 40, 80],
+                        backgroundColor: ['rgba(79, 70, 229, 0.7)', 'rgba(30, 64, 175, 0.7)', 'rgba(129, 140, 248, 0.7)'],
+                        borderColor: ['#4f46e5', '#1e40af', '#818cf8'],
+                        borderWidth: 1
+                    }]
+                },
+                options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'bottom' }, title: { display: false } } }
+            });
+
+            const accordions = document.querySelectorAll('.accordion-item');
+            accordions.forEach(item => {
+                const header = item.querySelector('.accordion-header');
+                const content = item.querySelector('.accordion-content');
+                const icon = header.querySelector('.accordion-icon');
+                header.addEventListener('click', () => {
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                        icon.classList.remove('rotate-45');
+                    } else {
+                        accordions.forEach(otherItem => {
+                           const otherContent = otherItem.querySelector('.accordion-content');
+                           const otherIcon = otherItem.querySelector('.accordion-icon');
+                           otherContent.style.maxHeight = null;
+                           otherIcon.classList.remove('rotate-45');
+                        });
+                        content.style.maxHeight = content.scrollHeight + "px";
+                        icon.classList.add('rotate-45');
+                    }
+                });
+            });
+
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('section');
+            window.addEventListener('scroll', () => {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    if (pageYOffset >= sectionTop - 120) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').includes(current)) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+
+        });
+    </script>
+</body>
+</html>
