@@ -1,0 +1,190 @@
+{
+  "start_time": "2025-07-13T03:56:11.717062",
+  "collection_phase": {
+    "success_count": 7,
+    "collection_time": 0.0,
+    "collected_data": [
+      {
+        "title": "계통한계가격(SMP) - 2025-07-13",
+        "category": "신재생에너지",
+        "data_type": "통계",
+        "source": "전력거래소",
+        "indicator_name": "계통한계가격",
+        "value": "116.82",
+        "unit": "원/kWh",
+        "reference_period": "2025-07-13",
+        "importance_level": "중요",
+        "business_relevance": "직접연관",
+        "trend_analysis": "상승",
+        "source_url": "https://new.kpx.or.kr",
+        "detail_info": "전력 도매시장에서 형성되는 시간대별 전력가격으로, 신재생에너지 사업의 수익성에 직접적 영향",
+        "attached_files": null,
+        "collection_date": "2025-07-13 03:56:11.721942",
+        "publish_date": "2025-07-13",
+        "next_update": "2025-07-14",
+        "related_projects": null
+      },
+      {
+        "title": "전력수급현황 - 2025-07-13",
+        "category": "신재생에너지",
+        "data_type": "통계",
+        "source": "전력거래소",
+        "indicator_name": "전력수급현황",
+        "value": "공급예비율 68.92%",
+        "unit": "%",
+        "reference_period": "2025-07-13",
+        "importance_level": "중요",
+        "business_relevance": "간접연관",
+        "trend_analysis": "정상",
+        "source_url": "https://new.kpx.or.kr",
+        "detail_info": "실시간 전력수급 상황으로, 전력계통 안정성과 에너지 정책 방향성 파악에 활용",
+        "attached_files": null,
+        "collection_date": "2025-07-13 03:56:11.722039",
+        "publish_date": "2025-07-13",
+        "next_update": "실시간 업데이트",
+        "related_projects": null
+      },
+      {
+        "title": "보험업계 월별 통계 - 2025년 07월",
+        "category": "보험업계",
+        "data_type": "통계",
+        "source": "금융감독원",
+        "indicator_name": "보험료 수입",
+        "value": "전년 동월 대비 5.2% 증가",
+        "unit": "%",
+        "reference_period": "2025년 07월",
+        "importance_level": "중요",
+        "business_relevance": "직접연관",
+        "trend_analysis": "상승",
+        "source_url": "https://www.fss.or.kr",
+        "detail_info": "보험업계 전반의 성장세를 보여주는 지표로, 보험 관련 사업 기회 파악에 활용",
+        "attached_files": null,
+        "collection_date": "2025-07-13 03:56:11.723028",
+        "publish_date": "2025-07-13",
+        "next_update": "다음 달 발표",
+        "related_projects": null
+      },
+      {
+        "title": "국방예산 현황 - 2025년",
+        "category": "방위산업",
+        "data_type": "정책",
+        "source": "e-나라지표",
+        "indicator_name": "국방예산",
+        "value": "57.1조원",
+        "unit": "조원",
+        "reference_period": "2025년",
+        "importance_level": "중요",
+        "business_relevance": "직접연관",
+        "trend_analysis": "상승",
+        "source_url": "https://www.index.go.kr",
+        "detail_info": "국방예산 규모와 증가율을 통해 방위산업 시장 전망 파악",
+        "attached_files": null,
+        "collection_date": "2025-07-13 03:56:11.723863",
+        "publish_date": "2025-07-13",
+        "next_update": "2026년 예산안 발표",
+        "related_projects": null
+      },
+      {
+        "title": "보험사기 적발현황 - 2025년 3분기",
+        "category": "보험업계",
+        "data_type": "통계",
+        "source": "금융감독원",
+        "indicator_name": "보험사기 적발금액",
+        "value": "전분기 대비 12% 증가",
+        "unit": "%",
+        "reference_period": "2025년 3분기",
+        "importance_level": "보통",
+        "business_relevance": "간접연관",
+        "trend_analysis": "증가",
+        "source_url": "https://www.fss.or.kr",
+        "detail_info": "보험사기 동향을 통해 보험업계의 리스크 관리 방향성 파악",
+        "attached_files": null,
+        "collection_date": "2025-07-13 03:56:11.723078",
+        "publish_date": "2025-07-13",
+        "next_update": "다음 분기 발표",
+        "related_projects": null
+      },
+      {
+        "title": "REC 거래가격 - 2025-07-13",
+        "category": "신재생에너지",
+        "data_type": "통계",
+        "source": "전력거래소",
+        "indicator_name": "REC 평균가격",
+        "value": "71,252",
+        "unit": "원/REC",
+        "reference_period": "2025-07-13",
+        "importance_level": "매우중요",
+        "business_relevance": "직접연관",
+        "trend_analysis": "보합",
+        "source_url": "https://new.kpx.or.kr",
+        "detail_info": "신재생에너지 공급인증서 거래가격으로, 신재생에너지 사업수익에 핵심 지표",
+        "attached_files": null,
+        "collection_date": "2025-07-13 03:56:11.722014",
+        "publish_date": "2025-07-13",
+        "next_update": "다음 거래일",
+        "related_projects": null
+      },
+      {
+        "title": "신재생에너지 보급률 - 2025년",
+        "category": "신재생에너지",
+        "data_type": "지표",
+        "source": "e-나라지표",
+        "indicator_name": "신재생에너지 보급률",
+        "value": "9.7%",
+        "unit": "%",
+        "reference_period": "2025년",
+        "importance_level": "매우중요",
+        "business_relevance": "직접연관",
+        "trend_analysis": "상승",
+        "source_url": "https://www.index.go.kr",
+        "detail_info": "전체 발전량 중 신재생에너지 비중으로, 정부 그린뉴딜 정책의 핵심 지표",
+        "attached_files": null,
+        "collection_date": "2025-07-13 03:56:11.723840",
+        "publish_date": "2025-07-13",
+        "next_update": "2026년 발표",
+        "related_projects": null
+      }
+    ],
+    "data_sources": {
+      "전력거래소": {
+        "count": 3,
+        "categories": [
+          "신재생에너지"
+        ]
+      },
+      "금융감독원": {
+        "count": 2,
+        "categories": [
+          "보험업계"
+        ]
+      },
+      "e-나라지표": {
+        "count": 2,
+        "categories": [
+          "방위산업",
+          "신재생에너지"
+        ]
+      }
+    }
+  },
+  "upload_phase": {
+    "success_count": 0,
+    "failed_count": 0,
+    "upload_time": 5.89,
+    "errors": []
+  },
+  "dashboard_phase": {
+    "stats_policy_db_id": "22ea613d-25ff-81dc-9a2b-fc7934d1661a",
+    "integration_ready": true,
+    "last_update": "2025-07-13T03:56:17.614685",
+    "dashboard_sections": [
+      "신재생에너지 동향",
+      "방위산업 통계",
+      "보험업계 현황",
+      "경제지표 요약"
+    ]
+  },
+  "total_time": 5.94,
+  "success": true,
+  "error_message": null
+}

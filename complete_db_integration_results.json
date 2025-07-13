@@ -1,0 +1,21 @@
+{
+  "start_time": "2025-07-13T09:28:11.329524",
+  "steps": {
+    "todo_relations": true,
+    "reverse_relations": true,
+    "auto_linking": {
+      "total_todos": 38,
+      "linked_news": 114,
+      "linked_bids": 76,
+      "processing_errors": 0
+    }
+  },
+  "final_stats": {
+    "total_todos": 38,
+    "linked_news": 114,
+    "linked_bids": 76,
+    "processing_errors": 0
+  },
+  "success": true,
+  "end_time": "2025-07-13T09:30:43.034322"
+}

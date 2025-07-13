@@ -156,7 +156,7 @@ class BidNewsCollector:
                             "주요내용": description[:200] if description else title,  # 초기 요약
                             "중요도": self.determine_bid_importance(title, description, self.determine_bid_type(title, description)),
                             "선별여부": False,  # 초기값
-                            "수집일시": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                            "수정일시": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
                             "관련 프로젝트": "",  # 빈 값
                             "_keyword": keyword_combo,  # 내부 추적용
                             "_score": self.calculate_relevance_score(title, description, category)

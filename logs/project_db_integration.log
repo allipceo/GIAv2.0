@@ -1,0 +1,46 @@
+2025-07-13 09:07:28,046 - INFO - 🚀 프로젝트 DB 연동 프로세스 시작
+2025-07-13 09:07:28,070 - INFO - 1️⃣ 관계형 속성 추가
+2025-07-13 09:07:28,072 - INFO - 🔗 프로젝트 DB에 관계형 속성 추가 시작
+2025-07-13 09:07:30,197 - INFO - HTTP Request: PATCH https://api.notion.com/v1/databases/228a613d25ff818d9bbac1b53e19dcbd "HTTP/1.1 200 OK"
+2025-07-13 09:07:30,211 - INFO - ✅ '관련 뉴스' 관계형 속성 추가 성공
+2025-07-13 09:07:31,256 - INFO - HTTP Request: PATCH https://api.notion.com/v1/databases/228a613d25ff818d9bbac1b53e19dcbd "HTTP/1.1 200 OK"
+2025-07-13 09:07:31,261 - INFO - ✅ '관련 입찰정보' 관계형 속성 추가 성공
+2025-07-13 09:07:31,262 - INFO - 2️⃣ 역방향 관계 추가
+2025-07-13 09:07:31,267 - INFO - 🔄 GIA 시스템 DB들에 역방향 관계형 속성 추가 시작
+2025-07-13 09:07:32,504 - INFO - HTTP Request: PATCH https://api.notion.com/v1/databases/22aa613d25ff80888257c652d865f85a "HTTP/1.1 200 OK"
+2025-07-13 09:07:32,515 - INFO - ✅ 뉴스 정보 DB에 '관련 프로젝트' 속성 추가 성공
+2025-07-13 09:07:35,609 - INFO - HTTP Request: PATCH https://api.notion.com/v1/databases/22ea613d25ff80b59beff3ddc38ad068 "HTTP/1.1 200 OK"
+2025-07-13 09:07:35,613 - INFO - ✅ 입찰낙찰 공고 DB에 '관련 프로젝트' 속성 추가 성공
+2025-07-13 09:07:35,616 - INFO - 3️⃣ 롤업 속성 추가
+2025-07-13 09:07:35,622 - INFO - 📊 프로젝트 DB에 롤업 속성 추가 시작
+2025-07-13 09:07:35,822 - INFO - HTTP Request: PATCH https://api.notion.com/v1/databases/228a613d25ff818d9bbac1b53e19dcbd "HTTP/1.1 400 Bad Request"
+2025-07-13 09:07:35,835 - ERROR - ❌ 롤업 속성 추가 실패: body failed validation. Fix one:
+body.properties.중요 뉴스 수.rollup.filter should be not present, instead was `{"property":"중요도","select":{"equals":"중요"}}`.
+body.properties.중요 뉴스 수.rollup.relation_property_id should be defined, instead was `undefined`.
+body.properties.중요 뉴스 수.rollup.rollup_property_id should be defined, instead was `undefined`.
+2025-07-13 09:07:35,845 - INFO - 4️⃣ 자동 연결
+2025-07-13 09:07:35,846 - INFO - 🤖 관련 항목들 자동 연결 시작
+2025-07-13 09:07:36,273 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/228a613d25ff818d9bbac1b53e19dcbd/query "HTTP/1.1 200 OK"
+2025-07-13 09:07:36,279 - INFO - 🔍 프로젝트 'AI경쟁력 향상' 관련 항목 검색 중...
+2025-07-13 09:07:36,281 - WARNING - ⚠️  프로젝트 'AI경쟁력 향상' 분야 '연구' 매핑되지 않음
+2025-07-13 09:07:36,287 - INFO - 🔍 프로젝트 'GIA 1단계 기반체계 구축 (1)' 관련 항목 검색 중...
+2025-07-13 09:07:36,289 - WARNING - ⚠️  프로젝트 'GIA 1단계 기반체계 구축 (1)' 분야 '연구' 매핑되지 않음
+2025-07-13 09:07:36,294 - INFO - 🔍 프로젝트 'GIA 1단계 기반체계 구축' 관련 항목 검색 중...
+2025-07-13 09:07:36,299 - WARNING - ⚠️  프로젝트 'GIA 1단계 기반체계 구축' 분야 '연구' 매핑되지 않음
+2025-07-13 09:07:36,300 - INFO - 🔍 프로젝트 '방산 수출기업 대상 마케팅' 관련 항목 검색 중...
+2025-07-13 09:07:38,698 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22aa613d25ff80888257c652d865f85a/query "HTTP/1.1 200 OK"
+2025-07-13 09:07:39,716 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/228a613d-25ff-81d6-b4b6-f3936931e4e5 "HTTP/1.1 200 OK"
+2025-07-13 09:07:39,736 - INFO - ✅ 프로젝트 '방산 수출기업 대상 마케팅'에 5개 뉴스 연결
+2025-07-13 09:07:40,116 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22ea613d25ff80b59beff3ddc38ad068/query "HTTP/1.1 200 OK"
+2025-07-13 09:07:40,130 - INFO - 🔍 프로젝트 '해상풍력 발전사업 리스크 보험' 관련 항목 검색 중...
+2025-07-13 09:07:40,582 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22aa613d25ff80888257c652d865f85a/query "HTTP/1.1 200 OK"
+2025-07-13 09:07:44,386 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/228a613d-25ff-81b9-ba5a-c4db86bf21ad "HTTP/1.1 200 OK"
+2025-07-13 09:07:44,419 - INFO - ✅ 프로젝트 '해상풍력 발전사업 리스크 보험'에 5개 뉴스 연결
+2025-07-13 09:07:44,658 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22ea613d25ff80b59beff3ddc38ad068/query "HTTP/1.1 200 OK"
+2025-07-13 09:07:44,674 - INFO - 🔍 프로젝트 '한화시스템 사이버보안 보험 제안' 관련 항목 검색 중...
+2025-07-13 09:07:45,160 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22aa613d25ff80888257c652d865f85a/query "HTTP/1.1 200 OK"
+2025-07-13 09:07:45,856 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/228a613d-25ff-815f-bcd8-db319db51543 "HTTP/1.1 200 OK"
+2025-07-13 09:07:45,924 - INFO - ✅ 프로젝트 '한화시스템 사이버보안 보험 제안'에 5개 뉴스 연결
+2025-07-13 09:07:46,179 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22ea613d25ff80b59beff3ddc38ad068/query "HTTP/1.1 200 OK"
+2025-07-13 09:07:46,186 - INFO - 🎯 자동 연결 완료: 뉴스 15건, 입찰정보 0건
+2025-07-13 09:07:46,187 - INFO - 🎉 프로젝트 DB 연동 프로세스 완료!

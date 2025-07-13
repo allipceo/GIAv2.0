@@ -19,6 +19,11 @@ class APIConfig:
     NOTION_BID_DATABASE_ID = "22ea613d25ff80b59beff3ddc38ad068"  # 새로운 입찰낙찰 공고 DB
     NOTION_DASHBOARD_PAGE_ID = "227a613d-25ff-800c-a97d-e24f6eb521a8"
     
+    # 조대표님 기존 DB ID들 (나실장 지시에 따라 기존 DB 사용)
+    NOTION_PROJECT_DATABASE_ID = "228a613d25ff818d9bbac1b53e19dcbd"  # 기존 프로젝트 DB
+    NOTION_TASK_DATABASE_ID = "228a613d25ff814e9153fa459f1392ef"     # 기존 태스크 DB (URL에서 추출한 실제 DB ID)
+    NOTION_TODO_DATABASE_ID = "228a613d25ff813dbb4ef3d3d984d186"     # 기존 TODO DB (URL에서 추출한 실제 DB ID)
+    
     # 구글 뉴스 연동 (웹 스크래핑 방식)
     GOOGLE_NEWS_RSS_URL = "https://news.google.com/rss"
     GOOGLE_NEWS_SEARCH_URL = "https://news.google.com/search"

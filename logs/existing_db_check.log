@@ -1,0 +1,128 @@
+2025-07-13 04:25:08,495 - INFO - 🔍 조대표님 기존 DB 종합 검사 시작
+2025-07-13 04:25:08,529 - INFO - 
+--- 프로젝트 DB 검사 ---
+2025-07-13 04:25:08,534 - INFO - 📊 프로젝트 DB 구조 확인 중... (228a613d25ff818d9bbac1b53e19dcbd)
+2025-07-13 04:25:09,374 - INFO - HTTP Request: GET https://api.notion.com/v1/databases/228a613d25ff818d9bbac1b53e19dcbd "HTTP/1.1 200 OK"
+2025-07-13 04:25:09,399 - INFO - ✅ 프로젝트 DB 구조 확인 완료 (7개 속성)
+2025-07-13 04:25:09,427 - INFO - 📋 프로젝트 DB 샘플 데이터 가져오기 중...
+2025-07-13 04:25:09,694 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/228a613d25ff818d9bbac1b53e19dcbd/query "HTTP/1.1 200 OK"
+2025-07-13 04:25:09,722 - INFO - ✅ 프로젝트 DB 샘플 데이터 3건 확인 완료
+2025-07-13 04:25:09,724 - INFO - 
+--- 태스크 DB 검사 ---
+2025-07-13 04:25:09,729 - INFO - 📊 태스크 DB 구조 확인 중... (228a613d25ff81aba2dd000c987eace5)
+2025-07-13 04:25:10,003 - INFO - HTTP Request: GET https://api.notion.com/v1/databases/228a613d25ff81aba2dd000c987eace5 "HTTP/1.1 404 Not Found"
+2025-07-13 04:25:10,028 - ERROR - ❌ 태스크 DB 구조 확인 실패: Could not find database with ID: 228a613d-25ff-81ab-a2dd-000c987eace5. Make sure the relevant pages and databases are shared with your integration.
+2025-07-13 04:25:10,058 - INFO - 📋 태스크 DB 샘플 데이터 가져오기 중...
+2025-07-13 04:25:10,293 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/228a613d25ff81aba2dd000c987eace5/query "HTTP/1.1 404 Not Found"
+2025-07-13 04:25:10,310 - ERROR - ❌ 태스크 DB 샘플 데이터 가져오기 실패: Could not find database with ID: 228a613d-25ff-81ab-a2dd-000c987eace5. Make sure the relevant pages and databases are shared with your integration.
+2025-07-13 04:25:10,313 - INFO - 
+--- TODO DB 검사 ---
+2025-07-13 04:25:10,325 - INFO - 📊 TODO DB 구조 확인 중... (228a613d25ff817698d6000c211b4c38)
+2025-07-13 04:25:10,585 - INFO - HTTP Request: GET https://api.notion.com/v1/databases/228a613d25ff817698d6000c211b4c38 "HTTP/1.1 404 Not Found"
+2025-07-13 04:25:10,624 - ERROR - ❌ TODO DB 구조 확인 실패: Could not find database with ID: 228a613d-25ff-8176-98d6-000c211b4c38. Make sure the relevant pages and databases are shared with your integration.
+2025-07-13 04:25:10,695 - INFO - 📋 TODO DB 샘플 데이터 가져오기 중...
+2025-07-13 04:25:10,943 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/228a613d25ff817698d6000c211b4c38/query "HTTP/1.1 404 Not Found"
+2025-07-13 04:25:10,959 - ERROR - ❌ TODO DB 샘플 데이터 가져오기 실패: Could not find database with ID: 228a613d-25ff-8176-98d6-000c211b4c38. Make sure the relevant pages and databases are shared with your integration.
+2025-07-13 04:25:11,379 - INFO - 
+🎯 기존 DB 검사 완료:
+2025-07-13 04:25:11,394 - INFO -    - 성공: 1개
+2025-07-13 04:25:11,398 - INFO -    - 실패: 2개
+2025-07-13 04:25:11,420 - INFO -    - 결과 저장: existing_db_analysis.json
+2025-07-13 04:25:11,428 - INFO - 🔗 관계형 연결 가능성 분석 중...
+2025-07-13 04:25:11,430 - INFO - ✅ 관계형 연결 가능성 분석 완료
+2025-07-13 09:13:16,616 - INFO - 🔍 조대표님 기존 DB 종합 검사 시작
+2025-07-13 09:13:16,636 - INFO - 
+--- 프로젝트 DB 검사 ---
+2025-07-13 09:13:16,637 - INFO - 📊 프로젝트 DB 구조 확인 중... (228a613d25ff818d9bbac1b53e19dcbd)
+2025-07-13 09:13:17,356 - INFO - HTTP Request: GET https://api.notion.com/v1/databases/228a613d25ff818d9bbac1b53e19dcbd "HTTP/1.1 200 OK"
+2025-07-13 09:13:17,359 - INFO - ✅ 프로젝트 DB 구조 확인 완료 (11개 속성)
+2025-07-13 09:13:17,361 - INFO - 📋 프로젝트 DB 샘플 데이터 가져오기 중...
+2025-07-13 09:13:17,605 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/228a613d25ff818d9bbac1b53e19dcbd/query "HTTP/1.1 200 OK"
+2025-07-13 09:13:17,609 - INFO - ✅ 프로젝트 DB 샘플 데이터 3건 확인 완료
+2025-07-13 09:13:17,614 - INFO - 
+--- 태스크 DB 검사 ---
+2025-07-13 09:13:17,618 - INFO - 📊 태스크 DB 구조 확인 중... (228a613d25ff81aba2dd000c987eace5)
+2025-07-13 09:13:17,829 - INFO - HTTP Request: GET https://api.notion.com/v1/databases/228a613d25ff81aba2dd000c987eace5 "HTTP/1.1 404 Not Found"
+2025-07-13 09:13:17,840 - ERROR - ❌ 태스크 DB 구조 확인 실패: Could not find database with ID: 228a613d-25ff-81ab-a2dd-000c987eace5. Make sure the relevant pages and databases are shared with your integration.
+2025-07-13 09:13:17,851 - INFO - 📋 태스크 DB 샘플 데이터 가져오기 중...
+2025-07-13 09:13:18,052 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/228a613d25ff81aba2dd000c987eace5/query "HTTP/1.1 404 Not Found"
+2025-07-13 09:13:18,055 - ERROR - ❌ 태스크 DB 샘플 데이터 가져오기 실패: Could not find database with ID: 228a613d-25ff-81ab-a2dd-000c987eace5. Make sure the relevant pages and databases are shared with your integration.
+2025-07-13 09:13:18,058 - INFO - 
+--- TODO DB 검사 ---
+2025-07-13 09:13:18,068 - INFO - 📊 TODO DB 구조 확인 중... (228a613d25ff817698d6000c211b4c38)
+2025-07-13 09:13:18,266 - INFO - HTTP Request: GET https://api.notion.com/v1/databases/228a613d25ff817698d6000c211b4c38 "HTTP/1.1 404 Not Found"
+2025-07-13 09:13:18,270 - ERROR - ❌ TODO DB 구조 확인 실패: Could not find database with ID: 228a613d-25ff-8176-98d6-000c211b4c38. Make sure the relevant pages and databases are shared with your integration.
+2025-07-13 09:13:18,284 - INFO - 📋 TODO DB 샘플 데이터 가져오기 중...
+2025-07-13 09:13:18,491 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/228a613d25ff817698d6000c211b4c38/query "HTTP/1.1 404 Not Found"
+2025-07-13 09:13:18,503 - ERROR - ❌ TODO DB 샘플 데이터 가져오기 실패: Could not find database with ID: 228a613d-25ff-8176-98d6-000c211b4c38. Make sure the relevant pages and databases are shared with your integration.
+2025-07-13 09:13:18,575 - INFO - 
+🎯 기존 DB 검사 완료:
+2025-07-13 09:13:18,580 - INFO -    - 성공: 1개
+2025-07-13 09:13:18,581 - INFO -    - 실패: 2개
+2025-07-13 09:13:18,583 - INFO -    - 결과 저장: existing_db_analysis.json
+2025-07-13 09:13:18,584 - INFO - 🔗 관계형 연결 가능성 분석 중...
+2025-07-13 09:13:18,586 - INFO - ✅ 관계형 연결 가능성 분석 완료
+2025-07-13 09:18:33,534 - INFO - 🔍 조대표님 기존 DB 종합 검사 시작
+2025-07-13 09:18:33,538 - INFO - 
+--- 프로젝트 DB 검사 ---
+2025-07-13 09:18:33,552 - INFO - 📊 프로젝트 DB 구조 확인 중... (228a613d25ff818d9bbac1b53e19dcbd)
+2025-07-13 09:18:34,572 - INFO - HTTP Request: GET https://api.notion.com/v1/databases/228a613d25ff818d9bbac1b53e19dcbd "HTTP/1.1 200 OK"
+2025-07-13 09:18:34,615 - INFO - ✅ 프로젝트 DB 구조 확인 완료 (11개 속성)
+2025-07-13 09:18:34,616 - INFO - 📋 프로젝트 DB 샘플 데이터 가져오기 중...
+2025-07-13 09:18:35,554 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/228a613d25ff818d9bbac1b53e19dcbd/query "HTTP/1.1 200 OK"
+2025-07-13 09:18:35,570 - INFO - ✅ 프로젝트 DB 샘플 데이터 3건 확인 완료
+2025-07-13 09:18:35,572 - INFO - 
+--- 태스크 DB 검사 ---
+2025-07-13 09:18:35,576 - INFO - 📊 태스크 DB 구조 확인 중... (228a613d25ff81aba2dd000c987eace5)
+2025-07-13 09:18:36,791 - INFO - HTTP Request: GET https://api.notion.com/v1/databases/228a613d25ff81aba2dd000c987eace5 "HTTP/1.1 404 Not Found"
+2025-07-13 09:18:36,794 - ERROR - ❌ 태스크 DB 구조 확인 실패: Could not find database with ID: 228a613d-25ff-81ab-a2dd-000c987eace5. Make sure the relevant pages and databases are shared with your integration.
+2025-07-13 09:18:36,797 - INFO - 📋 태스크 DB 샘플 데이터 가져오기 중...
+2025-07-13 09:18:37,004 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/228a613d25ff81aba2dd000c987eace5/query "HTTP/1.1 404 Not Found"
+2025-07-13 09:18:37,007 - ERROR - ❌ 태스크 DB 샘플 데이터 가져오기 실패: Could not find database with ID: 228a613d-25ff-81ab-a2dd-000c987eace5. Make sure the relevant pages and databases are shared with your integration.
+2025-07-13 09:18:37,008 - INFO - 
+--- TODO DB 검사 ---
+2025-07-13 09:18:37,009 - INFO - 📊 TODO DB 구조 확인 중... (228a613d25ff813dbb4ef3d3d984d186)
+2025-07-13 09:18:37,954 - INFO - HTTP Request: GET https://api.notion.com/v1/databases/228a613d25ff813dbb4ef3d3d984d186 "HTTP/1.1 200 OK"
+2025-07-13 09:18:37,957 - INFO - ✅ TODO DB 구조 확인 완료 (11개 속성)
+2025-07-13 09:18:37,958 - INFO - 📋 TODO DB 샘플 데이터 가져오기 중...
+2025-07-13 09:18:38,224 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/228a613d25ff813dbb4ef3d3d984d186/query "HTTP/1.1 200 OK"
+2025-07-13 09:18:38,230 - INFO - ✅ TODO DB 샘플 데이터 3건 확인 완료
+2025-07-13 09:18:38,275 - INFO - 
+🎯 기존 DB 검사 완료:
+2025-07-13 09:18:38,277 - INFO -    - 성공: 2개
+2025-07-13 09:18:38,278 - INFO -    - 실패: 1개
+2025-07-13 09:18:38,279 - INFO -    - 결과 저장: existing_db_analysis.json
+2025-07-13 09:18:38,280 - INFO - 🔗 관계형 연결 가능성 분석 중...
+2025-07-13 09:18:38,281 - INFO - ✅ 관계형 연결 가능성 분석 완료
+2025-07-13 09:26:18,903 - INFO - 🔍 조대표님 기존 DB 종합 검사 시작
+2025-07-13 09:26:19,002 - INFO - 
+--- 프로젝트 DB 검사 ---
+2025-07-13 09:26:19,047 - INFO - 📊 프로젝트 DB 구조 확인 중... (228a613d25ff818d9bbac1b53e19dcbd)
+2025-07-13 09:26:19,634 - INFO - HTTP Request: GET https://api.notion.com/v1/databases/228a613d25ff818d9bbac1b53e19dcbd "HTTP/1.1 200 OK"
+2025-07-13 09:26:19,651 - INFO - ✅ 프로젝트 DB 구조 확인 완료 (11개 속성)
+2025-07-13 09:26:19,682 - INFO - 📋 프로젝트 DB 샘플 데이터 가져오기 중...
+2025-07-13 09:26:19,930 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/228a613d25ff818d9bbac1b53e19dcbd/query "HTTP/1.1 200 OK"
+2025-07-13 09:26:20,026 - INFO - ✅ 프로젝트 DB 샘플 데이터 3건 확인 완료
+2025-07-13 09:26:20,045 - INFO - 
+--- 태스크 DB 검사 ---
+2025-07-13 09:26:20,089 - INFO - 📊 태스크 DB 구조 확인 중... (228a613d25ff814e9153fa459f1392ef)
+2025-07-13 09:26:20,323 - INFO - HTTP Request: GET https://api.notion.com/v1/databases/228a613d25ff814e9153fa459f1392ef "HTTP/1.1 200 OK"
+2025-07-13 09:26:20,330 - INFO - ✅ 태스크 DB 구조 확인 완료 (11개 속성)
+2025-07-13 09:26:20,332 - INFO - 📋 태스크 DB 샘플 데이터 가져오기 중...
+2025-07-13 09:26:20,609 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/228a613d25ff814e9153fa459f1392ef/query "HTTP/1.1 200 OK"
+2025-07-13 09:26:20,615 - INFO - ✅ 태스크 DB 샘플 데이터 3건 확인 완료
+2025-07-13 09:26:20,617 - INFO - 
+--- TODO DB 검사 ---
+2025-07-13 09:26:20,620 - INFO - 📊 TODO DB 구조 확인 중... (228a613d25ff813dbb4ef3d3d984d186)
+2025-07-13 09:26:21,021 - INFO - HTTP Request: GET https://api.notion.com/v1/databases/228a613d25ff813dbb4ef3d3d984d186 "HTTP/1.1 200 OK"
+2025-07-13 09:26:21,027 - INFO - ✅ TODO DB 구조 확인 완료 (11개 속성)
+2025-07-13 09:26:21,032 - INFO - 📋 TODO DB 샘플 데이터 가져오기 중...
+2025-07-13 09:26:21,319 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/228a613d25ff813dbb4ef3d3d984d186/query "HTTP/1.1 200 OK"
+2025-07-13 09:26:21,327 - INFO - ✅ TODO DB 샘플 데이터 3건 확인 완료
+2025-07-13 09:26:21,488 - INFO - 
+🎯 기존 DB 검사 완료:
+2025-07-13 09:26:21,490 - INFO -    - 성공: 3개
+2025-07-13 09:26:21,491 - INFO -    - 실패: 0개
+2025-07-13 09:26:21,500 - INFO -    - 결과 저장: existing_db_analysis.json
+2025-07-13 09:26:21,502 - INFO - 🔗 관계형 연결 가능성 분석 중...
+2025-07-13 09:26:21,504 - INFO - ✅ 관계형 연결 가능성 분석 완료

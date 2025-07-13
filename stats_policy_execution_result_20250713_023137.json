@@ -1,0 +1,9 @@
+{
+  "start_time": "2025-07-13T02:31:36.807396",
+  "collection_phase": {},
+  "upload_phase": {},
+  "dashboard_phase": {},
+  "total_time": 0,
+  "success": false,
+  "error_message": "데이터베이스 설정 실패"
+}

@@ -155,7 +155,7 @@ class BidNotionUploader:
             # 수정일시 (Date)
             BidDatabaseFields.MODIFIED_TIME: {
                 "date": {
-                    "start": format_date_for_notion(article.get('수집일시', datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
+                    "start": format_date_for_notion(article.get('수정일시', datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
                 }
             }
             

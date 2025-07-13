@@ -1,0 +1,22 @@
+{
+  "start_time": "2025-07-13T09:07:28.070112",
+  "steps": {
+    "relations": true,
+    "reverse_relations": true,
+    "rollups": false,
+    "auto_linking": {
+      "total_projects": 6,
+      "linked_news": 15,
+      "linked_bids": 0,
+      "processing_errors": 0
+    }
+  },
+  "final_stats": {
+    "total_projects": 6,
+    "linked_news": 15,
+    "linked_bids": 0,
+    "processing_errors": 0
+  },
+  "success": true,
+  "end_time": "2025-07-13T09:07:46.187537"
+}
