@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIA 원클릭 아카이브 웹훅 테스트</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+        }
+        .title {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .test-section {
+            margin: 20px 0;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            border-left: 5px solid #4CAF50;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 10px 5px;
+            background: linear-gradient(45deg, #4CAF50, #45a049);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+        }
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+        }
+        .button.test {
+            background: linear-gradient(45deg, #2196F3, #1976D2);
+            box-shadow: 0 4px 15px rgba(33, 150, 243, 0.3);
+        }
+        .button.test:hover {
+            box-shadow: 0 6px 20px rgba(33, 150, 243, 0.4);
+        }
+        .button.archive {
+            background: linear-gradient(45deg, #FF9800, #F57C00);
+            box-shadow: 0 4px 15px rgba(255, 152, 0, 0.3);
+        }
+        .button.archive:hover {
+            box-shadow: 0 6px 20px rgba(255, 152, 0, 0.4);
+        }
+        .info {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            font-size: 0.9em;
+        }
+        .status {
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        .success { background: rgba(76, 175, 80, 0.3); }
+        .warning { background: rgba(255, 193, 7, 0.3); }
+        .error { background: rgba(244, 67, 54, 0.3); }
+        
+        .webhook-urls {
+            font-family: 'Courier New', monospace;
+            font-size: 0.8em;
+            word-break: break-all;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            🚀 GIA 원클릭 아카이브 웹훅 테스트
+        </div>
+        
+        <div class="test-section">
+            <h3>📊 서버 상태 확인</h3>
+            <p>웹훅 서버가 정상적으로 실행되고 있는지 확인합니다.</p>
+            <a href="http://localhost:8000/" class="button test" target="_blank">
+                🔍 서버 상태 확인
+            </a>
+            <a href="http://localhost:8000/status" class="button test" target="_blank">
+                📈 상세 상태 조회
+            </a>
+        </div>
+
+        <div class="test-section">
+            <h3>🧪 웹훅 테스트 (노션 버튼 시뮬레이션)</h3>
+            <p>이 링크들은 노션 버튼에서 호출될 URL과 동일합니다. 클릭하여 웹훅이 정상 작동하는지 확인하세요.</p>
+            
+            <div class="info">
+                <strong>🔑 웹훅 토큰:</strong> <code>gia-archive-webhook-token-2025-3a967b2e</code>
+            </div>
+            
+            <a href="http://localhost:8000/test?token=gia-archive-webhook-token-2025-3a967b2e" class="button test" target="_blank">
+                ✅ 연결 테스트
+            </a>
+            
+            <div class="webhook-urls">
+                <strong>테스트 URL:</strong><br>
+                http://localhost:8000/test?token=gia-archive-webhook-token-2025-3a967b2e
+            </div>
+        </div>
+
+        <div class="test-section">
+            <h3>🎯 실제 아카이브 실행 (주의!)</h3>
+            <p><strong>⚠️ 주의:</strong> 아래 버튼들은 실제로 Phase 3 아카이브 스크립트를 실행합니다!</p>
+            
+            <a href="http://localhost:8000/archive_trigger?token=gia-archive-webhook-token-2025-3a967b2e&archive_type=code" class="button archive" target="_blank">
+                💻 코드 아카이브만 실행
+            </a>
+            
+            <a href="http://localhost:8000/archive_trigger?token=gia-archive-webhook-token-2025-3a967b2e&archive_type=reports" class="button archive" target="_blank">
+                📋 보고서 아카이브만 실행
+            </a>
+            
+            <a href="http://localhost:8000/archive_trigger?token=gia-archive-webhook-token-2025-3a967b2e&archive_type=both" class="button archive" target="_blank">
+                🚀 전체 아카이브 실행
+            </a>
+            
+            <div class="webhook-urls">
+                <strong>아카이브 URL들:</strong><br>
+                • 코드만: http://localhost:8000/archive_trigger?token=gia-archive-webhook-token-2025-3a967b2e&archive_type=code<br>
+                • 보고서만: http://localhost:8000/archive_trigger?token=gia-archive-webhook-token-2025-3a967b2e&archive_type=reports<br>
+                • 전체: http://localhost:8000/archive_trigger?token=gia-archive-webhook-token-2025-3a967b2e&archive_type=both
+            </div>
+        </div>
+
+        <div class="test-section">
+            <h3>📋 노션 버튼 설정 가이드</h3>
+            <p>노션에서 버튼을 만들 때 다음 단계를 따르세요:</p>
+            <ol>
+                <li>노션 페이지에서 <code>/button</code> 입력</li>
+                <li>버튼 이름: <strong>"🚀 GIA 아카이브 실행"</strong></li>
+                <li>버튼 액션: <strong>"Open page"</strong> 선택</li>
+                <li>URL 입력: 위의 웹훅 URL 중 하나를 복사해서 붙여넣기</li>
+                <li>새 탭에서 열기 옵션 활성화</li>
+            </ol>
+            
+            <div class="info">
+                <strong>💡 추천 URL:</strong> 테스트용으로는 "연결 테스트" URL을, 실제 사용시에는 "전체 아카이브 실행" URL을 사용하세요.
+            </div>
+        </div>
+
+        <div class="test-section">
+            <h3>🔗 관련 링크</h3>
+            <a href="https://www.notion.so/22ea613d25ff80b78fd4ce8dc7a437a6" class="button" target="_blank">
+                📊 GIA 코드 아카이브 DB
+            </a>
+            <a href="http://localhost:8000/docs" class="button test" target="_blank">
+                📚 API 문서 (FastAPI)
+            </a>
+        </div>
+
+        <div class="status success">
+            ✅ 웹훅 서버가 localhost:8000에서 실행 중입니다.
+        </div>
+        
+        <div class="status warning">
+            ⚠️ 이 테스트는 로컬 개발 환경에서만 작동합니다. 실제 노션에서 사용하려면 서버를 외부에서 접근 가능한 주소로 배포해야 합니다.
+        </div>
+    </div>
+
+    <script>
+        // 페이지 로드 시 서버 상태 확인
+        async function checkServerStatus() {
+            try {
+                const response = await fetch('http://localhost:8000/');
+                if (response.ok) {
+                    console.log('✅ 웹훅 서버 정상 작동 중');
+                } else {
+                    console.log('⚠️ 웹훅 서버 응답 이상');
+                }
+            } catch (error) {
+                console.log('❌ 웹훅 서버 연결 실패:', error);
+            }
+        }
+        
+        // 페이지 로드 시 실행
+        checkServerStatus();
+    </script>
+</body>
+</html> 
