@@ -291,3 +291,168 @@ UnicodeEncodeError: 'cp949' codec can't encode character '\U0001f4f0' in positio
 2025-07-12 10:41:49,211 - INFO - ✅ 성공한 단계: 2/2
 2025-07-12 10:41:49,216 - INFO - 🎉 뉴스 클리핑 완전 자동화 성공!
 2025-07-12 10:41:49,279 - INFO - 📰 Google News → news_data.json → Notion DB 업로드 완료
+2025-07-16 13:27:14,020 - INFO - ============================================================
+2025-07-16 13:27:14,025 - INFO - 🎯 뉴스 클리핑 완전 자동화 시스템 시작
+2025-07-16 13:27:14,033 - INFO - ⏰ 시작 시간: 2025-07-16 13:27:14
+2025-07-16 13:27:14,035 - INFO - ============================================================
+2025-07-16 13:27:14,035 - INFO - 🚀 1단계: Google News 뉴스 수집 시작...
+2025-07-16 13:27:37,760 - INFO - ✅ 1단계: Google News 뉴스 수집 성공 완료
+2025-07-16 13:27:37,760 - INFO - 📋 실행 결과:
+==================================================
+[NEWS] Google News 수집 결과
+==================================================
+1. [방위산업] 中방산, AI·드론·로봇으로 무장중"韓 수출전략 고도화 시급" - 연합뉴스
+[DATE] 2025-07-16 | [URL] https://news.google.com/rss/articles/CBMiW0FVX3lxT...
+[PRIORITY] 중요도: 보통
+
+2. [방위산업] 대한민국방위산업전에 글로벌 방산업체 참가 신청 - 조선일보
+[DATE] 2025-07-14 | [URL] https://news.google.com/rss/articles/CBMijgFBVV95c...
+[PRIORITY] 중요도: 보통
+
+3. [방위산업] 농협은행-LIG넥스원, K-방위산업 발전 위해 맞손 - 마켓인
+[DATE] 2025-07-14 | [URL] https://news.google.com/rss/articles/CBMic0FVX3lxT...
+[PRIORITY] 중요도: 보통
+
+4. [방위산업] 안규백 국방장관 인사청문회 끝내 파행병적기록 미제출에 야당 보이콧 - 경향신문
+[DATE] 2025-07-15 | [URL] https://news.google.com/rss/articles/CBMiWkFVX3lxT...
+[PRIORITY] 중요도: 보통
+
+5. [방위산업] "소버린AI 필수 분야"코난테크놀로지 '국방 AI 테크 서밋' - 연합뉴스
+[DATE] 2025-07-16 | [URL] https://news.google.com/rss/articles/CBMiW0FVX3lxT...
+[PRIORITY] 중요도: 보통
+
+6. [방위산업] 방사청, AI 기반 국방사업 중기 초청해 애로사항 청취 - 문화일보
+[DATE] 2025-07-15 | [URL] https://news.google.com/rss/articles/CBMiUEFVX3lxT...
+[PRIORITY] 중요도: 보통
+
+7. [방위산업] 삼성운용, KODEX K방산TOP10 ETF 신규 상장 - 조선비즈 - Chosunbiz
+[DATE] 2025-07-15 | [URL] https://news.google.com/rss/articles/CBMiiAFBVV95c...
+[PRIORITY] 중요도: 보통
+
+8. [방위산업] K-방산 빅5 분기 매출 첫 10조 돌파...한화에어로 질주 지속 - 아주경제
+[DATE] 2025-07-15 | [URL] https://news.google.com/rss/articles/CBMiWkFVX3lxT...
+[PRIORITY] 중요도: 보통
+
+9. [방위산업] 삼성운용, KODEX K방산TOP10 ETF 신규 상장 - 서울경제
+[DATE] 2025-07-15 | [URL] https://news.google.com/rss/articles/CBMiVkFVX3lxT...
+[PRIORITY] 중요도: 보통
+
+10. [방위산업] K방산 커지자'24년 분업 구도' 흔들 - 한국경제
+[DATE] 2025-06-27 | [URL] https://news.google.com/rss/articles/CBMiWkFVX3lxT...
+[PRIORITY] 중요도: 보통
+
+11. [방위산업] 세계4강 정조준 진격하는 K방산 - 매일경제
+[DATE] 2025-06-22 | [URL] https://news.google.com/rss/articles/CBMiX0FVX3lxT...
+[PRIORITY] 중요도: 보통
+
+12. [신재생에너지] 기계연 "신재생에너지로 스마트 무탄소 농업시대 열다" - 지디넷코리아
+[DATE] 2025-07-15 | [URL] https://news.google.com/rss/articles/CBMiVkFVX3lxT...
+[PRIORITY] 중요도: 보통
+
+13. [신재생에너지] 신재생에너지 산업 구조로 전환 미래지향형 도시로 - 조선일보
+[DATE] 2025-07-15 | [URL] https://news.google.com/rss/articles/CBMijgFBVV95c...
+[PRIORITY] 중요도: 보통
+
+14. [신재생에너지] [Realty & Now] 산업수도 울산, 신재생에너지 육성에 힘입어 부동산 시장도 활기 등 - ebn.co.kr
+[DATE] 2025-07-16 | [URL] https://news.google.com/rss/articles/CBMiaEFVX3lxT...
+[PRIORITY] 중요도: 중간
+
+15. [신재생에너지] [단독] LG엔솔 버테크, 뉴멕시코 최대 규모 태양광·에너지저장 프로젝트 따냈다 - 더구루
+[DATE] 2025-07-14 | [URL] https://news.google.com/rss/articles/CBMiYkFVX3lxT...
+[PRIORITY] 중요도: 보통
+
+16. [신재생에너지] 정동영 아내 태양광 사업은 생계형 투자이해충돌 아냐 - 동아일보
+[DATE] 2025-07-14 | [URL] https://news.google.com/rss/articles/CBMid0FVX3lxT...
+[PRIORITY] 중요도: 보통
+
+17. [신재생에너지] 정동영 호구지책으로 태양광 사업노후 준비 안정수입원 [지금뉴스] - KBS 뉴스
+[DATE] 2025-07-14 | [URL] https://news.google.com/rss/articles/CBMiW0FVX3lxT...
+[PRIORITY] 중요도: 보통
+
+18. [신재생에너지] [단독] 中 해상풍력 기업, 국내시장 공습 '신호탄' - 서울경제
+[DATE] 2025-07-14 | [URL] https://news.google.com/rss/articles/CBMiVkFVX3lxT...
+[PRIORITY] 중요도: 중간
+
+19. [신재생에너지] 부산 다대포 해상풍력, 국내 첫 공공주도형 해상풍력으로 주목 - 전기신문
+[DATE] 2025-07-15 | [URL] https://news.google.com/rss/articles/CBMibEFVX3lxT...
+[PRIORITY] 중요도: 보통
+
+20. [신재생에너지] 한전KDN-한빛해상풍력, 해상풍력단지 보안 체계 강화 협력 - 전자신문
+[DATE] 2025-07-15 | [URL] https://news.google.com/rss/articles/CBMiTkFVX3lxT...
+[PRIORITY] 중요도: 보통
+
+21. [신재생에너지] 1조 ESS 프로젝트 시동"국내 배터리 투자 마중물" - 한국경제
+[DATE] 2025-07-14 | [URL] https://news.google.com/rss/articles/CBMiWkFVX3lxT...
+[PRIORITY] 중요도: 보통
+
+22. [신재생에너지] 'ESS 사활' K-배터리, 국책사업 사수할까 - 뉴시스
+[DATE] 2025-07-12 | [URL] https://news.google.com/rss/articles/CBMiYEFVX3lxT...
+[PRIORITY] 중요도: 보통
+
+23. [신재생에너지] 스탠다드에너지, 산업부 장관상 수상바나듐 배터리 UPS·ESS 제안 - 지디넷코리아
+[DATE] 2025-07-15 | [URL] https://news.google.com/rss/articles/CBMiVkFVX3lxT...
+[PRIORITY] 중요도: 보통
+
+24. [보험중개] '창립 10주년' LK보험중개 "글로벌 위험관리 컨설팅사 도약" - 한국금융신문
+[DATE] 2025-01-15 | [URL] https://news.google.com/rss/articles/CBMifEFVX3lxT...
+[PRIORITY] 중요도: 보통
+
+25. [보험중개] [금융人사이드]'N잡러' 보험설계사에 도전하세요...'원더'가 도와줘요 - 아시아경제
+[DATE] 2025-07-15 | [URL] https://news.google.com/rss/articles/CBMi2wFBVV95c...
+[PRIORITY] 중요도: 보통
+
+26. [보험중개] ABL생명, 곽희필 신임 대표 선임20년 경력 보험영업 전문가 - 뉴스1
+[DATE] 2025-07-01 | [URL] https://news.google.com/rss/articles/CBMiYEFVX3lxT...
+[PRIORITY] 중요도: 보통
+
+27. [보험중개] 금융감독원, 건전 '보험영업 질서' 확립한다...제도 정비 - MSN
+[DATE] 2025-07-13 | [URL] https://news.google.com/rss/articles/CBMi9gNBVV95c...
+[PRIORITY] 중요도: 보통
+
+28. [보험중개] 굿리치, 고객 보호 뒷전치아보험 연성사기 유도 - 뉴스프리존
+[DATE] 2025-07-16 | [URL] https://news.google.com/rss/articles/CBMic0FVX3lxT...
+[PRIORITY] 중요도: 보통
+
+29. [보험중개] MBTI로 고르는 나만의 보험농협손보, NH헤아림MBTI보험 출시 - 농민신문
+[DATE] 2025-07-15 | [URL] https://news.google.com/rss/articles/CBMiWkFVX3lxT...
+[PRIORITY] 중요도: 보통
+
+30. [보험중개] 농협손보, MBTI 기반 담보추천 보험상품 출시 - KPI뉴스
+[DATE] 2025-07-15 | [URL] https://news.google.com/rss/articles/CBMiXEFVX3lxT...
+[PRIORITY] 중요도: 보통
+
+[SUCCESS] 총 30건의 새 뉴스가 news_data.json에 추가되었습니다!
+
+2025-07-16 13:27:37,798 - INFO - 🚀 2단계: Notion DB 업로드 시작...
+2025-07-16 13:27:55,584 - INFO - ✅ 2단계: Notion DB 업로드 성공 완료
+2025-07-16 13:27:55,585 - INFO - 📋 실행 결과:
+[INFO] news_data.json ���� �ε� �Ϸ�: 96��
+[INFO] �±׺� 5���� �� 18�� ������ ���ε��մϴ�.
+[SUCCESS] �������������å ��ȭ ��ǥ...
+[SUCCESS] ǳ�¹��� �ű� ������Ʈ ����...
+[SUCCESS] BESS(���͸�ESS) ���� ���弼...
+[SUCCESS] 2025�� 7�� 11�� �ֿ� ������� ����: K-��� ���� �ű�� ���...
+[SUCCESS] ��������� �� ���ȸ - ���� | ��Ƽ�̵�� - ���ѹα� ��å�긮��...
+[SUCCESS] [�Խ���] ���û, ������� ���ű�� ���ڼ���ȸ - ���մ���...
+[SUCCESS] ����������� ���� �ù� �佺Ƽ���������̱۽� ���� ������� 10��12�� ����� ���� - KB...
+[SUCCESS] '�Űݳ뼳' ������ �غ�Ư��, �Ź�ö �� ���������� �м����� - ���մ���...
+[SUCCESS] 2025�� 7�� 11�� ����������� ��å ����: �¾籤 ���� Ȯ��...
+[SUCCESS] 100% ����������� ��� ����١��� "���� ����" ���� ���� - �߾��Ϻ�...
+[SUCCESS] �������ػ�ǳ��, ���� ���� ����������� Ȯ�� ��ȹ�� ������ ���⡱ - �����ǼҸ�...
+[SUCCESS] [Ư¡��] ��RE100�� �õ��ų��� ������������ ���� - Chosunbiz...
+[SUCCESS] 7�� �ʼ��� ���� 4��° �ִ�������ũ���¾籤�� �������� �����ƿ� �� ���� - �����������Ź�...
+[SUCCESS] 2025�� 7�� 11�� �����߰� ���� �м�: ������ ��ȯ ����ȭ...
+[SUCCESS] �����߰���, ����, ��� ���� �ϳ�? - �ѱ���������Ź�...
+[SUCCESS] �������߰��� ���� �Ϲݺ��� Ȱ��ȭ�ؾߡ���������ȸ, �����߰����� ������ ���� - û���Ϻ�...
+[SUCCESS] LK�����߰�, ��A&G�ڸ��ƺ����߰��� �μ� - �ؾ��ѱ�...
+[SUCCESS] ������ ������ ��� '�', ���� �븮�� ���� Ȯ�� ���� - ����Ʈ...
+
+[RESULT] ���� 18��, ���� 0��
+
+2025-07-16 13:27:55,594 - INFO - ============================================================
+2025-07-16 13:27:55,594 - INFO - 📊 뉴스 클리핑 자동화 결과 요약
+2025-07-16 13:27:55,595 - INFO - ============================================================
+2025-07-16 13:27:55,595 - INFO - ⏱️ 총 소요 시간: 0:00:41.573963
+2025-07-16 13:27:55,596 - INFO - ✅ 성공한 단계: 2/2
+2025-07-16 13:27:55,598 - INFO - 🎉 뉴스 클리핑 완전 자동화 성공!
+2025-07-16 13:27:55,598 - INFO - 📰 Google News → news_data.json → Notion DB 업로드 완료
