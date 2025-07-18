@@ -1,0 +1,330 @@
+{
+  "기업 위험 프로파일 DB": [
+    {
+      "name": "🎯 조대표님 종합 대시보드",
+      "type": "table",
+      "description": "🎯 조대표님 종합 대시보드 뷰 설정 정보",
+      "configuration": {
+        "name": "🎯 조대표님 종합 대시보드",
+        "type": "table",
+        "query": {
+          "filter": {
+            "property": "리스크 등급",
+            "select": {
+              "equals": "매우 높음"
+            }
+          },
+          "sort": [
+            {
+              "property": "리스크 점수",
+              "direction": "descending"
+            }
+          ]
+        },
+        "format": {
+          "table_properties": [
+            {
+              "property": "리스크명",
+              "visible": true
+            },
+            {
+              "property": "리스크 등급",
+              "visible": true
+            },
+            {
+              "property": "리스크 점수",
+              "visible": true
+            },
+            {
+              "property": "대응 현황",
+              "visible": true
+            },
+            {
+              "property": "관련 사업부",
+              "visible": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "📊 리스크 매트릭스 메인",
+      "type": "table",
+      "description": "📊 리스크 매트릭스 메인 뷰 설정 정보",
+      "configuration": {
+        "name": "📊 리스크 매트릭스 메인",
+        "type": "table",
+        "query": {
+          "sort": [
+            {
+              "property": "리스크 점수",
+              "direction": "descending"
+            }
+          ]
+        },
+        "format": {
+          "table_properties": [
+            {
+              "property": "리스크명",
+              "visible": true
+            },
+            {
+              "property": "발생 확률",
+              "visible": true
+            },
+            {
+              "property": "영향도",
+              "visible": true
+            },
+            {
+              "property": "리스크 점수",
+              "visible": true
+            },
+            {
+              "property": "리스크 등급",
+              "visible": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "🚨 긴급 대응 필요",
+      "type": "table",
+      "description": "🚨 긴급 대응 필요 뷰 설정 정보",
+      "configuration": {
+        "name": "🚨 긴급 대응 필요",
+        "type": "table",
+        "query": {
+          "filter": {
+            "or": [
+              {
+                "property": "리스크 등급",
+                "select": {
+                  "equals": "매우 높음"
+                }
+              },
+              {
+                "property": "리스크 등급",
+                "select": {
+                  "equals": "높음"
+                }
+              }
+            ]
+          },
+          "sort": [
+            {
+              "property": "리스크 점수",
+              "direction": "descending"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "💼 보험 영업 우선순위",
+      "type": "table",
+      "description": "💼 보험 영업 우선순위 뷰 설정 정보",
+      "configuration": {
+        "name": "💼 보험 영업 우선순위",
+        "type": "table",
+        "query": {
+          "filter": {
+            "property": "리스크 유형",
+            "select": {
+              "equals": "운영 리스크"
+            }
+          },
+          "sort": [
+            {
+              "property": "리스크 점수",
+              "direction": "descending"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "👀 모니터링 대상",
+      "type": "table",
+      "description": "👀 모니터링 대상 뷰 설정 정보",
+      "configuration": {
+        "name": "👀 모니터링 대상",
+        "type": "table",
+        "query": {
+          "filter": {
+            "property": "리스크 등급",
+            "select": {
+              "equals": "보통"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "📋 칸반 보드 (리스크 레벨별)",
+      "type": "board",
+      "description": "📋 칸반 보드 (리스크 레벨별) 뷰 설정 정보",
+      "configuration": {
+        "name": "📋 칸반 보드 (리스크 레벨별)",
+        "type": "board",
+        "query": {
+          "group_by": {
+            "property": "리스크 등급"
+          }
+        }
+      }
+    },
+    {
+      "name": "📈 확률별 테이블",
+      "type": "table",
+      "description": "📈 확률별 테이블 뷰 설정 정보",
+      "configuration": {
+        "name": "📈 확률별 테이블",
+        "type": "table",
+        "query": {
+          "sort": [
+            {
+              "property": "발생 확률 점수",
+              "direction": "descending"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "🎨 영향도별 갤러리",
+      "type": "gallery",
+      "description": "🎨 영향도별 갤러리 뷰 설정 정보",
+      "configuration": {
+        "name": "🎨 영향도별 갤러리",
+        "type": "gallery",
+        "query": {
+          "sort": [
+            {
+              "property": "영향도 점수",
+              "direction": "descending"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "📊 점수순 리스트",
+      "type": "list",
+      "description": "📊 점수순 리스트 뷰 설정 정보",
+      "configuration": {
+        "name": "📊 점수순 리스트",
+        "type": "list",
+        "query": {
+          "sort": [
+            {
+              "property": "리스크 점수",
+              "direction": "descending"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "기업 재무 및 프로젝트 DB": [
+    {
+      "name": "📊 재무 현황 대시보드",
+      "type": "table",
+      "db_name": "기업 재무 및 프로젝트 DB",
+      "db_id": "234a613d-25ff-81ab-a93a-e4cb8f36c920"
+    },
+    {
+      "name": "💰 수익성 분석",
+      "type": "table",
+      "db_name": "기업 재무 및 프로젝트 DB",
+      "db_id": "234a613d-25ff-81ab-a93a-e4cb8f36c920"
+    },
+    {
+      "name": "🏗️ 프로젝트 진행 현황",
+      "type": "board",
+      "db_name": "기업 재무 및 프로젝트 DB",
+      "db_id": "234a613d-25ff-81ab-a93a-e4cb8f36c920"
+    }
+  ],
+  "신재생에너지 프로젝트 DB": [
+    {
+      "name": "🌱 프로젝트 대시보드",
+      "type": "table",
+      "db_name": "신재생에너지 프로젝트 DB",
+      "db_id": "234a613d-25ff-81b5-a9a3-f01a46bdaab8"
+    },
+    {
+      "name": "⚡ 진행 상태별 칸반",
+      "type": "board",
+      "db_name": "신재생에너지 프로젝트 DB",
+      "db_id": "234a613d-25ff-81b5-a9a3-f01a46bdaab8"
+    },
+    {
+      "name": "🌍 지역별 갤러리",
+      "type": "gallery",
+      "db_name": "신재생에너지 프로젝트 DB",
+      "db_id": "234a613d-25ff-81b5-a9a3-f01a46bdaab8"
+    }
+  ],
+  "핵심 인물 DB": [
+    {
+      "name": "👥 인물 대시보드",
+      "type": "table",
+      "db_name": "핵심 인물 DB",
+      "db_id": "234a613d-25ff-81f0-8d29-f5ccc2d15e6e"
+    },
+    {
+      "name": "🏢 부문별 조직도",
+      "type": "board",
+      "db_name": "핵심 인물 DB",
+      "db_id": "234a613d-25ff-81f0-8d29-f5ccc2d15e6e"
+    },
+    {
+      "name": "⭐ 중요도별 리스트",
+      "type": "list",
+      "db_name": "핵심 인물 DB",
+      "db_id": "234a613d-25ff-81f0-8d29-f5ccc2d15e6e"
+    }
+  ],
+  "정부 정책 DB": [
+    {
+      "name": "🏛️ 정책 대시보드",
+      "type": "table",
+      "db_name": "정부 정책 DB",
+      "db_id": "234a613d-25ff-81d3-93ad-db6970db66a8"
+    },
+    {
+      "name": "📅 시행일별 타임라인",
+      "type": "timeline",
+      "db_name": "정부 정책 DB",
+      "db_id": "234a613d-25ff-81d3-93ad-db6970db66a8"
+    },
+    {
+      "name": "💼 영향도별 분석",
+      "type": "board",
+      "db_name": "정부 정책 DB",
+      "db_id": "234a613d-25ff-81d3-93ad-db6970db66a8"
+    }
+  ],
+  "글로벌 보험중개 시장 DB": [
+    {
+      "name": "🌐 시장 분석 대시보드",
+      "type": "table",
+      "db_name": "글로벌 보험중개 시장 DB",
+      "db_id": "234a613d-25ff-818f-b525-d84d366e5adf"
+    },
+    {
+      "name": "💪 경쟁력 비교",
+      "type": "board",
+      "db_name": "글로벌 보험중개 시장 DB",
+      "db_id": "234a613d-25ff-818f-b525-d84d366e5adf"
+    },
+    {
+      "name": "📈 매출 규모별",
+      "type": "table",
+      "db_name": "글로벌 보험중개 시장 DB",
+      "db_id": "234a613d-25ff-818f-b525-d84d366e5adf"
+    }
+  ]
+}
