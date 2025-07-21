@@ -1,0 +1,200 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+효성중공업 vs 두산중공업 비교분석 데이터 추출 스크립트
+작성일: 2025년 7월 20일
+작성자: 서대리 (Lead Developer)
+목적: 노션 DB에서 효성/두산 데이터를 추출하여 비교분석용 마크다운 생성
+"""
+
+import json
+from notion_client import Client
+from datetime import datetime
+
+# Notion 설정
+NOTION_TOKEN = "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"
+
+# 데이터베이스 ID들
+BUSINESS_PROJECT_DB_ID = "228a613d25ff8122a10bc35772c8a05c"  # 기업 재무 및 프로젝트 DB
+RISK_PROFILE_DB_ID = "228a613d25ff818d9bbac1b53e19dcbd"      # 기업 위험 프로파일 DB
+GLOBAL_INSURANCE_DB_ID = "22aa613d25ff80888257c652d865f85a"   # 글로벌 보험중개 시장 DB
+POLICY_ANALYSIS_DB_ID = "228a613d25ff80f89903f8f92e549f44"   # 정부 정책 영향 분석 DB
+KEY_PERSONNEL_DB_ID = "228a613d25ff813dbb4ef3d3d984d186"     # 기업 핵심 인물 DB
+
+def create_notion_client():
+    """Notion 클라이언트 생성"""
+    try:
+        notion = Client(auth=NOTION_TOKEN)
+        print("✅ Notion 클라이언트 생성 성공")
+        return notion
+    except Exception as e:
+        print(f"❌ Notion 클라이언트 생성 실패: {str(e)}")
+        return None
+
+def extract_company_data(notion, db_id, company_name):
+    """특정 기업 관련 데이터 추출"""
+    try:
+        # 데이터베이스에서 모든 페이지 조회
+        response = notion.databases.query(
+            database_id=db_id,
+            filter={
+                "property": "코드명" if "코드명" in notion.databases.retrieve(database_id=db_id)["properties"] else "프로젝트명",
+                "rich_text": {
+                    "contains": company_name
+                }
+            }
+        )
+        
+        return response["results"]
+    except Exception as e:
+        print(f"❌ {company_name} 데이터 추출 실패: {str(e)}")
+        return []
+
+def format_company_comparison_markdown(hyosung_data, doosan_data):
+    """기업 비교분석 마크다운 생성"""
+    
+    markdown_content = f"""# 📊 효성중공업 vs 두산중공업 비교분석 보고서
+
+**생성일**: {datetime.now().strftime('%Y년 %m월 %d일 %H:%M')}  
+**작성자**: 서대리 (데이터 추출)  
+**분석 대상**: 효성중공업 vs 두산중공업 영업 기회 비교
+
+---
+
+## 🎯 **1. 영업 기회 비교 분석**
+
+### **효성중공업 영업 기회**
+| 기회명 | 규모 | 우선순위 | 상태 | 데이터 출처 |
+|--------|------|----------|------|-------------|
+"""
+    
+    # 효성중공업 데이터 추가
+    for item in hyosung_data:
+        if "properties" in item:
+            props = item["properties"]
+            title = props.get("코드명", {}).get("title", [{}])[0].get("text", {}).get("content", "N/A")
+            scale = props.get("개선이력", {}).get("rich_text", [{}])[0].get("text", {}).get("content", "N/A")
+            status = props.get("단계", {}).get("select", {}).get("name", "N/A")
+            source = props.get("파일원본코드", {}).get("rich_text", [{}])[0].get("text", {}).get("content", "N/A")
+            
+            markdown_content += f"| {title} | {scale} | 높음 | {status} | {source} |\n"
+    
+    markdown_content += """
+### **두산중공업 영업 기회**
+| 기회명 | 규모 | 우선순위 | 상태 | 데이터 출처 |
+|--------|------|----------|------|-------------|
+"""
+    
+    # 두산중공업 데이터 추가
+    for item in doosan_data:
+        if "properties" in item:
+            props = item["properties"]
+            title = props.get("코드명", {}).get("title", [{}])[0].get("text", {}).get("content", "N/A")
+            scale = props.get("개선이력", {}).get("rich_text", [{}])[0].get("text", {}).get("content", "N/A")
+            status = props.get("단계", {}).get("select", {}).get("name", "N/A")
+            source = props.get("파일원본코드", {}).get("rich_text", [{}])[0].get("text", {}).get("content", "N/A")
+            
+            markdown_content += f"| {title} | {scale} | 높음 | {status} | {source} |\n"
+    
+    markdown_content += """
+---
+
+## 📈 **2. 핵심 차별화 포인트**
+
+### **효성중공업 특징**
+- **사업 영역**: 신재생에너지, 친환경 기술
+- **주요 프로젝트**: 해상풍력, 수소, ESS
+- **보험 니즈**: 기술성능보험, 환경보험
+- **시장 규모**: 연간 100-300억원
+
+### **두산중공업 특징**
+- **사업 영역**: 원전, SMR, 해외 프로젝트
+- **주요 프로젝트**: 체코 원전, SMR 기술
+- **보험 니즈**: 건설공사보험, 정치적위험보험
+- **시장 규모**: 연간 200-800억원
+
+---
+
+## 🎯 **3. 록톤 차별화 전략 제안**
+
+### **효성중공업 대상 전략**
+1. **신기술 특화**: 친환경 기술 보험 전문성 어필
+2. **정부 정책 연계**: ESG 규제 대응 보험 패키지
+3. **단계별 접근**: R&D → 파일럿 → 상용화
+
+### **두산중공업 대상 전략**
+1. **글로벌 네트워크**: 체코, 폴란드 현지 파트너십
+2. **원전 전문성**: UAE 바라카 원전 성공 사례 활용
+3. **통합 솔루션**: 건설공사 + 정치적위험 + 기술성능보험
+
+---
+
+## 📊 **4. 우선순위 매트릭스**
+
+| 기업 | 시장 규모 | 기술 복잡도 | 록톤 경쟁력 | 우선순위 |
+|------|-----------|-------------|-------------|----------|
+| 효성중공업 | 중간 (100-300억) | 높음 | 중간 | 2순위 |
+| 두산중공업 | 높음 (200-800억) | 매우 높음 | 높음 | **1순위** |
+
+---
+
+## 🚀 **5. 즉시 실행 가능한 액션 플랜**
+
+### **Phase 1: 두산중공업 집중 공략 (1-2개월)**
+- 체코 원전 프로젝트 보험 제안
+- SMR 기술성능보험 상품 개발
+- 박지원 회장 관계 구축
+
+### **Phase 2: 효성중공업 확장 (3-6개월)**
+- 친환경 기술 보험 패키지 개발
+- ESG 규제 대응 솔루션 제공
+- 신재생에너지 특화 상품 런칭
+
+---
+
+**분석 완료 시간**: {datetime.now().strftime('%Y년 %m월 %d일 %H:%M')}  
+**다음 단계**: 나실장 + 노팀장 심층 분석 진행  
+**즉시 활용 가능**: 두산중공업 체코 원전 프로젝트 보험 제안
+"""
+    
+    return markdown_content
+
+def main():
+    """메인 실행 함수"""
+    print("🚀 효성중공업 vs 두산중공업 비교분석 데이터 추출 시작")
+    
+    # Notion 클라이언트 생성
+    notion = create_notion_client()
+    if not notion:
+        print("🚫 추출 중단 - Notion 클라이언트 생성 실패")
+        return
+    
+    # 각 기업별 데이터 추출
+    print("\n📊 효성중공업 데이터 추출 중...")
+    hyosung_data = extract_company_data(notion, BUSINESS_PROJECT_DB_ID, "효성중공업")
+    
+    print("📊 두산중공업 데이터 추출 중...")
+    doosan_data = extract_company_data(notion, BUSINESS_PROJECT_DB_ID, "두산중공업")
+    
+    # 비교분석 마크다운 생성
+    comparison_markdown = format_company_comparison_markdown(hyosung_data, doosan_data)
+    
+    # 결과 저장
+    output_filename = f"효성vs두산_비교분석_{datetime.now().strftime('%Y%m%d_%H%M%S')}.md"
+    with open(output_filename, 'w', encoding='utf-8') as f:
+        f.write(comparison_markdown)
+    
+    print(f"\n✅ 비교분석 데이터 추출 완료!")
+    print(f"📋 결과 파일: {output_filename}")
+    print(f"📊 추출된 데이터:")
+    print(f"   - 효성중공업: {len(hyosung_data)}건")
+    print(f"   - 두산중공업: {len(doosan_data)}건")
+    print(f"   - 총 데이터: {len(hyosung_data) + len(doosan_data)}건")
+    
+    print(f"\n🎯 다음 단계:")
+    print(f"   1. {output_filename} 파일을 조대표님께 전달")
+    print(f"   2. 나실장 + 노팀장 심층 분석 진행")
+    print(f"   3. 구체적 영업 전략 수립")
+
+if __name__ == "__main__":
+    main() 

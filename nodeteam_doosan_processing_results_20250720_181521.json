@@ -1,0 +1,210 @@
+{
+  "business_opportunities": [
+    {
+      "opportunity_name": "해외 원전 프로젝트 특화 보험 솔루션",
+      "db_mapping": "기업 재무 및 프로젝트 DB",
+      "potential_scale": "연간 200-500억원",
+      "priority_level": "최우선 기회",
+      "specific_details": [
+        "체코 원전 (26조원): 건설공사보험, 정치적위험보험, 기술성능보험",
+        "폴란드 원전 (예상 15조원): 해외투자보험, 공급망중단보험",
+        "불가리아/영국/베트남: 다국적 프로젝트 통합보험 패키지"
+      ],
+      "competitive_advantages": [
+        "록톤의 글로벌 네트워크: 체코, 폴란드 현지 보험시장 전문성",
+        "원전 특화 경험: UAE 바라카 원전 보험 성공 사례 (한국 최초)",
+        "정치적 위험 관리: 동유럽 지정학적 리스크 전문 컨설팅"
+      ],
+      "extraction_date": "2025-07-20",
+      "data_source": "노반장 두산중공업 조사",
+      "confidence_score": 95
+    },
+    {
+      "opportunity_name": "SMR 및 신기술 기술성능보험",
+      "db_mapping": "기업 위험 프로파일 DB",
+      "potential_scale": "연간 100-300억원",
+      "priority_level": "신규 블루오션",
+      "specific_details": [
+        "SMR 기술성능보험: 뉴스케일, 엑스에너지 협력 프로젝트 대상",
+        "수소 가스터빈 보험: 연소 안정성, 효율성 보증 보험",
+        "해상풍력 특화보험: 두산 8MW급 터빈 성능 보험"
+      ],
+      "competitive_advantages": [
+        "신기술 리스크 평가: 록톤 글로벌의 첨단기술 보험 경험",
+        "맞춤형 상품 개발: 기존 보험사가 커버하지 못하는 신기술 위험",
+        "단계별 보험 설계: R&D → 파일럿 → 상용화 각 단계별 보험"
+      ],
+      "extraction_date": "2025-07-20",
+      "data_source": "노반장 두산중공업 조사",
+      "confidence_score": 95
+    },
+    {
+      "opportunity_name": "글로벌 통합 보험 프로그램",
+      "db_mapping": "글로벌 보험중개 시장 DB",
+      "potential_scale": "연간 300-800억원",
+      "priority_level": "확장성 최대",
+      "specific_details": [
+        "글로벌 재물보험: 29개국 119개 사업장 통합 커버리지",
+        "D&O 보험: 체코 상장, 글로벌 M&A 확대에 따른 임원 리스크",
+        "공급망 통합보험: 일본 JSW 의존 등 핵심 소재 공급망 리스크"
+      ],
+      "competitive_advantages": [
+        "독립적 자문: 특정 보험사에 종속되지 않은 최적 솔루션",
+        "비용 효율성: 통합 프로그램을 통한 20-30% 보험료 절감",
+        "클레임 지원: 록톤의 글로벌 클레임 처리 전문성"
+      ],
+      "extraction_date": "2025-07-20",
+      "data_source": "노반장 두산중공업 조사",
+      "confidence_score": 95
+    },
+    {
+      "opportunity_name": "친환경 전환 ESG 보험",
+      "db_mapping": "정부 정책 영향 분석 DB",
+      "potential_scale": "연간 50-200억원",
+      "priority_level": "미래 성장동력",
+      "specific_details": [
+        "탄소배출권 관련보험: EU ETS, K-ETS 가격 변동 헤지",
+        "친환경 기술 보험: 수소터빈, SF6-Free GIS 등 친환경 제품",
+        "ESG 컴플라이언스 보험: 환경규제 위반 시 배상책임"
+      ],
+      "competitive_advantages": [
+        "ESG 전문성: 친환경 기술에 대한 깊은 이해",
+        "규제 대응: 급변하는 환경규제에 대한 선제적 대응",
+        "미래 지향: 지속가능한 성장을 위한 보험 솔루션"
+      ],
+      "extraction_date": "2025-07-20",
+      "data_source": "노반장 두산중공업 조사",
+      "confidence_score": 95
+    }
+  ],
+  "ma_jv_trends": [
+    {
+      "investment_year": "2009",
+      "target_company": "체코 스코다파워",
+      "investment_type": "M&A",
+      "investment_scale": "8,000억원",
+      "target_region": "유럽",
+      "db_mapping": "기업 재무 및 프로젝트 DB",
+      "insurance_needs": [
+        "W&I (Warranty & Indemnity) 보험",
+        "정치적 위험보험 (PRI)",
+        "해외투자보험"
+      ],
+      "risk_level": "중간-높음",
+      "extraction_date": "2025-07-20",
+      "data_source": "노반장 두산중공업 조사"
+    },
+    {
+      "investment_year": "2019",
+      "target_company": "미국 뉴스케일",
+      "investment_type": "지분투자",
+      "investment_scale": "미공개",
+      "target_region": "북미",
+      "db_mapping": "기업 재무 및 프로젝트 DB",
+      "insurance_needs": [
+        "W&I (Warranty & Indemnity) 보험",
+        "정치적 위험보험 (PRI)",
+        "해외투자보험"
+      ],
+      "risk_level": "중간-높음",
+      "extraction_date": "2025-07-20",
+      "data_source": "노반장 두산중공업 조사"
+    },
+    {
+      "investment_year": "2021",
+      "target_company": "미국 엑스에너지",
+      "investment_type": "JV",
+      "investment_scale": "설계용역",
+      "target_region": "북미",
+      "db_mapping": "기업 재무 및 프로젝트 DB",
+      "insurance_needs": [
+        "W&I (Warranty & Indemnity) 보험",
+        "정치적 위험보험 (PRI)",
+        "해외투자보험"
+      ],
+      "risk_level": "중간-높음",
+      "extraction_date": "2025-07-20",
+      "data_source": "노반장 두산중공업 조사"
+    },
+    {
+      "investment_year": "2024",
+      "target_company": "두산스코다파워",
+      "investment_type": "IPO",
+      "investment_scale": "체코 상장",
+      "target_region": "유럽",
+      "db_mapping": "기업 재무 및 프로젝트 DB",
+      "insurance_needs": [
+        "W&I (Warranty & Indemnity) 보험",
+        "정치적 위험보험 (PRI)",
+        "해외투자보험"
+      ],
+      "risk_level": "중간-높음",
+      "extraction_date": "2025-07-20",
+      "data_source": "노반장 두산중공업 조사"
+    }
+  ],
+  "key_personnel": [
+    {
+      "name": "박지원",
+      "position": "두산에너빌리티 대표이사 회장",
+      "birth_year": "1965",
+      "education": "연세대 경영학과, 뉴욕대 경영대학원 MBA",
+      "family_relation": "박정원 두산그룹 회장의 동생",
+      "career_highlights": [
+        "2007-현재: 두산중공업/에너빌리티 CEO (18년)",
+        "2010: UAE 원전 수출 공로 금탑산업훈장",
+        "2009: 체코 스코다파워 인수 결정",
+        "2024: 체코 원전 수주 성공"
+      ],
+      "government_influence": "원전 정책 핵심 인물",
+      "overseas_network": "체코, 폴란드 정관계",
+      "industry_leadership": "한국원자력산업협회 등 업계 단체 활동",
+      "sales_approach": "정책 연계 + 글로벌 네트워크 활용",
+      "db_mapping": "기업 핵심 인물 DB",
+      "extraction_date": "2025-07-20",
+      "data_source": "노반장 두산중공업 조사",
+      "confidence_score": 90
+    }
+  ],
+  "policy_analysis": [
+    {
+      "policy_area": "원전 수출 정책",
+      "impact_level": "높음",
+      "business_opportunity": "수출보험 패키지 강화",
+      "target_company": "두산중공업",
+      "policy_trend": "정부지원 확대",
+      "db_mapping": "정부 정책 영향 분석 DB",
+      "extraction_date": "2025-07-20",
+      "data_source": "노반장 두산중공업 조사"
+    },
+    {
+      "policy_area": "ESG 규제",
+      "impact_level": "중간",
+      "business_opportunity": "ESG 컴플라이언스 보험",
+      "target_company": "두산중공업",
+      "policy_trend": "환경규제 강화",
+      "db_mapping": "정부 정책 영향 분석 DB",
+      "extraction_date": "2025-07-20",
+      "data_source": "노반장 두산중공업 조사"
+    },
+    {
+      "policy_area": "해외투자 지원",
+      "impact_level": "높음",
+      "business_opportunity": "해외투자보험 연계",
+      "target_company": "두산중공업",
+      "policy_trend": "K-SURE, NEXI 등 공적보험 확대",
+      "db_mapping": "정부 정책 영향 분석 DB",
+      "extraction_date": "2025-07-20",
+      "data_source": "노반장 두산중공업 조사"
+    }
+  ],
+  "processing_metadata": {
+    "processing_date": "2025-07-20 18:15:21",
+    "data_source": "노반장 두산중공업 조사",
+    "total_opportunities": 4,
+    "total_investments": 4,
+    "total_personnel": 1,
+    "total_policies": 3,
+    "processing_status": "완료"
+  }
+}

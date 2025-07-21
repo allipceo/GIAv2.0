@@ -1,0 +1,18 @@
+{
+  "success_rate": 100.0,
+  "test_results": {
+    "key_personnel_connection": true,
+    "government_policy_connection": true,
+    "risk_profile_connection": true,
+    "renewable_energy_connection": true,
+    "financial_project_connection": true,
+    "global_insurance_connection": true,
+    "key_personnel_full_pipeline": true,
+    "government_policy_full_pipeline": true,
+    "risk_profile_full_pipeline": true,
+    "renewable_energy_full_pipeline": true,
+    "financial_project_full_pipeline": true,
+    "global_insurance_full_pipeline": true
+  },
+  "timestamp": "2025-07-19T17:14:52.904350"
+}

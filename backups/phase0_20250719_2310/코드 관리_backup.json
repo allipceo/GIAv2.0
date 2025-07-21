@@ -1,0 +1,2013 @@
+{
+  "object": "list",
+  "results": [
+    {
+      "object": "page",
+      "id": "228a613d-25ff-80d5-bf2c-c7e944bd01db",
+      "created_time": "2025-07-06T08:11:00.000Z",
+      "last_edited_time": "2025-07-06T08:18:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "212d872b-594c-8101-8802-00024a84d0a1"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "212d872b-594c-8101-8802-00024a84d0a1"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "228a613d-25ff-80f8-9903-f8f92e549f44"
+      },
+      "archived": false,
+      "in_trash": false,
+      "properties": {
+        "생성일": {
+          "id": "%3FeUm",
+          "type": "date",
+          "date": {
+            "start": "2025-07-06",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "프로젝트": {
+          "id": "Gd%5DY",
+          "type": "select",
+          "select": null
+        },
+        "실행": {
+          "id": "MjXx",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "실행이력": {
+          "id": "SQi%5E",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "품질지표": {
+          "id": "X%3Eyd",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "담당자": {
+          "id": "a%7CiX",
+          "type": "people",
+          "people": []
+        },
+        "주요내용": {
+          "id": "dd%40J",
+          "type": "select",
+          "select": {
+            "id": "AAGz",
+            "name": "코드관리자동화",
+            "color": "red"
+          }
+        },
+        "태그": {
+          "id": "kRid",
+          "type": "multi_select",
+          "multi_select": []
+        },
+        "결과": {
+          "id": "mKID",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "파일": {
+          "id": "p%3DWJ",
+          "type": "files",
+          "files": []
+        },
+        "수동평가": {
+          "id": "tRDj",
+          "type": "select",
+          "select": null
+        },
+        "세부내용": {
+          "id": "xCwq",
+          "type": "select",
+          "select": null
+        },
+        "파일명": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "test_notion_connection",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "test_notion_connection",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/test_notion_connection-228a613d25ff80d5bf2cc7e944bd01db",
+      "public_url": null
+    },
+    {
+      "object": "page",
+      "id": "228a613d-25ff-8071-8cde-eee716f322e8",
+      "created_time": "2025-07-06T08:11:00.000Z",
+      "last_edited_time": "2025-07-06T08:18:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "212d872b-594c-8101-8802-00024a84d0a1"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "212d872b-594c-8101-8802-00024a84d0a1"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "228a613d-25ff-80f8-9903-f8f92e549f44"
+      },
+      "archived": false,
+      "in_trash": false,
+      "properties": {
+        "생성일": {
+          "id": "%3FeUm",
+          "type": "date",
+          "date": {
+            "start": "2025-07-06",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "프로젝트": {
+          "id": "Gd%5DY",
+          "type": "select",
+          "select": null
+        },
+        "실행": {
+          "id": "MjXx",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "실행이력": {
+          "id": "SQi%5E",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "품질지표": {
+          "id": "X%3Eyd",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "담당자": {
+          "id": "a%7CiX",
+          "type": "people",
+          "people": []
+        },
+        "주요내용": {
+          "id": "dd%40J",
+          "type": "select",
+          "select": {
+            "id": "AAGz",
+            "name": "코드관리자동화",
+            "color": "red"
+          }
+        },
+        "태그": {
+          "id": "kRid",
+          "type": "multi_select",
+          "multi_select": []
+        },
+        "결과": {
+          "id": "mKID",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "파일": {
+          "id": "p%3DWJ",
+          "type": "files",
+          "files": []
+        },
+        "수동평가": {
+          "id": "tRDj",
+          "type": "select",
+          "select": null
+        },
+        "세부내용": {
+          "id": "xCwq",
+          "type": "select",
+          "select": null
+        },
+        "파일명": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "setup_advanced_code_repository",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "setup_advanced_code_repository",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/setup_advanced_code_repository-228a613d25ff80718cdeeee716f322e8",
+      "public_url": null
+    },
+    {
+      "object": "page",
+      "id": "228a613d-25ff-8006-a24a-dd3a8223338c",
+      "created_time": "2025-07-06T08:11:00.000Z",
+      "last_edited_time": "2025-07-06T08:18:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "212d872b-594c-8101-8802-00024a84d0a1"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "212d872b-594c-8101-8802-00024a84d0a1"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "228a613d-25ff-80f8-9903-f8f92e549f44"
+      },
+      "archived": false,
+      "in_trash": false,
+      "properties": {
+        "생성일": {
+          "id": "%3FeUm",
+          "type": "date",
+          "date": {
+            "start": "2025-07-06",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "프로젝트": {
+          "id": "Gd%5DY",
+          "type": "select",
+          "select": null
+        },
+        "실행": {
+          "id": "MjXx",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "실행이력": {
+          "id": "SQi%5E",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "품질지표": {
+          "id": "X%3Eyd",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "담당자": {
+          "id": "a%7CiX",
+          "type": "people",
+          "people": []
+        },
+        "주요내용": {
+          "id": "dd%40J",
+          "type": "select",
+          "select": {
+            "id": "AAGz",
+            "name": "코드관리자동화",
+            "color": "red"
+          }
+        },
+        "태그": {
+          "id": "kRid",
+          "type": "multi_select",
+          "multi_select": []
+        },
+        "결과": {
+          "id": "mKID",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "파일": {
+          "id": "p%3DWJ",
+          "type": "files",
+          "files": []
+        },
+        "수동평가": {
+          "id": "tRDj",
+          "type": "select",
+          "select": null
+        },
+        "세부내용": {
+          "id": "xCwq",
+          "type": "select",
+          "select": null
+        },
+        "파일명": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "run_code_management_automation",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "run_code_management_automation",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/run_code_management_automation-228a613d25ff8006a24add3a8223338c",
+      "public_url": null
+    },
+    {
+      "object": "page",
+      "id": "228a613d-25ff-80dc-836e-fc4e397b36e4",
+      "created_time": "2025-07-06T08:11:00.000Z",
+      "last_edited_time": "2025-07-06T08:18:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "212d872b-594c-8101-8802-00024a84d0a1"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "212d872b-594c-8101-8802-00024a84d0a1"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "228a613d-25ff-80f8-9903-f8f92e549f44"
+      },
+      "archived": false,
+      "in_trash": false,
+      "properties": {
+        "생성일": {
+          "id": "%3FeUm",
+          "type": "date",
+          "date": {
+            "start": "2025-07-06",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "프로젝트": {
+          "id": "Gd%5DY",
+          "type": "select",
+          "select": null
+        },
+        "실행": {
+          "id": "MjXx",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "실행이력": {
+          "id": "SQi%5E",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "품질지표": {
+          "id": "X%3Eyd",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "담당자": {
+          "id": "a%7CiX",
+          "type": "people",
+          "people": []
+        },
+        "주요내용": {
+          "id": "dd%40J",
+          "type": "select",
+          "select": {
+            "id": "AAGz",
+            "name": "코드관리자동화",
+            "color": "red"
+          }
+        },
+        "태그": {
+          "id": "kRid",
+          "type": "multi_select",
+          "multi_select": []
+        },
+        "결과": {
+          "id": "mKID",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "파일": {
+          "id": "p%3DWJ",
+          "type": "files",
+          "files": []
+        },
+        "수동평가": {
+          "id": "tRDj",
+          "type": "select",
+          "select": null
+        },
+        "세부내용": {
+          "id": "xCwq",
+          "type": "select",
+          "select": null
+        },
+        "파일명": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "notion_code_sync_service",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "notion_code_sync_service",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/notion_code_sync_service-228a613d25ff80dc836efc4e397b36e4",
+      "public_url": null
+    },
+    {
+      "object": "page",
+      "id": "228a613d-25ff-80e7-bd1e-d98e1d419d62",
+      "created_time": "2025-07-06T08:11:00.000Z",
+      "last_edited_time": "2025-07-06T08:18:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "212d872b-594c-8101-8802-00024a84d0a1"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "212d872b-594c-8101-8802-00024a84d0a1"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "228a613d-25ff-80f8-9903-f8f92e549f44"
+      },
+      "archived": false,
+      "in_trash": false,
+      "properties": {
+        "생성일": {
+          "id": "%3FeUm",
+          "type": "date",
+          "date": {
+            "start": "2025-07-06",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "프로젝트": {
+          "id": "Gd%5DY",
+          "type": "select",
+          "select": null
+        },
+        "실행": {
+          "id": "MjXx",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "실행이력": {
+          "id": "SQi%5E",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "품질지표": {
+          "id": "X%3Eyd",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "담당자": {
+          "id": "a%7CiX",
+          "type": "people",
+          "people": []
+        },
+        "주요내용": {
+          "id": "dd%40J",
+          "type": "select",
+          "select": {
+            "id": "AAGz",
+            "name": "코드관리자동화",
+            "color": "red"
+          }
+        },
+        "태그": {
+          "id": "kRid",
+          "type": "multi_select",
+          "multi_select": []
+        },
+        "결과": {
+          "id": "mKID",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "파일": {
+          "id": "p%3DWJ",
+          "type": "files",
+          "files": []
+        },
+        "수동평가": {
+          "id": "tRDj",
+          "type": "select",
+          "select": null
+        },
+        "세부내용": {
+          "id": "xCwq",
+          "type": "select",
+          "select": null
+        },
+        "파일명": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "notion_code_dashboard_trigger",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "notion_code_dashboard_trigger",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/notion_code_dashboard_trigger-228a613d25ff80e7bd1ed98e1d419d62",
+      "public_url": null
+    },
+    {
+      "object": "page",
+      "id": "228a613d-25ff-807d-979a-eee050549c37",
+      "created_time": "2025-07-06T08:11:00.000Z",
+      "last_edited_time": "2025-07-06T08:18:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "212d872b-594c-8101-8802-00024a84d0a1"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "212d872b-594c-8101-8802-00024a84d0a1"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "228a613d-25ff-80f8-9903-f8f92e549f44"
+      },
+      "archived": false,
+      "in_trash": false,
+      "properties": {
+        "생성일": {
+          "id": "%3FeUm",
+          "type": "date",
+          "date": {
+            "start": "2025-07-06",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "프로젝트": {
+          "id": "Gd%5DY",
+          "type": "select",
+          "select": null
+        },
+        "실행": {
+          "id": "MjXx",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "실행이력": {
+          "id": "SQi%5E",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "품질지표": {
+          "id": "X%3Eyd",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "담당자": {
+          "id": "a%7CiX",
+          "type": "people",
+          "people": []
+        },
+        "주요내용": {
+          "id": "dd%40J",
+          "type": "select",
+          "select": {
+            "id": "AAGz",
+            "name": "코드관리자동화",
+            "color": "red"
+          }
+        },
+        "태그": {
+          "id": "kRid",
+          "type": "multi_select",
+          "multi_select": []
+        },
+        "결과": {
+          "id": "mKID",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "파일": {
+          "id": "p%3DWJ",
+          "type": "files",
+          "files": []
+        },
+        "수동평가": {
+          "id": "tRDj",
+          "type": "select",
+          "select": null
+        },
+        "세부내용": {
+          "id": "xCwq",
+          "type": "select",
+          "select": null
+        },
+        "파일명": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "notion_code_automation_agent",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "notion_code_automation_agent",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/notion_code_automation_agent-228a613d25ff807d979aeee050549c37",
+      "public_url": null
+    },
+    {
+      "object": "page",
+      "id": "228a613d-25ff-80e0-b16d-e67eaffbdd12",
+      "created_time": "2025-07-06T08:11:00.000Z",
+      "last_edited_time": "2025-07-06T08:18:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "212d872b-594c-8101-8802-00024a84d0a1"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "212d872b-594c-8101-8802-00024a84d0a1"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "228a613d-25ff-80f8-9903-f8f92e549f44"
+      },
+      "archived": false,
+      "in_trash": false,
+      "properties": {
+        "생성일": {
+          "id": "%3FeUm",
+          "type": "date",
+          "date": {
+            "start": "2025-07-06",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "프로젝트": {
+          "id": "Gd%5DY",
+          "type": "select",
+          "select": null
+        },
+        "실행": {
+          "id": "MjXx",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "실행이력": {
+          "id": "SQi%5E",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "품질지표": {
+          "id": "X%3Eyd",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "담당자": {
+          "id": "a%7CiX",
+          "type": "people",
+          "people": []
+        },
+        "주요내용": {
+          "id": "dd%40J",
+          "type": "select",
+          "select": {
+            "id": "AAGz",
+            "name": "코드관리자동화",
+            "color": "red"
+          }
+        },
+        "태그": {
+          "id": "kRid",
+          "type": "multi_select",
+          "multi_select": []
+        },
+        "결과": {
+          "id": "mKID",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "파일": {
+          "id": "p%3DWJ",
+          "type": "files",
+          "files": []
+        },
+        "수동평가": {
+          "id": "tRDj",
+          "type": "select",
+          "select": null
+        },
+        "세부내용": {
+          "id": "xCwq",
+          "type": "select",
+          "select": null
+        },
+        "파일명": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "create_remaining_projects",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "create_remaining_projects",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/create_remaining_projects-228a613d25ff80e0b16de67eaffbdd12",
+      "public_url": null
+    },
+    {
+      "object": "page",
+      "id": "228a613d-25ff-80a2-b0b2-c6631486e4e4",
+      "created_time": "2025-07-06T08:11:00.000Z",
+      "last_edited_time": "2025-07-06T08:18:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "212d872b-594c-8101-8802-00024a84d0a1"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "212d872b-594c-8101-8802-00024a84d0a1"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "228a613d-25ff-80f8-9903-f8f92e549f44"
+      },
+      "archived": false,
+      "in_trash": false,
+      "properties": {
+        "생성일": {
+          "id": "%3FeUm",
+          "type": "date",
+          "date": {
+            "start": "2025-07-06",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "프로젝트": {
+          "id": "Gd%5DY",
+          "type": "select",
+          "select": null
+        },
+        "실행": {
+          "id": "MjXx",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "실행이력": {
+          "id": "SQi%5E",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "품질지표": {
+          "id": "X%3Eyd",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "담당자": {
+          "id": "a%7CiX",
+          "type": "people",
+          "people": []
+        },
+        "주요내용": {
+          "id": "dd%40J",
+          "type": "select",
+          "select": {
+            "id": "AAGz",
+            "name": "코드관리자동화",
+            "color": "red"
+          }
+        },
+        "태그": {
+          "id": "kRid",
+          "type": "multi_select",
+          "multi_select": []
+        },
+        "결과": {
+          "id": "mKID",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "파일": {
+          "id": "p%3DWJ",
+          "type": "files",
+          "files": []
+        },
+        "수동평가": {
+          "id": "tRDj",
+          "type": "select",
+          "select": null
+        },
+        "세부내용": {
+          "id": "xCwq",
+          "type": "select",
+          "select": null
+        },
+        "파일명": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "create_master_tags_db",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "create_master_tags_db",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/create_master_tags_db-228a613d25ff80a2b0b2c6631486e4e4",
+      "public_url": null
+    },
+    {
+      "object": "page",
+      "id": "228a613d-25ff-80a8-99f5-deca8c1d498c",
+      "created_time": "2025-07-06T08:11:00.000Z",
+      "last_edited_time": "2025-07-06T08:18:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "212d872b-594c-8101-8802-00024a84d0a1"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "212d872b-594c-8101-8802-00024a84d0a1"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "228a613d-25ff-80f8-9903-f8f92e549f44"
+      },
+      "archived": false,
+      "in_trash": false,
+      "properties": {
+        "생성일": {
+          "id": "%3FeUm",
+          "type": "date",
+          "date": {
+            "start": "2025-07-06",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "프로젝트": {
+          "id": "Gd%5DY",
+          "type": "select",
+          "select": null
+        },
+        "실행": {
+          "id": "MjXx",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "실행이력": {
+          "id": "SQi%5E",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "품질지표": {
+          "id": "X%3Eyd",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "담당자": {
+          "id": "a%7CiX",
+          "type": "people",
+          "people": []
+        },
+        "주요내용": {
+          "id": "dd%40J",
+          "type": "select",
+          "select": {
+            "id": "AAGz",
+            "name": "코드관리자동화",
+            "color": "red"
+          }
+        },
+        "태그": {
+          "id": "kRid",
+          "type": "multi_select",
+          "multi_select": []
+        },
+        "결과": {
+          "id": "mKID",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "파일": {
+          "id": "p%3DWJ",
+          "type": "files",
+          "files": []
+        },
+        "수동평가": {
+          "id": "tRDj",
+          "type": "select",
+          "select": null
+        },
+        "세부내용": {
+          "id": "xCwq",
+          "type": "select",
+          "select": null
+        },
+        "파일명": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "create_intelligent_code_scanner",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "create_intelligent_code_scanner",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/create_intelligent_code_scanner-228a613d25ff80a899f5deca8c1d498c",
+      "public_url": null
+    },
+    {
+      "object": "page",
+      "id": "228a613d-25ff-8005-978a-c6f50d5fb95a",
+      "created_time": "2025-07-06T08:11:00.000Z",
+      "last_edited_time": "2025-07-06T08:18:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "212d872b-594c-8101-8802-00024a84d0a1"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "212d872b-594c-8101-8802-00024a84d0a1"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "228a613d-25ff-80f8-9903-f8f92e549f44"
+      },
+      "archived": false,
+      "in_trash": false,
+      "properties": {
+        "생성일": {
+          "id": "%3FeUm",
+          "type": "date",
+          "date": {
+            "start": "2025-07-06",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "프로젝트": {
+          "id": "Gd%5DY",
+          "type": "select",
+          "select": null
+        },
+        "실행": {
+          "id": "MjXx",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "실행이력": {
+          "id": "SQi%5E",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "품질지표": {
+          "id": "X%3Eyd",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "담당자": {
+          "id": "a%7CiX",
+          "type": "people",
+          "people": []
+        },
+        "주요내용": {
+          "id": "dd%40J",
+          "type": "select",
+          "select": {
+            "id": "AAGz",
+            "name": "코드관리자동화",
+            "color": "red"
+          }
+        },
+        "태그": {
+          "id": "kRid",
+          "type": "multi_select",
+          "multi_select": []
+        },
+        "결과": {
+          "id": "mKID",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "파일": {
+          "id": "p%3DWJ",
+          "type": "files",
+          "files": []
+        },
+        "수동평가": {
+          "id": "tRDj",
+          "type": "select",
+          "select": null
+        },
+        "세부내용": {
+          "id": "xCwq",
+          "type": "select",
+          "select": null
+        },
+        "파일명": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "create_dashboard_views",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "create_dashboard_views",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/create_dashboard_views-228a613d25ff8005978ac6f50d5fb95a",
+      "public_url": null
+    },
+    {
+      "object": "page",
+      "id": "228a613d-25ff-806e-bd88-e4160eeb8984",
+      "created_time": "2025-07-06T08:11:00.000Z",
+      "last_edited_time": "2025-07-06T08:18:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "212d872b-594c-8101-8802-00024a84d0a1"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "212d872b-594c-8101-8802-00024a84d0a1"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "228a613d-25ff-80f8-9903-f8f92e549f44"
+      },
+      "archived": false,
+      "in_trash": false,
+      "properties": {
+        "생성일": {
+          "id": "%3FeUm",
+          "type": "date",
+          "date": {
+            "start": "2025-07-06",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "프로젝트": {
+          "id": "Gd%5DY",
+          "type": "select",
+          "select": null
+        },
+        "실행": {
+          "id": "MjXx",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "실행이력": {
+          "id": "SQi%5E",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "품질지표": {
+          "id": "X%3Eyd",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "담당자": {
+          "id": "a%7CiX",
+          "type": "people",
+          "people": []
+        },
+        "주요내용": {
+          "id": "dd%40J",
+          "type": "select",
+          "select": {
+            "id": "AAGz",
+            "name": "코드관리자동화",
+            "color": "red"
+          }
+        },
+        "태그": {
+          "id": "kRid",
+          "type": "multi_select",
+          "multi_select": []
+        },
+        "결과": {
+          "id": "mKID",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "파일": {
+          "id": "p%3DWJ",
+          "type": "files",
+          "files": []
+        },
+        "수동평가": {
+          "id": "tRDj",
+          "type": "select",
+          "select": null
+        },
+        "세부내용": {
+          "id": "xCwq",
+          "type": "select",
+          "select": null
+        },
+        "파일명": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "create_comprehensive_code_db",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "create_comprehensive_code_db",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/create_comprehensive_code_db-228a613d25ff806ebd88e4160eeb8984",
+      "public_url": null
+    },
+    {
+      "object": "page",
+      "id": "228a613d-25ff-8012-b200-fa40768d9e7f",
+      "created_time": "2025-07-06T08:11:00.000Z",
+      "last_edited_time": "2025-07-06T08:18:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "212d872b-594c-8101-8802-00024a84d0a1"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "212d872b-594c-8101-8802-00024a84d0a1"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "228a613d-25ff-80f8-9903-f8f92e549f44"
+      },
+      "archived": false,
+      "in_trash": false,
+      "properties": {
+        "생성일": {
+          "id": "%3FeUm",
+          "type": "date",
+          "date": {
+            "start": "2025-07-06",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "프로젝트": {
+          "id": "Gd%5DY",
+          "type": "select",
+          "select": null
+        },
+        "실행": {
+          "id": "MjXx",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "실행이력": {
+          "id": "SQi%5E",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "품질지표": {
+          "id": "X%3Eyd",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "담당자": {
+          "id": "a%7CiX",
+          "type": "people",
+          "people": []
+        },
+        "주요내용": {
+          "id": "dd%40J",
+          "type": "select",
+          "select": {
+            "id": "AAGz",
+            "name": "코드관리자동화",
+            "color": "red"
+          }
+        },
+        "태그": {
+          "id": "kRid",
+          "type": "multi_select",
+          "multi_select": []
+        },
+        "결과": {
+          "id": "mKID",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "파일": {
+          "id": "p%3DWJ",
+          "type": "files",
+          "files": []
+        },
+        "수동평가": {
+          "id": "tRDj",
+          "type": "select",
+          "select": null
+        },
+        "세부내용": {
+          "id": "xCwq",
+          "type": "select",
+          "select": null
+        },
+        "파일명": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "create_basic_dbs",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "create_basic_dbs",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/create_basic_dbs-228a613d25ff8012b200fa40768d9e7f",
+      "public_url": null
+    },
+    {
+      "object": "page",
+      "id": "228a613d-25ff-808d-b552-ec1866f63875",
+      "created_time": "2025-07-06T08:11:00.000Z",
+      "last_edited_time": "2025-07-12T04:24:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "212d872b-594c-8101-8802-00024a84d0a1"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "212d872b-594c-8101-8802-00024a84d0a1"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "228a613d-25ff-80f8-9903-f8f92e549f44"
+      },
+      "archived": false,
+      "in_trash": false,
+      "properties": {
+        "생성일": {
+          "id": "%3FeUm",
+          "type": "date",
+          "date": {
+            "start": "2025-07-06",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "프로젝트": {
+          "id": "Gd%5DY",
+          "type": "select",
+          "select": null
+        },
+        "실행": {
+          "id": "MjXx",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "실행이력": {
+          "id": "SQi%5E",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "품질지표": {
+          "id": "X%3Eyd",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "담당자": {
+          "id": "a%7CiX",
+          "type": "people",
+          "people": []
+        },
+        "주요내용": {
+          "id": "dd%40J",
+          "type": "select",
+          "select": {
+            "id": "AAGz",
+            "name": "코드관리자동화",
+            "color": "red"
+          }
+        },
+        "태그": {
+          "id": "kRid",
+          "type": "multi_select",
+          "multi_select": []
+        },
+        "결과": {
+          "id": "mKID",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "파일": {
+          "id": "p%3DWJ",
+          "type": "files",
+          "files": []
+        },
+        "수동평가": {
+          "id": "tRDj",
+          "type": "select",
+          "select": null
+        },
+        "세부내용": {
+          "id": "xCwq",
+          "type": "select",
+          "select": null
+        },
+        "파일명": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "build_complete_system",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "build_complete_system",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/build_complete_system-228a613d25ff808db552ec1866f63875",
+      "public_url": null
+    },
+    {
+      "object": "page",
+      "id": "228a613d-25ff-80d6-ba21-e9777a853e00",
+      "created_time": "2025-07-06T08:11:00.000Z",
+      "last_edited_time": "2025-07-12T04:24:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "212d872b-594c-8101-8802-00024a84d0a1"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "212d872b-594c-8101-8802-00024a84d0a1"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "228a613d-25ff-80f8-9903-f8f92e549f44"
+      },
+      "archived": false,
+      "in_trash": false,
+      "properties": {
+        "생성일": {
+          "id": "%3FeUm",
+          "type": "date",
+          "date": {
+            "start": "2025-07-06",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "프로젝트": {
+          "id": "Gd%5DY",
+          "type": "select",
+          "select": null
+        },
+        "실행": {
+          "id": "MjXx",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "실행이력": {
+          "id": "SQi%5E",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "품질지표": {
+          "id": "X%3Eyd",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "담당자": {
+          "id": "a%7CiX",
+          "type": "people",
+          "people": []
+        },
+        "주요내용": {
+          "id": "dd%40J",
+          "type": "select",
+          "select": {
+            "id": "AAGz",
+            "name": "코드관리자동화",
+            "color": "red"
+          }
+        },
+        "태그": {
+          "id": "kRid",
+          "type": "multi_select",
+          "multi_select": []
+        },
+        "결과": {
+          "id": "mKID",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "파일": {
+          "id": "p%3DWJ",
+          "type": "files",
+          "files": []
+        },
+        "수동평가": {
+          "id": "tRDj",
+          "type": "select",
+          "select": null
+        },
+        "세부내용": {
+          "id": "xCwq",
+          "type": "select",
+          "select": null
+        },
+        "파일명": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "apply_final_tags",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "apply_final_tags",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/apply_final_tags-228a613d25ff80d6ba21e9777a853e00",
+      "public_url": null
+    },
+    {
+      "object": "page",
+      "id": "228a613d-25ff-8036-b6d4-c4e32d523440",
+      "created_time": "2025-07-06T08:11:00.000Z",
+      "last_edited_time": "2025-07-12T04:24:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "212d872b-594c-8101-8802-00024a84d0a1"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "212d872b-594c-8101-8802-00024a84d0a1"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "228a613d-25ff-80f8-9903-f8f92e549f44"
+      },
+      "archived": false,
+      "in_trash": false,
+      "properties": {
+        "생성일": {
+          "id": "%3FeUm",
+          "type": "date",
+          "date": {
+            "start": "2025-07-06",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "프로젝트": {
+          "id": "Gd%5DY",
+          "type": "select",
+          "select": null
+        },
+        "실행": {
+          "id": "MjXx",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "실행이력": {
+          "id": "SQi%5E",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "품질지표": {
+          "id": "X%3Eyd",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "담당자": {
+          "id": "a%7CiX",
+          "type": "people",
+          "people": []
+        },
+        "주요내용": {
+          "id": "dd%40J",
+          "type": "select",
+          "select": {
+            "id": "AAGz",
+            "name": "코드관리자동화",
+            "color": "red"
+          }
+        },
+        "태그": {
+          "id": "kRid",
+          "type": "multi_select",
+          "multi_select": []
+        },
+        "결과": {
+          "id": "mKID",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "파일": {
+          "id": "p%3DWJ",
+          "type": "files",
+          "files": []
+        },
+        "수동평가": {
+          "id": "tRDj",
+          "type": "select",
+          "select": null
+        },
+        "세부내용": {
+          "id": "xCwq",
+          "type": "select",
+          "select": null
+        },
+        "파일명": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "add_sample_data_and_views",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "add_sample_data_and_views",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/add_sample_data_and_views-228a613d25ff8036b6d4c4e32d523440",
+      "public_url": null
+    },
+    {
+      "object": "page",
+      "id": "228a613d-25ff-802f-9338-df2e87ff765c",
+      "created_time": "2025-07-06T08:00:00.000Z",
+      "last_edited_time": "2025-07-12T04:24:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "212d872b-594c-8101-8802-00024a84d0a1"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "212d872b-594c-8101-8802-00024a84d0a1"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "228a613d-25ff-80f8-9903-f8f92e549f44"
+      },
+      "archived": false,
+      "in_trash": false,
+      "properties": {
+        "생성일": {
+          "id": "%3FeUm",
+          "type": "date",
+          "date": {
+            "start": "2025-07-06",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "프로젝트": {
+          "id": "Gd%5DY",
+          "type": "select",
+          "select": null
+        },
+        "실행": {
+          "id": "MjXx",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "실행이력": {
+          "id": "SQi%5E",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "품질지표": {
+          "id": "X%3Eyd",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "담당자": {
+          "id": "a%7CiX",
+          "type": "people",
+          "people": []
+        },
+        "주요내용": {
+          "id": "dd%40J",
+          "type": "select",
+          "select": {
+            "id": "AAGz",
+            "name": "코드관리자동화",
+            "color": "red"
+          }
+        },
+        "태그": {
+          "id": "kRid",
+          "type": "multi_select",
+          "multi_select": []
+        },
+        "결과": {
+          "id": "mKID",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "파일": {
+          "id": "p%3DWJ",
+          "type": "files",
+          "files": []
+        },
+        "수동평가": {
+          "id": "tRDj",
+          "type": "select",
+          "select": null
+        },
+        "세부내용": {
+          "id": "xCwq",
+          "type": "select",
+          "select": null
+        },
+        "파일명": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "add_relations_and_rollups.py",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "add_relations_and_rollups.py",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/add_relations_and_rollups-py-228a613d25ff802f9338df2e87ff765c",
+      "public_url": null
+    },
+    {
+      "object": "page",
+      "id": "228a613d-25ff-8059-bb9c-e7a97020ca99",
+      "created_time": "2025-07-06T07:59:00.000Z",
+      "last_edited_time": "2025-07-12T04:24:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "212d872b-594c-8101-8802-00024a84d0a1"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "212d872b-594c-8101-8802-00024a84d0a1"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "228a613d-25ff-80f8-9903-f8f92e549f44"
+      },
+      "archived": false,
+      "in_trash": false,
+      "properties": {
+        "생성일": {
+          "id": "%3FeUm",
+          "type": "date",
+          "date": {
+            "start": "2025-07-06",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "프로젝트": {
+          "id": "Gd%5DY",
+          "type": "select",
+          "select": {
+            "id": "WCsv",
+            "name": "GIA V2.0",
+            "color": "gray"
+          }
+        },
+        "실행": {
+          "id": "MjXx",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "실행이력": {
+          "id": "SQi%5E",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "품질지표": {
+          "id": "X%3Eyd",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "담당자": {
+          "id": "a%7CiX",
+          "type": "people",
+          "people": []
+        },
+        "주요내용": {
+          "id": "dd%40J",
+          "type": "select",
+          "select": {
+            "id": "AAGz",
+            "name": "코드관리자동화",
+            "color": "red"
+          }
+        },
+        "태그": {
+          "id": "kRid",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "rov[",
+              "name": "기타",
+              "color": "blue"
+            }
+          ]
+        },
+        "결과": {
+          "id": "mKID",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "파일": {
+          "id": "p%3DWJ",
+          "type": "files",
+          "files": []
+        },
+        "수동평가": {
+          "id": "tRDj",
+          "type": "select",
+          "select": {
+            "id": "qMwF",
+            "name": "중요도",
+            "color": "brown"
+          }
+        },
+        "세부내용": {
+          "id": "xCwq",
+          "type": "select",
+          "select": null
+        },
+        "파일명": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "add_rollups.py",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "add_rollups.py",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/add_rollups-py-228a613d25ff8059bb9ce7a97020ca99",
+      "public_url": null
+    }
+  ],
+  "next_cursor": null,
+  "has_more": false,
+  "type": "page_or_database",
+  "page_or_database": {},
+  "request_id": "360de200-208a-4587-8710-9ac272d21b11"
+}

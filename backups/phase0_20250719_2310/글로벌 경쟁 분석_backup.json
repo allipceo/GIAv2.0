@@ -1,0 +1,1124 @@
+{
+  "object": "list",
+  "results": [
+    {
+      "object": "page",
+      "id": "232a613d-25ff-80dd-9b70-f6b317c69a29",
+      "created_time": "2025-07-16T14:04:00.000Z",
+      "last_edited_time": "2025-07-16T14:15:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "212d872b-594c-8101-8802-00024a84d0a1"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "212d872b-594c-8101-8802-00024a84d0a1"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "228a613d-25ff-818d-9bba-c1b53e19dcbd"
+      },
+      "archived": false,
+      "in_trash": false,
+      "properties": {
+        "분야": {
+          "id": "%3CGm%7B",
+          "type": "select",
+          "select": {
+            "id": "557c473f-a8c2-4cc4-9fd6-b377cdd5fd71",
+            "name": "연구",
+            "color": "yellow"
+          }
+        },
+        "관련 입찰정보": {
+          "id": "%3EerR",
+          "type": "relation",
+          "relation": [],
+          "has_more": false
+        },
+        "마감일": {
+          "id": "%3F%5BPu",
+          "type": "date",
+          "date": {
+            "start": "2025-07-19",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "우선순위": {
+          "id": "B~n%7B",
+          "type": "select",
+          "select": {
+            "id": "383fed21-0c23-4b61-be51-25481f40f29c",
+            "name": "높음",
+            "color": "red"
+          }
+        },
+        "Related to 뉴스정보DB (관련 프로젝트)": {
+          "id": "TLme",
+          "type": "relation",
+          "relation": [],
+          "has_more": false
+        },
+        "태스크 완료율": {
+          "id": "V%60qJ",
+          "type": "rollup",
+          "rollup": {
+            "type": "array",
+            "array": [],
+            "function": "show_original"
+          }
+        },
+        "상태": {
+          "id": "%5BObh",
+          "type": "select",
+          "select": {
+            "id": "039e06e9-0d15-492f-975d-be23050ce22e",
+            "name": "진행중",
+            "color": "green"
+          }
+        },
+        "관련 뉴스": {
+          "id": "%5EIAP",
+          "type": "relation",
+          "relation": [],
+          "has_more": false
+        },
+        "Related to 태스크 (상위프로젝트)": {
+          "id": "ltmu",
+          "type": "relation",
+          "relation": [
+            {
+              "id": "232a613d-25ff-80fe-8d95-ce51492eb03c"
+            },
+            {
+              "id": "232a613d-25ff-801d-afde-ca4f395442b1"
+            },
+            {
+              "id": "232a613d-25ff-8088-b2f3-d57bd3e2e1c0"
+            }
+          ],
+          "has_more": false
+        },
+        "Related to 입찰낙찰공고DB (관련 프로젝트)": {
+          "id": "pq%3EL",
+          "type": "relation",
+          "relation": [],
+          "has_more": false
+        },
+        "마스터 태그": {
+          "id": "%7CTbG",
+          "type": "relation",
+          "relation": [
+            {
+              "id": "227a613d-25ff-81b4-b95d-f8f340386e8e"
+            },
+            {
+              "id": "227a613d-25ff-8144-8c48-d2818e6b71ea"
+            },
+            {
+              "id": "228a613d-25ff-807a-8ac4-cc67a7894c5c"
+            }
+          ],
+          "has_more": false
+        },
+        "프로젝트명": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "GIA 2단계 영업절차 구조화",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "GIA 2단계 영업절차 구조화",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/GIA-2-232a613d25ff80dd9b70f6b317c69a29",
+      "public_url": null
+    },
+    {
+      "object": "page",
+      "id": "22aa613d-25ff-80e9-badf-f6d72a3a4918",
+      "created_time": "2025-07-08T21:42:00.000Z",
+      "last_edited_time": "2025-07-08T21:45:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "212d872b-594c-8101-8802-00024a84d0a1"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "212d872b-594c-8101-8802-00024a84d0a1"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "228a613d-25ff-818d-9bba-c1b53e19dcbd"
+      },
+      "archived": false,
+      "in_trash": false,
+      "properties": {
+        "분야": {
+          "id": "%3CGm%7B",
+          "type": "select",
+          "select": {
+            "id": "557c473f-a8c2-4cc4-9fd6-b377cdd5fd71",
+            "name": "연구",
+            "color": "yellow"
+          }
+        },
+        "관련 입찰정보": {
+          "id": "%3EerR",
+          "type": "relation",
+          "relation": [],
+          "has_more": false
+        },
+        "마감일": {
+          "id": "%3F%5BPu",
+          "type": "date",
+          "date": {
+            "start": "2025-07-31",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "우선순위": {
+          "id": "B~n%7B",
+          "type": "select",
+          "select": {
+            "id": "383fed21-0c23-4b61-be51-25481f40f29c",
+            "name": "높음",
+            "color": "red"
+          }
+        },
+        "Related to 뉴스정보DB (관련 프로젝트)": {
+          "id": "TLme",
+          "type": "relation",
+          "relation": [],
+          "has_more": false
+        },
+        "태스크 완료율": {
+          "id": "V%60qJ",
+          "type": "rollup",
+          "rollup": {
+            "type": "array",
+            "array": [],
+            "function": "show_original"
+          }
+        },
+        "상태": {
+          "id": "%5BObh",
+          "type": "select",
+          "select": {
+            "id": "039e06e9-0d15-492f-975d-be23050ce22e",
+            "name": "진행중",
+            "color": "green"
+          }
+        },
+        "관련 뉴스": {
+          "id": "%5EIAP",
+          "type": "relation",
+          "relation": [],
+          "has_more": false
+        },
+        "Related to 태스크 (상위프로젝트)": {
+          "id": "ltmu",
+          "type": "relation",
+          "relation": [
+            {
+              "id": "229a613d-25ff-8013-a131-eb2087c09439"
+            },
+            {
+              "id": "229a613d-25ff-8019-87ed-d5702c154732"
+            },
+            {
+              "id": "229a613d-25ff-8059-9a4a-e43609f6fb45"
+            },
+            {
+              "id": "22aa613d-25ff-8084-851b-f00ec3200f8e"
+            },
+            {
+              "id": "229a613d-25ff-8009-88e0-c288a85cb398"
+            },
+            {
+              "id": "232a613d-25ff-8014-b0e2-fac5197c16a0"
+            }
+          ],
+          "has_more": false
+        },
+        "Related to 입찰낙찰공고DB (관련 프로젝트)": {
+          "id": "pq%3EL",
+          "type": "relation",
+          "relation": [],
+          "has_more": false
+        },
+        "마스터 태그": {
+          "id": "%7CTbG",
+          "type": "relation",
+          "relation": [
+            {
+              "id": "228a613d-25ff-807a-8ac4-cc67a7894c5c"
+            },
+            {
+              "id": "228a613d-25ff-809d-9fc4-f6d45308b049"
+            }
+          ],
+          "has_more": false
+        },
+        "프로젝트명": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "AI경쟁력 향상",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "AI경쟁력 향상",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/AI-22aa613d25ff80e9badff6d72a3a4918",
+      "public_url": null
+    },
+    {
+      "object": "page",
+      "id": "229a613d-25ff-805c-8275-f1a3f2e1ed7a",
+      "created_time": "2025-07-07T13:04:00.000Z",
+      "last_edited_time": "2025-07-07T13:04:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "212d872b-594c-8101-8802-00024a84d0a1"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "212d872b-594c-8101-8802-00024a84d0a1"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "228a613d-25ff-818d-9bba-c1b53e19dcbd"
+      },
+      "archived": false,
+      "in_trash": false,
+      "properties": {
+        "분야": {
+          "id": "%3CGm%7B",
+          "type": "select",
+          "select": {
+            "id": "557c473f-a8c2-4cc4-9fd6-b377cdd5fd71",
+            "name": "연구",
+            "color": "yellow"
+          }
+        },
+        "관련 입찰정보": {
+          "id": "%3EerR",
+          "type": "relation",
+          "relation": [],
+          "has_more": false
+        },
+        "마감일": {
+          "id": "%3F%5BPu",
+          "type": "date",
+          "date": {
+            "start": "2025-07-08",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "우선순위": {
+          "id": "B~n%7B",
+          "type": "select",
+          "select": {
+            "id": "383fed21-0c23-4b61-be51-25481f40f29c",
+            "name": "높음",
+            "color": "red"
+          }
+        },
+        "Related to 뉴스정보DB (관련 프로젝트)": {
+          "id": "TLme",
+          "type": "relation",
+          "relation": [],
+          "has_more": false
+        },
+        "태스크 완료율": {
+          "id": "V%60qJ",
+          "type": "rollup",
+          "rollup": {
+            "type": "array",
+            "array": [],
+            "function": "show_original"
+          }
+        },
+        "상태": {
+          "id": "%5BObh",
+          "type": "select",
+          "select": {
+            "id": "ee488b2b-9c31-47d3-9b40-6be8c10ef0b7",
+            "name": "검토중",
+            "color": "gray"
+          }
+        },
+        "관련 뉴스": {
+          "id": "%5EIAP",
+          "type": "relation",
+          "relation": [],
+          "has_more": false
+        },
+        "Related to 태스크 (상위프로젝트)": {
+          "id": "ltmu",
+          "type": "relation",
+          "relation": [
+            {
+              "id": "228a613d-25ff-8085-9993-c275099377b5"
+            },
+            {
+              "id": "228a613d-25ff-8044-9d73-ef893498cd5e"
+            },
+            {
+              "id": "229a613d-25ff-80be-99f2-f1a703ebec9d"
+            },
+            {
+              "id": "229a613d-25ff-8013-a131-eb2087c09439"
+            },
+            {
+              "id": "229a613d-25ff-803b-8f9c-dfd22f6d642b"
+            },
+            {
+              "id": "229a613d-25ff-8060-b433-d71b2ceb84fa"
+            },
+            {
+              "id": "229a613d-25ff-8059-9a4a-e43609f6fb45"
+            },
+            {
+              "id": "229a613d-25ff-8087-a3df-d0c356f4c9dd"
+            },
+            {
+              "id": "229a613d-25ff-8031-8da0-e77b9088bc7c"
+            },
+            {
+              "id": "229a613d-25ff-8019-87ed-d5702c154732"
+            },
+            {
+              "id": "229a613d-25ff-80bc-88df-d1563bae859d"
+            },
+            {
+              "id": "229a613d-25ff-8092-81ee-eb20c04f46ea"
+            },
+            {
+              "id": "229a613d-25ff-8009-8ab2-c90a01f124e3"
+            }
+          ],
+          "has_more": false
+        },
+        "Related to 입찰낙찰공고DB (관련 프로젝트)": {
+          "id": "pq%3EL",
+          "type": "relation",
+          "relation": [],
+          "has_more": false
+        },
+        "마스터 태그": {
+          "id": "%7CTbG",
+          "type": "relation",
+          "relation": [],
+          "has_more": false
+        },
+        "프로젝트명": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "GIA 1단계 기반체계 구축 (1)",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "GIA 1단계 기반체계 구축 (1)",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/GIA-1-1-229a613d25ff805c8275f1a3f2e1ed7a",
+      "public_url": null
+    },
+    {
+      "object": "page",
+      "id": "228a613d-25ff-8040-a093-f4a0dcded185",
+      "created_time": "2025-07-06T08:25:00.000Z",
+      "last_edited_time": "2025-07-06T13:13:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "212d872b-594c-8101-8802-00024a84d0a1"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "212d872b-594c-8101-8802-00024a84d0a1"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "228a613d-25ff-818d-9bba-c1b53e19dcbd"
+      },
+      "archived": false,
+      "in_trash": false,
+      "properties": {
+        "분야": {
+          "id": "%3CGm%7B",
+          "type": "select",
+          "select": {
+            "id": "557c473f-a8c2-4cc4-9fd6-b377cdd5fd71",
+            "name": "연구",
+            "color": "yellow"
+          }
+        },
+        "관련 입찰정보": {
+          "id": "%3EerR",
+          "type": "relation",
+          "relation": [],
+          "has_more": false
+        },
+        "마감일": {
+          "id": "%3F%5BPu",
+          "type": "date",
+          "date": {
+            "start": "2025-07-08",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "우선순위": {
+          "id": "B~n%7B",
+          "type": "select",
+          "select": {
+            "id": "383fed21-0c23-4b61-be51-25481f40f29c",
+            "name": "높음",
+            "color": "red"
+          }
+        },
+        "Related to 뉴스정보DB (관련 프로젝트)": {
+          "id": "TLme",
+          "type": "relation",
+          "relation": [],
+          "has_more": false
+        },
+        "태스크 완료율": {
+          "id": "V%60qJ",
+          "type": "rollup",
+          "rollup": {
+            "type": "array",
+            "array": [],
+            "function": "show_original"
+          }
+        },
+        "상태": {
+          "id": "%5BObh",
+          "type": "select",
+          "select": {
+            "id": "ee488b2b-9c31-47d3-9b40-6be8c10ef0b7",
+            "name": "검토중",
+            "color": "gray"
+          }
+        },
+        "관련 뉴스": {
+          "id": "%5EIAP",
+          "type": "relation",
+          "relation": [],
+          "has_more": false
+        },
+        "Related to 태스크 (상위프로젝트)": {
+          "id": "ltmu",
+          "type": "relation",
+          "relation": [
+            {
+              "id": "228a613d-25ff-80e7-9311-ed41542a09ee"
+            },
+            {
+              "id": "228a613d-25ff-8085-9993-c275099377b5"
+            },
+            {
+              "id": "228a613d-25ff-8044-9d73-ef893498cd5e"
+            },
+            {
+              "id": "229a613d-25ff-80be-99f2-f1a703ebec9d"
+            },
+            {
+              "id": "229a613d-25ff-8013-a131-eb2087c09439"
+            },
+            {
+              "id": "229a613d-25ff-803b-8f9c-dfd22f6d642b"
+            },
+            {
+              "id": "229a613d-25ff-8060-b433-d71b2ceb84fa"
+            },
+            {
+              "id": "229a613d-25ff-8059-9a4a-e43609f6fb45"
+            },
+            {
+              "id": "229a613d-25ff-8087-a3df-d0c356f4c9dd"
+            },
+            {
+              "id": "229a613d-25ff-8031-8da0-e77b9088bc7c"
+            },
+            {
+              "id": "229a613d-25ff-8019-87ed-d5702c154732"
+            },
+            {
+              "id": "229a613d-25ff-80bc-88df-d1563bae859d"
+            },
+            {
+              "id": "229a613d-25ff-8092-81ee-eb20c04f46ea"
+            },
+            {
+              "id": "229a613d-25ff-8009-8ab2-c90a01f124e3"
+            },
+            {
+              "id": "229a613d-25ff-814b-b098-c3470df69ec3"
+            },
+            {
+              "id": "229a613d-25ff-8009-88e0-c288a85cb398"
+            },
+            {
+              "id": "22ea613d-25ff-80be-951b-ec80d82a8600"
+            }
+          ],
+          "has_more": false
+        },
+        "Related to 입찰낙찰공고DB (관련 프로젝트)": {
+          "id": "pq%3EL",
+          "type": "relation",
+          "relation": [],
+          "has_more": false
+        },
+        "마스터 태그": {
+          "id": "%7CTbG",
+          "type": "relation",
+          "relation": [],
+          "has_more": false
+        },
+        "프로젝트명": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "GIA 1단계 기반체계 구축",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "GIA 1단계 기반체계 구축",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/GIA-1-228a613d25ff8040a093f4a0dcded185",
+      "public_url": null
+    },
+    {
+      "object": "page",
+      "id": "228a613d-25ff-81d6-b4b6-f3936931e4e5",
+      "created_time": "2025-07-06T00:27:00.000Z",
+      "last_edited_time": "2025-07-13T00:07:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "397d887e-1915-416a-a4e3-39fc486a476b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "397d887e-1915-416a-a4e3-39fc486a476b"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "228a613d-25ff-818d-9bba-c1b53e19dcbd"
+      },
+      "archived": false,
+      "in_trash": false,
+      "properties": {
+        "분야": {
+          "id": "%3CGm%7B",
+          "type": "select",
+          "select": {
+            "id": "c1421e5e-aa14-4609-8697-08e65c7030c0",
+            "name": "방산",
+            "color": "yellow"
+          }
+        },
+        "관련 입찰정보": {
+          "id": "%3EerR",
+          "type": "relation",
+          "relation": [],
+          "has_more": false
+        },
+        "마감일": {
+          "id": "%3F%5BPu",
+          "type": "date",
+          "date": {
+            "start": "2025-09-01",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "우선순위": {
+          "id": "B~n%7B",
+          "type": "select",
+          "select": {
+            "id": "3ed34129-6079-438a-bc65-56f443cb91de",
+            "name": "낮음",
+            "color": "blue"
+          }
+        },
+        "Related to 뉴스정보DB (관련 프로젝트)": {
+          "id": "TLme",
+          "type": "relation",
+          "relation": [],
+          "has_more": false
+        },
+        "태스크 완료율": {
+          "id": "V%60qJ",
+          "type": "rollup",
+          "rollup": {
+            "type": "array",
+            "array": [],
+            "function": "show_original"
+          }
+        },
+        "상태": {
+          "id": "%5BObh",
+          "type": "select",
+          "select": {
+            "id": "039e06e9-0d15-492f-975d-be23050ce22e",
+            "name": "진행중",
+            "color": "green"
+          }
+        },
+        "관련 뉴스": {
+          "id": "%5EIAP",
+          "type": "relation",
+          "relation": [
+            {
+              "id": "22ea613d-25ff-8143-a9be-e75ae6c38d5f"
+            },
+            {
+              "id": "22ea613d-25ff-810c-9b79-e54d7f3851d6"
+            },
+            {
+              "id": "22ea613d-25ff-812d-a655-f27f06ed9108"
+            },
+            {
+              "id": "22ea613d-25ff-81df-8996-d1e6e1620897"
+            },
+            {
+              "id": "22ea613d-25ff-81c9-9e8f-f9aea75c29e5"
+            }
+          ],
+          "has_more": false
+        },
+        "Related to 태스크 (상위프로젝트)": {
+          "id": "ltmu",
+          "type": "relation",
+          "relation": [
+            {
+              "id": "228a613d-25ff-8155-8825-eab49da503c9"
+            },
+            {
+              "id": "228a613d-25ff-815c-aef8-ea226e687678"
+            }
+          ],
+          "has_more": false
+        },
+        "Related to 입찰낙찰공고DB (관련 프로젝트)": {
+          "id": "pq%3EL",
+          "type": "relation",
+          "relation": [],
+          "has_more": false
+        },
+        "마스터 태그": {
+          "id": "%7CTbG",
+          "type": "relation",
+          "relation": [],
+          "has_more": false
+        },
+        "프로젝트명": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "방산 수출기업 대상 마케팅",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "방산 수출기업 대상 마케팅",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/228a613d25ff81d6b4b6f3936931e4e5",
+      "public_url": null
+    },
+    {
+      "object": "page",
+      "id": "228a613d-25ff-81b9-ba5a-c4db86bf21ad",
+      "created_time": "2025-07-06T00:27:00.000Z",
+      "last_edited_time": "2025-07-13T00:07:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "397d887e-1915-416a-a4e3-39fc486a476b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "397d887e-1915-416a-a4e3-39fc486a476b"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "228a613d-25ff-818d-9bba-c1b53e19dcbd"
+      },
+      "archived": false,
+      "in_trash": false,
+      "properties": {
+        "분야": {
+          "id": "%3CGm%7B",
+          "type": "select",
+          "select": {
+            "id": "23a18ac5-f13c-4cc3-ad1f-c3bd900ceb65",
+            "name": "보험",
+            "color": "yellow"
+          }
+        },
+        "관련 입찰정보": {
+          "id": "%3EerR",
+          "type": "relation",
+          "relation": [],
+          "has_more": false
+        },
+        "마감일": {
+          "id": "%3F%5BPu",
+          "type": "date",
+          "date": {
+            "start": "2025-08-15",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "우선순위": {
+          "id": "B~n%7B",
+          "type": "select",
+          "select": {
+            "id": "a8984771-f638-4554-8ca2-2c2b0f5140cc",
+            "name": "중간",
+            "color": "yellow"
+          }
+        },
+        "Related to 뉴스정보DB (관련 프로젝트)": {
+          "id": "TLme",
+          "type": "relation",
+          "relation": [],
+          "has_more": false
+        },
+        "태스크 완료율": {
+          "id": "V%60qJ",
+          "type": "rollup",
+          "rollup": {
+            "type": "array",
+            "array": [],
+            "function": "show_original"
+          }
+        },
+        "상태": {
+          "id": "%5BObh",
+          "type": "select",
+          "select": {
+            "id": "039e06e9-0d15-492f-975d-be23050ce22e",
+            "name": "진행중",
+            "color": "green"
+          }
+        },
+        "관련 뉴스": {
+          "id": "%5EIAP",
+          "type": "relation",
+          "relation": [
+            {
+              "id": "22ea613d-25ff-81f1-9e52-e2959620d7c2"
+            },
+            {
+              "id": "22ea613d-25ff-8157-98cd-f0e3f19291d7"
+            },
+            {
+              "id": "22ea613d-25ff-8106-b6bb-de8c1d5a8c73"
+            },
+            {
+              "id": "22ea613d-25ff-8143-a927-d307d449a63e"
+            },
+            {
+              "id": "22ea613d-25ff-8112-9bb1-d2b1f09284ac"
+            }
+          ],
+          "has_more": false
+        },
+        "Related to 태스크 (상위프로젝트)": {
+          "id": "ltmu",
+          "type": "relation",
+          "relation": [
+            {
+              "id": "228a613d-25ff-8126-a972-ed5e32ca8b5b"
+            },
+            {
+              "id": "228a613d-25ff-8192-8f93-c65394c4385f"
+            }
+          ],
+          "has_more": false
+        },
+        "Related to 입찰낙찰공고DB (관련 프로젝트)": {
+          "id": "pq%3EL",
+          "type": "relation",
+          "relation": [],
+          "has_more": false
+        },
+        "마스터 태그": {
+          "id": "%7CTbG",
+          "type": "relation",
+          "relation": [],
+          "has_more": false
+        },
+        "프로젝트명": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "해상풍력 발전사업 리스크 보험",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "해상풍력 발전사업 리스크 보험",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/228a613d25ff81b9ba5ac4db86bf21ad",
+      "public_url": null
+    },
+    {
+      "object": "page",
+      "id": "228a613d-25ff-815f-bcd8-db319db51543",
+      "created_time": "2025-07-06T00:21:00.000Z",
+      "last_edited_time": "2025-07-13T00:07:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "397d887e-1915-416a-a4e3-39fc486a476b"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "397d887e-1915-416a-a4e3-39fc486a476b"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "228a613d-25ff-818d-9bba-c1b53e19dcbd"
+      },
+      "archived": false,
+      "in_trash": false,
+      "properties": {
+        "분야": {
+          "id": "%3CGm%7B",
+          "type": "select",
+          "select": {
+            "id": "23a18ac5-f13c-4cc3-ad1f-c3bd900ceb65",
+            "name": "보험",
+            "color": "yellow"
+          }
+        },
+        "관련 입찰정보": {
+          "id": "%3EerR",
+          "type": "relation",
+          "relation": [],
+          "has_more": false
+        },
+        "마감일": {
+          "id": "%3F%5BPu",
+          "type": "date",
+          "date": {
+            "start": "2025-07-31",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "우선순위": {
+          "id": "B~n%7B",
+          "type": "select",
+          "select": {
+            "id": "383fed21-0c23-4b61-be51-25481f40f29c",
+            "name": "높음",
+            "color": "red"
+          }
+        },
+        "Related to 뉴스정보DB (관련 프로젝트)": {
+          "id": "TLme",
+          "type": "relation",
+          "relation": [],
+          "has_more": false
+        },
+        "태스크 완료율": {
+          "id": "V%60qJ",
+          "type": "rollup",
+          "rollup": {
+            "type": "array",
+            "array": [],
+            "function": "show_original"
+          }
+        },
+        "상태": {
+          "id": "%5BObh",
+          "type": "select",
+          "select": {
+            "id": "039e06e9-0d15-492f-975d-be23050ce22e",
+            "name": "진행중",
+            "color": "green"
+          }
+        },
+        "관련 뉴스": {
+          "id": "%5EIAP",
+          "type": "relation",
+          "relation": [
+            {
+              "id": "22ea613d-25ff-81f1-9e52-e2959620d7c2"
+            },
+            {
+              "id": "22ea613d-25ff-8157-98cd-f0e3f19291d7"
+            },
+            {
+              "id": "22ea613d-25ff-8106-b6bb-de8c1d5a8c73"
+            },
+            {
+              "id": "22ea613d-25ff-8143-a927-d307d449a63e"
+            },
+            {
+              "id": "22ea613d-25ff-8112-9bb1-d2b1f09284ac"
+            }
+          ],
+          "has_more": false
+        },
+        "Related to 태스크 (상위프로젝트)": {
+          "id": "ltmu",
+          "type": "relation",
+          "relation": [
+            {
+              "id": "228a613d-25ff-8124-9f24-f15462827147"
+            }
+          ],
+          "has_more": false
+        },
+        "Related to 입찰낙찰공고DB (관련 프로젝트)": {
+          "id": "pq%3EL",
+          "type": "relation",
+          "relation": [],
+          "has_more": false
+        },
+        "마스터 태그": {
+          "id": "%7CTbG",
+          "type": "relation",
+          "relation": [],
+          "has_more": false
+        },
+        "프로젝트명": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "한화시스템 사이버보안 보험 제안",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "한화시스템 사이버보안 보험 제안",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/228a613d25ff815fbcd8db319db51543",
+      "public_url": null
+    }
+  ],
+  "next_cursor": null,
+  "has_more": false,
+  "type": "page_or_database",
+  "page_or_database": {},
+  "request_id": "6ce246d6-31fb-40ee-bf0b-b441ed6f8117"
+}
