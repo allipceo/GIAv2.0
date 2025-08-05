@@ -52,7 +52,7 @@ RSS_PARAMS = "hl=ko&gl=KR&ceid=KR:ko"
 
 # 설정값
 MAX_ARTICLES_PER_KEYWORD = 5  # 키워드당 최대 수집 기사 수 (효성중공업 전용으로 증가)
-NEWS_DATA_FILE = "hyosung_news_data.json"
+NEWS_DATA_FILE = "../data/hyosung_news_data.json"
 
 def safe_encode_text(text):
     """

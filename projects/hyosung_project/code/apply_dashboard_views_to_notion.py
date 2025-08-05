@@ -24,7 +24,7 @@ HEADERS = {
 def load_db_ids():
     """생성된 DB ID 정보 로드"""
     try:
-        with open('hyosung_dbs_created_20250719_003144.json', 'r', encoding='utf-8') as f:
+        with open('../data/hyosung_dbs_created_20250719_003144.json', 'r', encoding='utf-8') as f:
             return json.load(f)
     except FileNotFoundError:
         print("❌ DB ID 파일을 찾을 수 없습니다.")
@@ -33,7 +33,7 @@ def load_db_ids():
 def load_view_settings():
     """생성된 뷰 설정 로드"""
     try:
-        with open('hyosung_dashboard_views_20250719_005527.json', 'r', encoding='utf-8') as f:
+        with open('../data/hyosung_dashboard_views_20250719_005527.json', 'r', encoding='utf-8') as f:
             return json.load(f)
     except FileNotFoundError:
         print("❌ 뷰 설정 파일을 찾을 수 없습니다.")

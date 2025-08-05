@@ -683,7 +683,7 @@ def main():
         print(f"    • URL: {db_info['url']}")
     
     # 결과를 JSON 파일로 저장
-    result_file = f"hyosung_dbs_created_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+    result_file = f"../data/hyosung_dbs_created_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
     with open(result_file, 'w', encoding='utf-8') as f:
         json.dump(created_dbs, f, ensure_ascii=False, indent=2)
     

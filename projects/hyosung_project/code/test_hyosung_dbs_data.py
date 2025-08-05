@@ -25,7 +25,7 @@ HEADERS = {
 def load_db_ids():
     """생성된 DB ID 정보 로드"""
     try:
-        with open('hyosung_dbs_created_20250719_003144.json', 'r', encoding='utf-8') as f:
+        with open('../data/hyosung_dbs_created_20250719_003144.json', 'r', encoding='utf-8') as f:
             return json.load(f)
     except FileNotFoundError:
         print("❌ DB ID 파일을 찾을 수 없습니다.")
@@ -526,7 +526,7 @@ def main():
     print("  ✅ 리스크 매트릭스 Formula 계산 검증")
     
     # 결과 저장
-    result_file = f"test_data_results_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+    result_file = f"../data/test_data_results_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
     with open(result_file, 'w', encoding='utf-8') as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
     

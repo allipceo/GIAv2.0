@@ -24,7 +24,7 @@ HEADERS = {
 def load_db_ids():
     """생성된 DB ID 정보 로드"""
     try:
-        with open('hyosung_dbs_created_20250719_003144.json', 'r', encoding='utf-8') as f:
+        with open('../data/hyosung_dbs_created_20250719_003144.json', 'r', encoding='utf-8') as f:
             return json.load(f)
     except FileNotFoundError:
         print("❌ DB ID 파일을 찾을 수 없습니다.")
@@ -442,7 +442,7 @@ def main():
     timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
     
     # 뷰 설정 정보 저장
-    views_file = f"hyosung_dashboard_views_{timestamp}.json"
+    views_file = f"../data/hyosung_dashboard_views_{timestamp}.json"
     with open(views_file, 'w', encoding='utf-8') as f:
         json.dump(all_results, f, ensure_ascii=False, indent=2)
     

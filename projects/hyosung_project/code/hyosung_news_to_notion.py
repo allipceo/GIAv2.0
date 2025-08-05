@@ -80,7 +80,7 @@ def create_notion_page(news):
         return False
 
 def main():
-    news_list = load_news_data('hyosung_news_data.json')
+    news_list = load_news_data('../data/hyosung_news_data.json')
     existing = get_existing_news()
     count = 0
     
