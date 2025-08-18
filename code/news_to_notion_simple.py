@@ -1,6 +1,6 @@
 import json
 import os
-from notion_client import Client
+import requests
 from datetime import datetime
 from email.utils import parsedate_to_datetime
 
@@ -8,9 +8,13 @@ from email.utils import parsedate_to_datetime
 NOTION_TOKEN = "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"
 DATABASE_ID = "22aa613d25ff80888257c652d865f85a"
 
+HEADERS = {
+    "Authorization": f"Bearer {NOTION_TOKEN}",
+    "Content-Type": "application/json",
+    "Notion-Version": "2022-06-28"
+}
+
 def upload_to_notion():
-    # 노션 클라이언트 초기화
-    notion = Client(auth=NOTION_TOKEN)
     
     # news_data.json 파일 읽기 (강화된 인코딩 처리)
     try:
@@ -64,10 +68,10 @@ def upload_to_notion():
             safe_tag = str(news["태그"][0]).encode('utf-8').decode('utf-8') if news.get("태그") and len(news["태그"]) > 0 else "기타"
             safe_importance = str(news.get("중요도", "보통")).encode('utf-8').decode('utf-8')
             
-            # 노션 페이지 생성 (강화된 인코딩 처리)
-            response = notion.pages.create(
-                parent={"database_id": DATABASE_ID},
-                properties={
+            # 노션 페이지 생성 (requests 사용)
+            payload = {
+                "parent": {"database_id": DATABASE_ID},
+                "properties": {
                     "제목": {
                         "title": [{"text": {"content": safe_title}}]
                     },
@@ -87,7 +91,14 @@ def upload_to_notion():
                         "select": {"name": safe_importance}
                     }
                 }
+            }
+            
+            response = requests.post(
+                "https://api.notion.com/v1/pages",
+                headers=HEADERS,
+                json=payload
             )
+            response.raise_for_status()
             success_count += 1
             print(f"[SUCCESS] {safe_title[:50]}...")
             
