@@ -581,3 +581,294 @@ def main():
 if __name__ == "__main__":
 
     main() 
+
+
+
+
+def collect_google_news_rss(keywords_dict):
+
+    """Google News RSS 피드에서 뉴스 수집"""
+
+    all_articles = []
+
+    
+
+    for category, keyword_list in keywords_dict.items():
+
+        logging.info(f"[NEWS] {category} 카테고리 뉴스 수집 시작")
+
+        
+
+        for keyword in keyword_list:
+
+            try:
+
+                # Google News RSS URL 구성
+
+                encoded_keyword = quote(keyword)
+
+                rss_url = f"{GOOGLE_NEWS_RSS_BASE}?q={encoded_keyword}&{RSS_PARAMS}"
+
+                
+
+                logging.info(f"[SEARCH] 키워드 '{keyword}' 검색 중...")
+
+                
+
+                # RSS 피드 파싱
+
+                feed = feedparser.parse(rss_url)
+
+                
+
+                if feed.bozo:
+
+                    logging.warning(f"[WARNING] RSS 피드 파싱 경고: {keyword}")
+
+                
+
+                # 기사 수집 (최대 개수 제한)
+
+                articles_collected = 0
+
+                for entry in feed.entries:
+
+                    if articles_collected >= MAX_ARTICLES_PER_KEYWORD:
+
+                        break
+
+                    
+
+                    # Notion DB 형식에 맞춰 데이터 구성 (인코딩 안전 처리)
+
+                    article = {
+
+                        "제목": safe_encode_text(clean_html_tags(entry.title)),
+
+                        "URL": safe_encode_text(entry.link),
+
+                        "발행일": format_korean_date(entry.published_parsed if hasattr(entry, 'published_parsed') else entry.published),
+
+                        "요약": "자동 수집된 뉴스",  # 초기 플레이스홀더
+
+                        "태그": [safe_encode_text(category)],  # 수집 카테고리를 태그로 사용
+
+                        "중요도": determine_importance(safe_encode_text(entry.title), category),
+
+                        "요약 품질 평가": "보통"  # 초기 기본값
+
+                    }
+
+                    
+
+                    all_articles.append(article)
+
+                    articles_collected += 1
+
+                
+
+                logging.info(f"[SUCCESS] '{keyword}' 키워드: {articles_collected}건 수집 완료")
+
+                
+
+            except Exception as e:
+
+                logging.error(f"[ERROR] '{keyword}' 수집 실패: {str(e)}")
+
+                continue
+
+    
+
+    logging.info(f"[COMPLETE] 전체 수집 완료: 총 {len(all_articles)}건")
+
+    return all_articles
+
+
+
+def load_existing_news(file_path):
+
+    """기존 news_data.json 파일 로드"""
+
+    if not os.path.exists(file_path):
+
+        logging.info(f"[INFO] {file_path} 파일이 없어 새로 생성합니다.")
+
+        return []
+
+    
+
+    try:
+
+        with open(file_path, 'r', encoding='utf-8') as f:
+
+            data = json.load(f)
+
+        logging.info(f"[INFO] 기존 뉴스 {len(data)}건 로드 완료")
+
+        return data
+
+    except Exception as e:
+
+        logging.error(f"[ERROR] 기존 파일 로드 실패: {str(e)}")
+
+        return []
+
+
+
+def get_existing_urls(news_list):
+
+    """기존 뉴스의 URL 목록 추출"""
+
+    return {news.get('URL', '') for news in news_list}
+
+
+
+def avoid_duplicates(new_articles, existing_news):
+
+    """중복 URL 제거"""
+
+    existing_urls = get_existing_urls(existing_news)
+
+    unique_articles = []
+
+    
+
+    for article in new_articles:
+
+        if article['URL'] not in existing_urls:
+
+            unique_articles.append(article)
+
+        else:
+
+            logging.info(f"[DUPLICATE] 중복 제거: {article['제목']}")
+
+    
+
+    logging.info(f"[INFO] 중복 제거 후: {len(unique_articles)}건")
+
+    return unique_articles
+
+
+
+def save_news_data(news_list, file_path):
+
+    """뉴스 데이터를 JSON 파일로 저장"""
+
+    try:
+
+        with open(file_path, 'w', encoding='utf-8') as f:
+
+            json.dump(news_list, f, ensure_ascii=False, indent=2)
+
+        logging.info(f"[SAVE] {file_path}에 {len(news_list)}건 저장 완료")
+
+        return True
+
+    except Exception as e:
+
+        logging.error(f"[ERROR] 파일 저장 실패: {str(e)}")
+
+        return False
+
+
+
+def main():
+
+    """메인 실행 함수"""
+
+    logging.info("[START] Google News 수집 시작")
+
+    logging.info(f"[INFO] 수집 키워드: {list(KEYWORDS.keys())}")
+
+    
+
+    try:
+
+        # 1. 새 뉴스 수집
+
+        new_articles = collect_google_news_rss(KEYWORDS)
+
+        
+
+        if not new_articles:
+
+            logging.warning("[WARNING] 수집된 뉴스가 없습니다.")
+
+            return
+
+        
+
+        # 2. 기존 뉴스 로드
+
+        existing_news = load_existing_news(NEWS_DATA_FILE)
+
+        
+
+        # 3. 중복 제거
+
+        unique_articles = avoid_duplicates(new_articles, existing_news)
+
+        
+
+        if not unique_articles:
+
+            logging.info("[INFO] 새로운 뉴스가 없습니다. (모두 중복)")
+
+            return
+
+        
+
+        # 4. 기존 뉴스와 합치기
+
+        updated_news = existing_news + unique_articles
+
+        
+
+        # 5. 저장
+
+        if save_news_data(updated_news, NEWS_DATA_FILE):
+
+            logging.info(f"[SUCCESS] 성공: 새 뉴스 {len(unique_articles)}건 추가")
+
+            logging.info(f"[INFO] 전체 뉴스: {len(updated_news)}건")
+
+            
+
+            # 수집된 뉴스 요약 출력 (인코딩 안전)
+
+            safe_print("\n" + "="*50)
+
+            safe_print("[NEWS] Google News 수집 결과")
+
+            safe_print("="*50)
+
+            for i, article in enumerate(unique_articles, 1):
+
+                safe_print(f"{i}. [{article['태그'][0]}] {article['제목']}")
+
+                safe_print(f"   [DATE] {article['발행일']} | [URL] {article['URL'][:50]}...")
+
+                safe_print(f"   [PRIORITY] 중요도: {article['중요도']}")
+
+                safe_print("")
+
+            safe_print(f"[SUCCESS] 총 {len(unique_articles)}건의 새 뉴스가 news_data.json에 추가되었습니다!")
+
+        else:
+
+            logging.error("[ERROR] 저장 실패")
+
+            
+
+    except Exception as e:
+
+        logging.error(f"[ERROR] 실행 중 오류 발생: {str(e)}")
+
+        raise
+
+
+
+if __name__ == "__main__":
+
+    main() 
