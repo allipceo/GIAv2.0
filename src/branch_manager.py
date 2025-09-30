@@ -1,3 +1,155 @@
+import os
+import uuid
+import json
+import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from typing import List, Dict, Any
+
+from utils.notion_api import (
+    check_health,
+    get_database_schema,
+    extract_status_property_id,
+    get_page,
+    validate_page_in_database,
+    set_status_by_property_id,
+    NotionApiError,
+)
+
+
+def _get_env(name: str) -> str:
+    val = os.getenv(name)
+    if not val:
+        raise RuntimeError(f"Missing required environment variable: {name}")
+    return val
+
+
+def step_health_check() -> Dict[str, Any]:
+    url = _get_env("G2N_HEALTH_URL")
+    return check_health(url)
+
+
+def step_fetch_status_property_id() -> str:
+    token = _get_env("NOTION_TOKEN")
+    dbid = _get_env("TARGET_DATABASE_ID")
+    schema = get_database_schema(token, dbid)
+    return extract_status_property_id(schema)
+
+
+def _ensure_page_in_db(page_id: str, target_db: str):
+    token = _get_env("NOTION_TOKEN")
+    pj = get_page(token, page_id)
+    if not validate_page_in_database(pj, target_db):
+        raise NotionApiError("Page is not a child of TARGET_DATABASE_ID")
+
+
+def run_g1_regression(status_property_id: str) -> List[Dict[str, Any]]:
+    token = _get_env("NOTION_TOKEN")
+    dbid = _get_env("TARGET_DATABASE_ID")
+    page_id = _get_env("Z062_PAGE_ID")
+
+    _ensure_page_in_db(page_id, dbid)
+
+    scenarios = ["작성중", "검토중", "작성중"]
+    logs: List[Dict[str, Any]] = []
+
+    for status_name in scenarios:
+        trace_id = f"g1_{uuid.uuid4().hex[:8]}"
+        started = time.time()
+        payload_summary = {status_property_id: {"status": {"name": status_name}}}
+        try:
+            res = set_status_by_property_id(token, page_id, status_property_id, status_name, parent_database_id=dbid)
+            code = 200
+        except Exception as e:
+            res = {"error": str(e)}
+            code = 500
+        duration_ms = int((time.time() - started) * 1000)
+        logs.append(
+            {
+                "trace_id": trace_id,
+                "page_id": page_id,
+                "database_id": dbid,
+                "property_id": status_property_id,
+                "payload": payload_summary,
+                "response_code": code,
+                "duration_ms": duration_ms,
+            }
+        )
+
+    return logs
+
+
+def _update_status_job(args: Dict[str, Any]) -> Dict[str, Any]:
+    token = args["token"]
+    dbid = args["dbid"]
+    page_id = args["page_id"]
+    status_property_id = args["status_property_id"]
+    status_name = args["status_name"]
+    trace_id = args["trace_id"]
+
+    started = time.time()
+    payload_summary = {status_property_id: {"status": {"name": status_name}}}
+    try:
+        _ = set_status_by_property_id(token, page_id, status_property_id, status_name, parent_database_id=dbid)
+        code = 200
+        err = None
+    except Exception as e:
+        code = 500
+        err = str(e)
+    duration_ms = int((time.time() - started) * 1000)
+    return {
+        "trace_id": trace_id,
+        "page_id": page_id,
+        "database_id": dbid,
+        "property_id": status_property_id,
+        "payload": payload_summary,
+        "response_code": code,
+        "duration_ms": duration_ms,
+        "error": err,
+    }
+
+
+def run_g2_batch(status_property_id: str, page_ids: List[str], status_name: str = "검토중", concurrency: int = 3) -> Dict[str, Any]:
+    token = _get_env("NOTION_TOKEN")
+    dbid = _get_env("TARGET_DATABASE_ID")
+
+    # Pre-validate page parents
+    for pid in page_ids:
+        _ensure_page_in_db(pid, dbid)
+
+    jobs: List[Dict[str, Any]] = []
+    for pid in page_ids:
+        jobs.append(
+            {
+                "token": token,
+                "dbid": dbid,
+                "page_id": pid,
+                "status_property_id": status_property_id,
+                "status_name": status_name,
+                "trace_id": f"g2_{uuid.uuid4().hex[:8]}",
+            }
+        )
+
+    results: List[Dict[str, Any]] = []
+    with ThreadPoolExecutor(max_workers=concurrency) as ex:
+        futs = [ex.submit(_update_status_job, j) for j in jobs]
+        for fut in as_completed(futs):
+            results.append(fut.result())
+
+    # basic report
+    success = sum(1 for r in results if r["response_code"] // 100 == 2)
+    fail = len(results) - success
+    avg_ms = int(sum(r["duration_ms"] for r in results) / max(1, len(results)))
+    results_sorted = sorted(results, key=lambda r: r["response_code"])
+    top_fail = [r for r in results_sorted if r["response_code"] >= 400][:3]
+    return {
+        "total": len(results),
+        "success": success,
+        "fail": fail,
+        "avg_duration_ms": avg_ms,
+        "top_fail": top_fail,
+        "results": results,
+    }
+
 # D:\AI_Project\GIAv2.0\src\branch_manager.py
 
 import subprocess
