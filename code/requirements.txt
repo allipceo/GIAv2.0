@@ -1,4 +1,0 @@
-notion-client
-feedparser
-python-dotenv
-requests 
