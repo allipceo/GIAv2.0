@@ -171,7 +171,7 @@ class NotionTemplateCreator:
 
 def main():
     # 실제 실행 시 아래 값을 조대표님께 받은 값으로 교체
-    token = "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"
+    token = ""
     task_db_id = "228a613d25ff814e9153fa459f1392ef"
     todo_db_id = "228a613d25ff813dbb4ef3d3d984d186"
 

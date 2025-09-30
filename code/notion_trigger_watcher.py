@@ -19,7 +19,7 @@ from datetime import datetime
 from notion_client import Client
 
 # 설정
-NOTION_TOKEN = "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"
+NOTION_TOKEN = ""
 TRIGGER_DATABASE_ID = "22aa613d25ff80888257c652d865f85a"  # 트리거용 DB ID
 CHECK_INTERVAL = 30  # 30초마다 체크
 

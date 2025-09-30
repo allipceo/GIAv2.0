@@ -3,7 +3,7 @@
 Smoke test for Google Custom Search API via unified adapter.
 
 Usage (PowerShell):
-  $env:CSE_API_KEY="<key>"; $env:CSE_CX="<cx>"; python scripts/smoke_cse_test.py
+  $env:; $env:CSE_CX="<cx>"; python scripts/smoke_cse_test.py
 
 Expectation:
 - HTTP 200 from Google CSE

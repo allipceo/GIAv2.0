@@ -12,7 +12,7 @@ import json
 from datetime import datetime
 
 # 노션 API 설정
-NOTION_TOKEN = "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"
+NOTION_TOKEN = ""
 PARENT_PAGE_ID = "227a613d-25ff-800c-a97d-e24f6eb521a8"  # 조대표님 워크스페이스 페이지 ID
 
 HEADERS = {

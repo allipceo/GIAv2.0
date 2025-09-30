@@ -13,7 +13,7 @@ from typing import Dict, List
 
 class GrokTeamNotionInputter:
     def __init__(self):
-        self.notion_token = "secret_YourNotionTokenHere"  # 실제 토큰으로 교체 필요
+        self.  # 실제 토큰으로 교체 필요
         self.headers = {
             "Authorization": f"Bearer {self.notion_token}",
             "Content-Type": "application/json",

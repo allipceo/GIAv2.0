@@ -11,7 +11,7 @@ from typing import Dict, List
 
 class NotionDBInputProcessor:
     def __init__(self):
-        self.notion_token = "your_notion_token_here"  # 실제 토큰으로 교체 필요
+        self.  # 실제 토큰으로 교체 필요
         self.base_url = "https://api.notion.com/v1"
         self.headers = {
             "Authorization": f"Bearer {self.notion_token}",

@@ -29,7 +29,7 @@ def load_env_vars():
 
 # API 키 설정
 env_vars = load_env_vars()
-NOTION_TOKEN = env_vars.get('NOTION_TOKEN', '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')
+NOTION_TOKEN = env_vars.get('NOTION_TOKEN', '')
 
 class AnalysisResultStorageSystem:
     def __init__(self):

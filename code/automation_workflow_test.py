@@ -12,7 +12,7 @@ import json
 from datetime import datetime
 
 # 노션 API 설정
-NOTION_TOKEN = "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"
+NOTION_TOKEN = ""
 COMPANY_DB_ID = "253a613d-25ff-819b-acfe-fa0547939de1"  # 조사 대상 기업 DB
 
 HEADERS = {

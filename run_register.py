@@ -8,7 +8,7 @@ import subprocess
 import sys
 
 # Set environment variables
-os.environ['NOTION_TOKEN'] = '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'
+os.environ['NOTION_TOKEN'] = ''
 os.environ['TARGET_DATABASE_ID'] = '5d15b3aa0f174b04bceeb22107e06a03'
 os.environ['PYTHONPATH'] = '.'
 

@@ -12,7 +12,7 @@ import json
 from datetime import datetime
 
 # 노션 API 설정
-NOTION_TOKEN = "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"
+NOTION_TOKEN = ""
 DASHBOARD_PAGE_ID = "253a613d-25ff-81ee-a83f-f53b14aec5c7"  # 대시보드 메인 페이지
 COMPANY_DB_ID = "253a613d-25ff-819b-acfe-fa0547939de1"      # 조사 대상 기업 DB
 REPORT_DB_ID = "253a613d-25ff-8161-b357-e6b56237fc0d"       # 생성된 보고서/전략 DB

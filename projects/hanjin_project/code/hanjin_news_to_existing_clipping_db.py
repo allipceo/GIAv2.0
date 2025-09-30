@@ -13,7 +13,7 @@ from datetime import datetime
 import time
 
 # 노션 API 설정
-NOTION_TOKEN = "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"
+NOTION_TOKEN = ""
 CLIPPING_DB_ID = "22aa613d25ff80888257c652d865f85a"  # 기존 뉴스 클리핑 DB
 
 HEADERS = {

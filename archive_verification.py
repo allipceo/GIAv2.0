@@ -12,7 +12,7 @@ from notion_client import Client
 from datetime import datetime
 
 # Notion 설정
-NOTION_TOKEN = "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"
+NOTION_TOKEN = ""
 DATABASE_ID = "22ea613d25ff80b78fd4ce8dc7a437a6"  # GIA 코드 아카이브DB
 
 def verify_notion_connection():

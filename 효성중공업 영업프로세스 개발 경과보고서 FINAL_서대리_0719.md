@@ -348,7 +348,7 @@
 - Google Custom Search: AIzaSyDEDD28QmBTFzig_kStW0kJ-FUvzpC3kpc
 - Gemini API: AIzaSyDLMjWJP6fn43tNPykS_ylpjdorZZyICJ8, AIzaSyAME1wtAlbBr3cccYgCTdyKmh5sNwLEosw
 - Naver API: 7PEImiCz3n9XSv35tNXK, GjPic6dQrl
-- Notion Token: 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
+- Notion Token: 
 ```
 
 ### **B. 데이터베이스 ID 목록**

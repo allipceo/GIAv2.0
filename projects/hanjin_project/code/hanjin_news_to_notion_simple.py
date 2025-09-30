@@ -13,7 +13,7 @@ from datetime import datetime
 import time
 
 # 노션 API 설정
-NOTION_TOKEN = "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"
+NOTION_TOKEN = ""
 NEWS_DB_ID = "234a613d25ff81aba93ae4cb8f36c920"  # 기업재무 및 프로젝트 DB
 
 HEADERS = {

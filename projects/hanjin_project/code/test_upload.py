@@ -9,7 +9,7 @@ import requests
 from datetime import datetime
 
 # 노션 API 설정
-NOTION_TOKEN = "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"
+NOTION_TOKEN = ""
 NEWS_DB_ID = "234a613d25ff81aba93ae4cb8f36c920"
 
 HEADERS = {

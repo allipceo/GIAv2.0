@@ -14,7 +14,7 @@ from datetime import datetime
 from dotenv import load_dotenv
 
 # 환경변수 대신 검증된 값 직접 사용
-NOTION_TOKEN = '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'
+NOTION_TOKEN = ''
 NOTION_DATABASE_ID = '22aa613d25ff80888257c652d865f85a'  # 기존 검증된 뉴스DB ID
 
 HEADERS = {

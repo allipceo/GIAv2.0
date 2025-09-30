@@ -13,7 +13,7 @@ import time
 from datetime import datetime
 
 # 노션 API 설정
-NOTION_TOKEN = "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"  # 검증된 노션 API 토큰
+NOTION_TOKEN = ""  # 검증된 노션 API 토큰
 PARENT_PAGE_ID = "227a613d25ff800ca97de24f6eb521a8"  # GIA_작업장 1단계
 
 HEADERS = {

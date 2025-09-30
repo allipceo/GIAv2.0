@@ -32,7 +32,7 @@ def load_env_vars():
 env_vars = load_env_vars()
 CLAUDE_API_KEY = env_vars.get('CLAUDE_API_KEY', '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')
 GEMINI_API_KEY = env_vars.get('GEMINI_API_KEY', 'AIzaSyDLMjWJP6fn43tNPykS_ylpjdorZZyICJ8')
-NOTION_TOKEN = env_vars.get('NOTION_TOKEN', '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')
+NOTION_TOKEN = env_vars.get('NOTION_TOKEN', '')
 
 class LLMPerformanceTester:
     def __init__(self):

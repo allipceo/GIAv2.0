@@ -13,7 +13,7 @@ from notion_client import Client
 from datetime import datetime
 
 # Notion 설정
-NOTION_TOKEN = "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"
+NOTION_TOKEN = ""
 
 # 데이터베이스 ID들 (기존 효성중공업 DB 활용)
 BUSINESS_PROJECT_DB_ID = "228a613d25ff8122a10bc35772c8a05c"  # 기업 재무 및 프로젝트 DB

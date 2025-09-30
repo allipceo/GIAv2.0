@@ -702,7 +702,7 @@ def save_to_notion_risk_db(risk_data):
     print("노션 기업 위험 프로파일 DB 연동 시작...")
     
     # 기존 검증된 노션 API 설정 활용
-    NOTION_TOKEN = "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"
+    NOTION_TOKEN = ""
     
     # 주의: 실제 기업 위험 프로파일 DB ID는 아직 확인 필요
     # 현재는 테스트용 뉴스 DB ID 사용 (노팀장 승인 후 실제 DB ID로 변경)
@@ -1344,7 +1344,7 @@ def implement_notion_dashboard_integration():
     print("노션 대시보드 실제 구현 및 연동...")
     
     # 기존 검증된 노션 API 설정 활용
-    NOTION_TOKEN = "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"
+    NOTION_TOKEN = ""
     RISK_PROFILE_DB_ID = "22aa613d25ff80888257c652d865f85a"  # 임시 테스트용
     
     HEADERS = {

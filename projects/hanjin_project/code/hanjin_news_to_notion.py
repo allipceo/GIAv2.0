@@ -12,7 +12,7 @@ import json
 from datetime import datetime
 
 # 노션 API 설정
-NOTION_TOKEN = "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"  # 검증된 노션 API 토큰
+NOTION_TOKEN = ""  # 검증된 노션 API 토큰
 NEWS_DB_ID = "234a613d25ff81aba93ae4cb8f36c920"  # 기업재무 및 프로젝트 DB
 
 HEADERS = {

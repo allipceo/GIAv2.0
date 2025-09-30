@@ -13,7 +13,7 @@ import time
 from datetime import datetime
 
 # 노션 API 설정
-NOTION_TOKEN = "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"
+NOTION_TOKEN = ""
 
 HEADERS = {
     "Authorization": f"Bearer {NOTION_TOKEN}",

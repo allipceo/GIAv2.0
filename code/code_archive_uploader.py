@@ -12,7 +12,7 @@ from notion_client import Client
 from datetime import datetime
 
 # Notion 설정
-NOTION_TOKEN = "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"
+NOTION_TOKEN = ""
 DATABASE_ID = "22ea613d25ff80b78fd4ce8dc7a437a6"  # GIA 코드 아카이브DB
 
 def create_code_blocks(code_content):
@@ -257,7 +257,7 @@ from datetime import datetime
 from email.utils import parsedate_to_datetime
 
 # 환경변수에서 토큰 가져오기
-NOTION_TOKEN = "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"
+NOTION_TOKEN = ""
 DATABASE_ID = "22aa613d25ff80888257c652d865f85a"
 
 def upload_to_notion():
@@ -641,7 +641,7 @@ from datetime import datetime
 from notion_client import Client
 
 # 설정
-NOTION_TOKEN = "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"
+NOTION_TOKEN = ""
 TRIGGER_DATABASE_ID = "22aa613d25ff80888257c652d865f85a"  # 트리거용 DB ID
 CHECK_INTERVAL = 30  # 30초마다 체크
 

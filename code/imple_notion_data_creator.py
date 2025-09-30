@@ -3,7 +3,7 @@ import requests
 import json
 
 # Notion API 설정
-TOKEN = "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"
+TOKEN = ""
 headers = {
     "Authorization": f"Bearer {TOKEN}",
     "Content-Type": "application/json",
