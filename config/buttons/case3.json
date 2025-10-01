@@ -1,0 +1,17 @@
+{
+  "button_id": "case3",
+  "name": "케이스3 실행",
+  "description": "외부자료 등록",
+  "parameters": {
+    "case": "3",
+    "db_id": "$NEWS_DB_ID",
+    "mode": "apply"
+  },
+  "preset": {
+    "case": "3",
+    "db_id": "$NEWS_DB_ID",
+    "mode": "apply"
+  },
+  "webhook_url": "http://localhost:8000/webhook/case3",
+  "expected_result": "성공"
+}

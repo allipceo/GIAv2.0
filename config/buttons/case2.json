@@ -1,0 +1,17 @@
+{
+  "button_id": "case2",
+  "name": "케이스2 실행",
+  "description": "개발결과 기록",
+  "parameters": {
+    "case": "2",
+    "page_id": "$THIS_PAGE_ID",
+    "mode": "apply"
+  },
+  "preset": {
+    "case": "2",
+    "page_id": "$THIS_PAGE_ID",
+    "mode": "apply"
+  },
+  "webhook_url": "http://localhost:8000/webhook/case2",
+  "expected_result": "성공"
+}

@@ -1,0 +1,14 @@
+{
+  "allowed_block_types": [
+    "paragraph"
+  ],
+  "max_changes": 1,
+  "forbidden_content": [],
+  "allowed_operations": [
+    "append_footer_note"
+  ],
+  "content_restrictions": {
+    "max_length": 100,
+    "allowed_patterns": ["읽음 표시", "서대리", "확인 완료"]
+  }
+}

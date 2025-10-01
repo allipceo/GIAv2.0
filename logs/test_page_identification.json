@@ -1,0 +1,21 @@
+{
+  "case": "케이스2",
+  "timestamp": "2025-10-01T19:26:25.998487",
+  "target_keyword": "Z062",
+  "steps": [
+    {
+      "step": "query",
+      "status": "success",
+      "page_id": "62d899af-7478-46aa-9163-0239e9120a22",
+      "message": "'Z062' 페이지 식별 완료"
+    },
+    {
+      "step": "page_info",
+      "status": "success",
+      "page_id": "62d899af-7478-46aa-9163-0239e9120a22",
+      "message": "페이지 상세 정보 조회 완료"
+    }
+  ],
+  "page_id": "62d899af-7478-46aa-9163-0239e9120a22",
+  "overall_status": "success"
+}

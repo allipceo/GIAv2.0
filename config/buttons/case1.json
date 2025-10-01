@@ -1,0 +1,19 @@
+{
+  "button_id": "case1",
+  "name": "케이스1 실행",
+  "description": "통합·권한 핸드셰이크",
+  "parameters": {
+    "case": "1",
+    "db_id": "5d15b3aa0f174b04bceeb22107e06a03",
+    "target": "Z062",
+    "mode": "dryrun"
+  },
+  "preset": {
+    "case": "1",
+    "db_id": "$DEV_DB_ID",
+    "target": "Z062",
+    "mode": "dryrun"
+  },
+  "webhook_url": "http://localhost:8000/webhook/case1",
+  "expected_result": "성공"
+}

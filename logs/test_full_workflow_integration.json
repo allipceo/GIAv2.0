@@ -1,0 +1,77 @@
+{
+  "workflow": "Notion 협업 워크플로우",
+  "timestamp": "2025-10-01T19:43:42.874994",
+  "target_keyword": "Z062",
+  "cases": {
+    "case1": {
+      "case": "케이스1",
+      "timestamp": "2025-10-01T19:43:42.875067",
+      "steps": [
+        {
+          "step": "users_me",
+          "status": "success",
+          "code": 200,
+          "message": "토큰 유효성 확인 완료"
+        },
+        {
+          "step": "databases",
+          "status": "success",
+          "code": 200,
+          "message": "DB 접근 권한 확인 완료"
+        }
+      ],
+      "overall_status": "success"
+    },
+    "case2": {
+      "case": "케이스2",
+      "timestamp": "2025-10-01T19:43:55.101891",
+      "target_keyword": "Z062",
+      "steps": [
+        {
+          "step": "query",
+          "status": "success",
+          "page_id": "27fa613d-25ff-81fd-b6ce-efdeb96794d1",
+          "message": "'Z062' 페이지 식별 완료"
+        },
+        {
+          "step": "page_info",
+          "status": "success",
+          "page_id": "27fa613d-25ff-81fd-b6ce-efdeb96794d1",
+          "message": "페이지 상세 정보 조회 완료"
+        }
+      ],
+      "page_id": "27fa613d-25ff-81fd-b6ce-efdeb96794d1",
+      "overall_status": "success"
+    },
+    "case3": {
+      "case": "케이스3",
+      "timestamp": "2025-10-01T19:44:11.158426",
+      "news_data": {
+        "title": "[파일럿] Z062 관련 뉴스 테스트 등록",
+        "url": "https://example.com/z062-news",
+        "date": "2025-10-01",
+        "source": "테스트 매체",
+        "category": "해상풍력발전",
+        "importance": "보통"
+      },
+      "steps": [
+        {
+          "step": "health_check",
+          "status": "success",
+          "message": "뉴스클리핑 DB 헬스체크 완료"
+        },
+        {
+          "step": "news_registration",
+          "status": "success",
+          "message": "뉴스클리핑 DB 등록 완료",
+          "page_id": "27fa613d-25ff-81ff-b579-ce3599acab47",
+          "notion_url": "https://www.notion.so/27fa613d25ff81ffb579ce3599acab47"
+        }
+      ],
+      "page_id": "27fa613d-25ff-81ff-b579-ce3599acab47",
+      "notion_url": "https://www.notion.so/27fa613d25ff81ffb579ce3599acab47",
+      "overall_status": "success"
+    }
+  },
+  "overall_status": "success"
+}

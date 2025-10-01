@@ -1,0 +1,13 @@
+{
+  "timestamp": "2025-10-01T19:32:49.419362",
+  "case": "케이스3",
+  "operation": "뉴스클리핑 DB 등록 (두 번째)",
+  "page_id": "27fa613d-25ff-81cf-ae97-f99dc2c12dcb",
+  "title": "[파일럿] 방산·조선 연계 뉴스 테스트 등록",
+  "url": "https://example.com/defense-shipbuilding-news",
+  "source": "국방일보",
+  "category": "방산",
+  "importance": "중요",
+  "status": "success",
+  "notion_url": "https://www.notion.so/27fa613d25ff81cfae97f99dc2c12dcb"
+}

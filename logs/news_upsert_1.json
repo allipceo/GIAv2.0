@@ -1,0 +1,13 @@
+{
+  "timestamp": "2025-10-01T19:32:00.869542",
+  "case": "케이스3",
+  "operation": "뉴스클리핑 DB 등록",
+  "page_id": "27fa613d-25ff-8186-88cc-c0ba6d12cd80",
+  "title": "[파일럿] 해상풍력 사고 동향 기사 테스트 등록",
+  "url": "https://example.com/offshore-wind-accident",
+  "source": "에너지데일리",
+  "category": "해상풍력발전",
+  "importance": "보통",
+  "status": "success",
+  "notion_url": "https://www.notion.so/27fa613d25ff818688ccc0ba6d12cd80"
+}

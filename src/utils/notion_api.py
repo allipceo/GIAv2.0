@@ -2,7 +2,8 @@ import os
 import json
 import time
 import logging
-from typing import Dict, Any, Optional
+import hashlib
+from typing import Dict, Any, Optional, List
 
 import requests
 
@@ -129,5 +130,62 @@ def safe_json(resp: requests.Response) -> Any:
         return resp.json()
     except Exception:
         return {"text": resp.text[:500]}
+
+
+# 선과장님 스크립트에 따른 NotionClient 클래스 구현
+class NotionClient:
+    def __init__(self, token: str):
+        self.token = token
+        self.headers = {
+            "Authorization": f"Bearer {token}",
+            "Notion-Version": "2022-06-28",
+            "Content-Type": "application/json; charset=utf-8",
+        }
+
+    def _req(self, method: str, path: str, **kwargs) -> Dict[str, Any]:
+        url = f"{NOTION_BASE_URL}{path}"
+        
+        # UTF-8 바이트 인코딩 보장
+        for k in ("json", "data"):
+            if k in kwargs and isinstance(kwargs[k], str):
+                kwargs[k] = kwargs[k].encode("utf-8")
+        
+        r = requests.request(method, url, headers=self.headers, timeout=30, **kwargs)
+        
+        if r.status_code >= 400:
+            raise RuntimeError(f"{method} {path} -> {r.status_code} {r.text[:400]}")
+        
+        return r.json()
+
+    # 프로브 메서드들
+    def users_me(self):
+        return self._req("GET", "/users/me")
+
+    def get_database(self, db_id: str):
+        return self._req("GET", f"/databases/{db_id}")
+
+    def query_database(self, db_id: str, payload: Optional[Dict] = None) -> Dict:
+        return self._req("POST", f"/databases/{db_id}/query", json=payload or {})
+
+    def get_page(self, page_id: str):
+        return self._req("GET", f"/pages/{page_id}")
+
+    def list_block_children(self, block_id: str, page_size=100, start_cursor=None):
+        params = []
+        if page_size:
+            params.append(f"page_size={page_size}")
+        if start_cursor:
+            params.append(f"start_cursor={start_cursor}")
+        
+        qs = ("?" + "&".join(params)) if params else ""
+        return self._req("GET", f"/blocks/{block_id}/children{qs}")
+
+
+# 스키마 해시 생성 함수
+def build_schema_hash(db_json: Dict) -> str:
+    props = db_json.get("properties", {})
+    sig = {k: {"id": v.get("id"), "type": v.get("type")} for k, v in props.items()}
+    raw = json.dumps(sig, sort_keys=True, ensure_ascii=False)
+    return hashlib.sha256(raw.encode("utf-8")).hexdigest()
 
 
