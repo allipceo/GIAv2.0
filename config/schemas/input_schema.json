@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["case", "mode", "ts", "nonce", "sig"],
+  "properties": {
+    "case": {
+      "type": "string",
+      "enum": ["1", "2", "3", "all"]
+    },
+    "mode": {
+      "type": "string",
+      "enum": ["dryrun", "apply"]
+    },
+    "ts": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "nonce": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sig": {
+      "type": "string",
+      "minLength": 1
+    },
+    "page_id": {
+      "type": "string"
+    },
+    "target": {
+      "type": "string"
+    },
+    "db_id": {
+      "type": "string"
+    }
+  },
+  "anyOf": [
+    {
+      "properties": {
+        "page_id": {"type": "string"}
+      }
+    },
+    {
+      "properties": {
+        "target": {"type": "string"}
+      }
+    }
+  ],
+  "additionalProperties": true
+}

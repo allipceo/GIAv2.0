@@ -57,6 +57,17 @@ def handle_case1():
     """케이스1 실행버튼 처리"""
     try:
         data = request.json
+        signature = request.headers.get('X-Signature')
+        timestamp = request.headers.get('X-Timestamp')
+        nonce = request.headers.get('X-Nonce')
+        
+        # 보안 검증 강제 적용
+        if not all([signature, timestamp, nonce]):
+            return jsonify({"status": "error", "message": "Missing security headers"}), 400
+        
+        if not validate_security(data, signature):
+            return jsonify({"status": "error", "message": "Security validation failed"}), 401
+        
         target = data.get('target', 'Z062')
         notion_page_id = data.get('notion_page_id')
         
@@ -104,6 +115,17 @@ def handle_case2():
     """케이스2 실행버튼 처리"""
     try:
         data = request.json
+        signature = request.headers.get('X-Signature')
+        timestamp = request.headers.get('X-Timestamp')
+        nonce = request.headers.get('X-Nonce')
+        
+        # 보안 검증 강제 적용
+        if not all([signature, timestamp, nonce]):
+            return jsonify({"status": "error", "message": "Missing security headers"}), 400
+        
+        if not validate_security(data, signature):
+            return jsonify({"status": "error", "message": "Security validation failed"}), 401
+        
         target = data.get('target', 'Z062')
         notion_page_id = data.get('notion_page_id')
         
@@ -151,6 +173,17 @@ def handle_case3():
     """케이스3 실행버튼 처리"""
     try:
         data = request.json
+        signature = request.headers.get('X-Signature')
+        timestamp = request.headers.get('X-Timestamp')
+        nonce = request.headers.get('X-Nonce')
+        
+        # 보안 검증 강제 적용
+        if not all([signature, timestamp, nonce]):
+            return jsonify({"status": "error", "message": "Missing security headers"}), 400
+        
+        if not validate_security(data, signature):
+            return jsonify({"status": "error", "message": "Security validation failed"}), 401
+        
         target = data.get('target', 'Z062')
         notion_page_id = data.get('notion_page_id')
         

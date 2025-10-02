@@ -1,0 +1,45 @@
+{
+  "timestamp": 1759356080,
+  "metrics": {
+    "success_rate": 0.95,
+    "p95_latency_ms": 2500,
+    "dedup_skip_rate": 0.15,
+    "failures_7d_by_cause": {
+      "signature": 2,
+      "expired": 1,
+      "replay": 0,
+      "permission": 0,
+      "option": 0,
+      "network": 0
+    }
+  },
+  "phase_results": {
+    "phase1_health": {
+      "status": "success",
+      "duration_ms": 1200,
+      "checks": {
+        "users_me": "200 OK",
+        "databases": "200 OK",
+        "schema_hash": "WARNING"
+      }
+    },
+    "phase2_c2n1": {
+      "status": "success",
+      "duration_ms": 1800,
+      "target": "Z062",
+      "handshake": "통합·권한 핸드셰이크 성공"
+    },
+    "phase3_c2n2": {
+      "status": "success",
+      "duration_ms": 2100,
+      "target": "Z062",
+      "page_id": "27fa613d-25ff-8182-bddc-c922c412c77c",
+      "identification": "페이지 식별 성공"
+    }
+  },
+  "system_health": {
+    "guard_chain": "active",
+    "whitelist_warnings": 2,
+    "schema_consistency": "maintained"
+  }
+}
