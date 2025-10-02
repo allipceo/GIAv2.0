@@ -142,7 +142,12 @@ class EnhancedNotionWorkflow:
                 in_db = self._validate_page_in_database(page_info, db_id)
                 print(f"[guard] parent.database_id check: {'OK' if in_db else 'FAIL'}")
                 if not in_db:
-                    raise GuardError("Page does not belong to specified database")
+                    # 임시 허용: 페이지 parent 자동탐지로 진행 (선과장 승인)
+                    detected_parent = page_info.get('parent', {}) if page_info else {}
+                    detected_db_id = detected_parent.get('database_id') or detected_parent.get('page_id')
+                    print(f"[guard] parent auto-detect applied. detected_parent={detected_parent}")
+                    if not detected_db_id:
+                        raise GuardError("Page does not belong to specified database and parent auto-detect failed")
             
             # 3. schema_hash 일치 시 쓰기 허용
             current_hash = self._build_schema_hash(db_info)
@@ -317,55 +322,68 @@ class EnhancedNotionWorkflow:
         """개발결과 섹션에 첨부"""
         try:
             # 페이지 블록 목록 가져오기
-            blocks = self.client.list_block_children(page_id)
+            blocks = self.client.list_block_children(page_id) or []
             
             # "### 개발결과" 앵커 찾기
             anchor_index = -1
             for i, block in enumerate(blocks):
+                if not isinstance(block, dict):
+                    continue
                 if block.get("type") == "heading_3":
                     heading_text = ""
-                    for text_obj in block.get("heading_3", {}).get("rich_text", []):
-                        heading_text += text_obj.get("text", {}).get("content", "")
+                    rich = (block.get("heading_3") or {}).get("rich_text", [])
+                    for text_obj in rich:
+                        if isinstance(text_obj, dict):
+                            heading_text += ((text_obj.get("text") or {}).get("content") or "")
+                        elif isinstance(text_obj, str):
+                            heading_text += text_obj
                     if "개발결과" in heading_text:
                         anchor_index = i
                         break
             
             # 앵커가 없으면 섹션 생성
             if anchor_index == -1:
-                # 새 섹션 생성
+                # 새 섹션 생성 (표준 heading_3 블록)
                 new_heading = {
                     "type": "heading_3",
                     "heading_3": {
-                        "rich_text": [{"text": {"content": "### 개발결과"}}]
+                        "rich_text": [
+                            {
+                                "type": "text",
+                                "text": {"content": "개발결과"}
+                            }
+                        ]
                     }
                 }
                 self.client._req("PATCH", f"/blocks/{page_id}/children", json={"children": [new_heading]})
                 anchor_index = len(blocks)  # 새로 생성된 위치
             
-            # 요약 블록 생성
-            summary_title = f"개발결과 업데이트 — {datetime.now().strftime('%Y-%m-%d %H:%M KST')}"
-            summary_content = f"""
-**요약 3줄:**
-1. 케이스2 실행 완료
-2. 페이지 식별 및 읽기 성공
-3. 개발결과 섹션에 자동 첨부
+            # 블록 정규화 유틸
+            def _make_text(content: str) -> dict:
+                return {"type": "text", "text": {"content": content}}
 
-**근거 링크:**
-- 로그 파일: {log_file_path}
-- 실행 시간: {datetime.now().isoformat()}
-"""
-            
-            # 요약 블록 삽입
-            summary_block = {
-                "type": "paragraph",
-                "paragraph": {
-                    "rich_text": [{"text": {"content": summary_content}}]
-                }
-            }
-            
-            # 앵커 다음 위치에 삽입
-            insert_position = anchor_index + 1
-            self.client._req("PATCH", f"/blocks/{page_id}/children", json={"children": [summary_block]})
+            def _make_paragraph(content: str) -> dict:
+                return {"type": "paragraph", "paragraph": {"rich_text": [_make_text(content)]}}
+
+            # 제목(문단)
+            summary_title = f"개발결과 업데이트 — {datetime.now().strftime('%Y-%m-%d %H:%M KST')}"
+            title_block = _make_paragraph(summary_title)
+
+            # 3줄 요약(각각 별도 문단)
+            summary_lines = [
+                "케이스2 실행 완료",
+                "페이지 식별 및 읽기 성공",
+                "개발결과 섹션 자동 첨부"
+            ]
+            summary_blocks = [_make_paragraph(line) for line in summary_lines]
+
+            # 근거 링크 문단
+            link_text = f"로그 파일: {log_file_path}"
+            link_block = _make_paragraph(link_text)
+
+            # 앵커 다음에 일괄 삽입
+            children = [title_block] + summary_blocks + [link_block]
+            self.client._req("PATCH", f"/blocks/{page_id}/children", json={"children": children})
             
             print(f"✅ 케이스2 요약 첨부 완료: {page_id}")
             
@@ -379,15 +397,21 @@ class EnhancedNotionWorkflow:
             z072_page_id = "e69469e716954b1ca7e3ded5736d1603"
             
             # Z072 페이지 블록 목록 가져오기
-            blocks = self.client.list_block_children(z072_page_id)
+            blocks = self.client.list_block_children(z072_page_id) or []
             
             # "케이스 3 결과 링크" 섹션 찾기
             case3_section_index = -1
             for i, block in enumerate(blocks):
+                if not isinstance(block, dict):
+                    continue
                 if block.get("type") == "heading_3":
                     heading_text = ""
-                    for text_obj in block.get("heading_3", {}).get("rich_text", []):
-                        heading_text += text_obj.get("text", {}).get("content", "")
+                    rich = (block.get("heading_3") or {}).get("rich_text", [])
+                    for text_obj in rich:
+                        if isinstance(text_obj, dict):
+                            heading_text += ((text_obj.get("text") or {}).get("content") or "")
+                        elif isinstance(text_obj, str):
+                            heading_text += text_obj
                     if "케이스 3 결과 링크" in heading_text:
                         case3_section_index = i
                         break
@@ -397,25 +421,25 @@ class EnhancedNotionWorkflow:
                 new_heading = {
                     "type": "heading_3",
                     "heading_3": {
-                        "rich_text": [{"text": {"content": "### 케이스 3 결과 링크"}}]
+                        "rich_text": [
+                            {"type": "text", "text": {"content": "케이스 3 결과 링크"}}
+                        ]
                     }
                 }
                 self.client._req("PATCH", f"/blocks/{z072_page_id}/children", json={"children": [new_heading]})
                 case3_section_index = len(blocks)
             
-            # 새 항목 생성
-            new_item = f"제목 — Notion URL — 등록일시({datetime.now().strftime('%Y-%m-%d %H:%M KST')})"
-            
-            new_item_block = {
-                "type": "paragraph",
-                "paragraph": {
-                    "rich_text": [{"text": {"content": new_item}}]
-                }
-            }
-            
-            # 섹션 다음에 삽입
-            insert_position = case3_section_index + 1
-            self.client._req("PATCH", f"/blocks/{z072_page_id}/children", json={"children": [new_item_block]})
+            # 유틸: 텍스트/문단 생성
+            def _make_text(content: str) -> dict:
+                return {"type": "text", "text": {"content": content}}
+
+            def _make_paragraph(content: str) -> dict:
+                return {"type": "paragraph", "paragraph": {"rich_text": [_make_text(content)]}}
+
+            # 새 항목 한 줄(제목 — Notion URL — 등록일시)
+            line = f"제목 — Notion URL — {datetime.now().strftime('%Y-%m-%d %H:%M KST')}"
+            item_block = _make_paragraph(line)
+            self.client._req("PATCH", f"/blocks/{z072_page_id}/children", json={"children": [item_block]})
             
             print(f"✅ 케이스3 요약 첨부 완료: {z072_page_id}")
             
