@@ -1,0 +1,28 @@
+{
+  "p95_thresholds": {
+    "warning_ms": 6000,
+    "critical_ms": 8000,
+    "description": "P95 지연시간 임계값 (밀리초)"
+  },
+  "success_rate": {
+    "minimum": 0.90,
+    "description": "최소 성공률 (90%)"
+  },
+  "link_validation": {
+    "failure_threshold": 3,
+    "time_window_hours": 24,
+    "description": "링크 실패 누적 임계값 (24시간 내 3건 이상)"
+  },
+  "rolling_window": {
+    "days": 7,
+    "description": "7일 rolling 윈도우"
+  },
+  "collection_schedule": {
+    "daily_cron": "0 2 * * *",
+    "description": "일 1회 수집 (매일 02:00)"
+  },
+  "cache_refresh": {
+    "interval_minutes": 10,
+    "description": "대문 KPI 카드 캐시 갱신 주기"
+  }
+}

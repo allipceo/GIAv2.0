@@ -1,126 +1,70 @@
 {
-  "pilot_candidates": [
+  "items": [
     {
-      "id": 1,
-      "title": "해상풍력 기술 동향 분석",
-      "url": "https://example.com/offshore-wind-tech-trends",
-      "category": "해상풍력발전",
-      "importance": "중요",
-      "source": "한국에너지공단",
-      "date": "2025-10-01",
-      "status": "ready"
+      "id": "candidate_001",
+      "url": "https://example.com/news/offshore-wind-2025",
+      "reason": "해상풍력발전 최신 동향",
+      "notes": "2025년 정책 변화 반영"
     },
     {
-      "id": 2,
-      "title": "방산 산업 보험 시장 동향",
-      "url": "https://example.com/defense-insurance-market",
-      "category": "방산",
-      "importance": "매우중요",
-      "source": "방산일보",
-      "date": "2025-10-01",
-      "status": "ready"
+      "id": "candidate_002", 
+      "url": "https://example.com/news/defense-contract-2025",
+      "reason": "방산 계약 관련 뉴스",
+      "notes": "보험 수요 증가 예상"
     },
     {
-      "id": 3,
-      "title": "신재생에너지 정책 변화",
-      "url": "https://example.com/renewable-energy-policy",
-      "category": "에너지",
-      "importance": "중요",
-      "source": "에너지경제신문",
-      "date": "2025-10-01",
-      "status": "ready"
+      "id": "candidate_003",
+      "url": "https://example.com/news/energy-transition-2025",
+      "reason": "에너지 전환 정책",
+      "notes": "재생에너지 투자 확대"
     },
     {
-      "id": 4,
-      "title": "AI 기반 보험 기술 혁신",
-      "url": "https://example.com/ai-insurance-tech",
-      "category": "기술",
-      "importance": "보통",
-      "source": "보험신문",
-      "date": "2025-10-01",
-      "status": "ready"
+      "id": "candidate_004",
+      "url": "https://example.com/news/shipbuilding-tech-2025",
+      "reason": "조선 기술 혁신",
+      "notes": "스마트 조선소 도입"
     },
     {
-      "id": 5,
-      "title": "글로벌 보험 시장 동향",
-      "url": "https://example.com/global-insurance-trends",
-      "category": "해상풍력발전",
-      "importance": "중요",
-      "source": "국제보험협회",
-      "date": "2025-10-01",
-      "status": "ready"
+      "id": "candidate_005",
+      "url": "https://example.com/news/insurance-trends-2025",
+      "reason": "보험 시장 동향",
+      "notes": "디지털 보험 확산"
     },
     {
-      "id": 6,
-      "title": "방산 수출 확대 전략",
-      "url": "https://example.com/defense-export-strategy",
-      "category": "방산",
-      "importance": "매우중요",
-      "source": "방산청",
-      "date": "2025-10-01",
-      "status": "ready"
+      "id": "candidate_006",
+      "url": "https://example.com/news/construction-safety-2025",
+      "reason": "건설 안전 규정",
+      "notes": "AI 안전 관리 도입"
     },
     {
-      "id": 7,
-      "title": "에너지 저장 시스템 기술",
-      "url": "https://example.com/energy-storage-tech",
-      "category": "에너지",
-      "importance": "중요",
-      "source": "에너지저널",
-      "date": "2025-10-01",
-      "status": "ready"
+      "id": "candidate_007",
+      "url": "https://example.com/news/cyber-security-2025",
+      "reason": "사이버 보안 강화",
+      "notes": "기업 보험 수요 증가"
     },
     {
-      "id": 8,
-      "title": "보험 디지털 전환 가속화",
-      "url": "https://example.com/insurance-digital-transformation",
-      "category": "기술",
-      "importance": "보통",
-      "source": "디지털보험협회",
-      "date": "2025-10-01",
-      "status": "ready"
+      "id": "candidate_008",
+      "url": "https://example.com/news/climate-risk-2025",
+      "reason": "기후 리스크 관리",
+      "notes": "ESG 투자 확대"
     },
     {
-      "id": 9,
-      "title": "해상풍력 안전 기준 강화",
-      "url": "https://example.com/offshore-wind-safety-standards",
-      "category": "해상풍력발전",
-      "importance": "중요",
-      "source": "해양수산부",
-      "date": "2025-10-01",
-      "status": "ready"
+      "id": "candidate_009",
+      "url": "https://example.com/news/automotive-insurance-2025",
+      "reason": "자동차 보험 혁신",
+      "notes": "자율주행 보험 도입"
     },
     {
-      "id": 10,
-      "title": "방산 보안 기술 발전",
-      "url": "https://example.com/defense-security-tech",
-      "category": "방산",
-      "importance": "매우중요",
-      "source": "국방과학연구소",
-      "date": "2025-10-01",
-      "status": "ready"
+      "id": "candidate_010",
+      "url": "https://example.com/news/healthcare-insurance-2025",
+      "reason": "의료 보험 디지털화",
+      "notes": "원격의료 보험 확산"
     }
   ],
-  "pilot_config": {
-    "concurrency": 3,
-    "retry_count": 1,
-    "timeout_seconds": 300,
-    "failure_label": "AI 처리 실패(재검토)",
-    "success_rate_target": 1.0
-  },
-  "dryrun_results": {
-    "total_candidates": 10,
-    "ready_count": 10,
-    "categories": {
-      "해상풍력발전": 3,
-      "방산": 3,
-      "에너지": 2,
-      "기술": 2
-    },
-    "importance_distribution": {
-      "매우중요": 3,
-      "중요": 5,
-      "보통": 2
-    }
+  "runtime": {
+    "concurrency": 4,
+    "retry": 1,
+    "timeout_ms": 8000,
+    "retry_whitelist": ["network", "5xx", "rate_limit"]
   }
 }

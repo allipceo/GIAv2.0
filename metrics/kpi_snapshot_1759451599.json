@@ -1,0 +1,26 @@
+{
+  "start_ts": 1758846799,
+  "end_ts": 1759451599,
+  "total": 10,
+  "success": 10,
+  "fail_by_cause": {
+    "network": 0,
+    "schema": 0,
+    "permission": 0,
+    "options": 0,
+    "other": 0
+  },
+  "p95_ms": 4200,
+  "dedup_skip_rate": 0.0,
+  "rolling_7d": {
+    "success_rate": 0.95,
+    "p95_ms": 5800,
+    "failures": {
+      "network": 1,
+      "options": 2,
+      "schema": 0,
+      "permission": 0,
+      "other": 0
+    }
+  }
+}

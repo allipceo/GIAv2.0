@@ -1,0 +1,72 @@
+{
+  "notification_channels": {
+    "slack": {
+      "enabled": true,
+      "priority": 1,
+      "webhook_url": "${SLACK_WEBHOOK_URL}",
+      "description": "Slack 웹훅 (1차 알림)"
+    },
+    "email": {
+      "enabled": true,
+      "priority": 2,
+      "smtp_server": "${SMTP_SERVER}",
+      "smtp_port": 587,
+      "username": "${EMAIL_USERNAME}",
+      "password": "${EMAIL_PASSWORD}",
+      "recipients": ["admin@zobis.com"],
+      "description": "이메일 알림 (2차, 중요 수준 이상)"
+    },
+    "notion": {
+      "enabled": true,
+      "priority": 3,
+      "page_id": "Z073",
+      "section": "운영 경보",
+      "description": "Notion 페이지 경보 (3차)"
+    }
+  },
+  "alert_conditions": {
+    "p95_critical": {
+      "threshold_ms": 8000,
+      "duration_minutes": 30,
+      "message": "P95 위험 초과: {current}ms > {threshold}ms (지속: {duration}분)"
+    },
+    "link_failures": {
+      "threshold_count": 3,
+      "time_window_hours": 24,
+      "message": "링크 실패 누적: {count}건 >= {threshold}건 (24시간 내)"
+    },
+    "success_rate_low": {
+      "threshold_rate": 0.90,
+      "message": "성공률 저하: {current:.1%} < {threshold:.1%}"
+    }
+  },
+  "message_templates": {
+    "alert": {
+      "title": "🚨 ZOBIS 운영 경보",
+      "format": "시간: {timestamp}\n유형: {alert_type}\n현재값: {current_value}\n임계값: {threshold}\n지속시간: {duration}\n조치: {action_required}"
+    },
+    "resolution": {
+      "title": "✅ ZOBIS 경보 해제",
+      "format": "시간: {timestamp}\n유형: {alert_type}\n해제 사유: {resolution_reason}\n현재값: {current_value}"
+    }
+  },
+  "escalation_policy": {
+    "levels": [
+      {
+        "level": 1,
+        "channels": ["slack"],
+        "immediate": true
+      },
+      {
+        "level": 2,
+        "channels": ["email"],
+        "delay_minutes": 5
+      },
+      {
+        "level": 3,
+        "channels": ["notion"],
+        "delay_minutes": 15
+      }
+    ]
+  }
+}

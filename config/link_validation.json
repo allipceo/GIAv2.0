@@ -1,0 +1,44 @@
+{
+  "validation_criteria": {
+    "http_status": {
+      "required": 200,
+      "redirects_allowed": 1,
+      "description": "HTTP 상태 코드 요구사항"
+    },
+    "response_time": {
+      "warning_ms": 1500,
+      "critical_ms": 3000,
+      "description": "응답 시간 임계값"
+    },
+    "ssl_policy": {
+      "required": true,
+      "self_signed_allowed": false,
+      "expired_allowed": false,
+      "test_whitelist": [],
+      "description": "SSL 인증서 정책"
+    },
+    "url_format": {
+      "notion_domain_required": true,
+      "external_absolute_path_only": true,
+      "description": "URL 형식 요구사항"
+    }
+  },
+  "collection_settings": {
+    "time_window_hours": 24,
+    "sources": [
+      "C2N2_개발결과",
+      "C2N3_케이스3결과링크"
+    ],
+    "description": "링크 수집 설정"
+  },
+  "retry_policy": {
+    "max_retries": 1,
+    "retry_delay_ms": 1000,
+    "description": "재시도 정책"
+  },
+  "alert_conditions": {
+    "failure_threshold": 3,
+    "p95_critical_duration_minutes": 30,
+    "description": "알림 조건"
+  }
+}

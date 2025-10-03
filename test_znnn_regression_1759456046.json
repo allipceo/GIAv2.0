@@ -1,0 +1,87 @@
+{
+  "test_info": {
+    "timestamp": 1759456046,
+    "test_time": "2025-10-03T10:47:26.874638",
+    "num_threads": 10,
+    "total_time": 0.03846907615661621
+  },
+  "results": {
+    "total_executions": 10,
+    "success_count": 10,
+    "success_rate": 100.0,
+    "duplicates": 0,
+    "unique_numbers": 10
+  },
+  "detailed_results": [
+    {
+      "thread_id": 1,
+      "timestamp": 1759456046.8672745,
+      "number": "Z893_",
+      "status": "success",
+      "delay_ms": 8.404888463195068
+    },
+    {
+      "thread_id": 3,
+      "timestamp": 1759456046.867623,
+      "number": "Z366_",
+      "status": "success",
+      "delay_ms": 9.189734399897816
+    },
+    {
+      "thread_id": 0,
+      "timestamp": 1759456046.8682253,
+      "number": "Z365_",
+      "status": "success",
+      "delay_ms": 8.051725699184127
+    },
+    {
+      "thread_id": 2,
+      "timestamp": 1759456046.8691509,
+      "number": "Z374_",
+      "status": "success",
+      "delay_ms": 7.335760320031868
+    },
+    {
+      "thread_id": 4,
+      "timestamp": 1759456046.8701637,
+      "number": "Z941_",
+      "status": "success",
+      "delay_ms": 8.705763791608586
+    },
+    {
+      "thread_id": 8,
+      "timestamp": 1759456046.8734915,
+      "number": "Z156_",
+      "status": "success",
+      "delay_ms": 8.930495021365555
+    },
+    {
+      "thread_id": 9,
+      "timestamp": 1759456046.873711,
+      "number": "Z144_",
+      "status": "success",
+      "delay_ms": 8.864822674971979
+    },
+    {
+      "thread_id": 7,
+      "timestamp": 1759456046.8739166,
+      "number": "Z923_",
+      "status": "success",
+      "delay_ms": 7.2681649102483075
+    },
+    {
+      "thread_id": 6,
+      "timestamp": 1759456046.8741093,
+      "number": "Z269_",
+      "status": "success",
+      "delay_ms": 6.44459426234806
+    },
+    {
+      "thread_id": 5,
+      "timestamp": 1759456046.874295,
+      "number": "Z033_",
+      "status": "success",
+      "delay_ms": 9.218365403067754
+    }
+  ]
+}
