@@ -14,6 +14,7 @@ import hmac
 import hashlib
 import time
 from datetime import datetime
+from time import sleep
 from dotenv import load_dotenv
 
 # 환경변수 로드
@@ -46,13 +47,29 @@ def validate_security(data, signature):
     
     if not hmac.compare_digest(signature, expected_sig):
         try:
-            # 진단용 3쌍 로그 포인트(body_raw/canonical/sig)
+            # 진단용 3쌍 로그 포인트(body_raw/canonical/sig) + 파일 이중화
             body_raw = json.dumps(data, ensure_ascii=False)
             body_canonical = json.dumps(data, ensure_ascii=False, separators=(",", ":"), sort_keys=True)
-            print("[sig-debug] body_raw=", body_raw[:512])
-            print("[sig-debug] body_canonical=", body_canonical[:512])
-            print("[sig-debug] provided_sig=", str(signature)[:128])
-        except Exception as _:
+            # 마스킹(길이 제한) 및 메타 포함
+            from datetime import datetime as _dt
+            log_rec = {
+                "ts": int(time.time()),
+                "level": "WARN",
+                "route": getattr(request, 'path', '/unknown'),
+                "client_ip": request.headers.get('X-Forwarded-For', request.remote_addr) if request else None,
+                "request_id": request.headers.get('X-Request-Id') if request else None,
+                "body_raw": (body_raw[:512] + "…") if len(body_raw) > 512 else body_raw,
+                "canonical": (body_canonical[:512] + "…") if len(body_canonical) > 512 else body_canonical,
+                "sig": (str(signature)[:128] + "…") if signature and len(str(signature)) > 128 else str(signature),
+                "verdict": "invalid_signature"
+            }
+            print(json.dumps(log_rec, ensure_ascii=False))
+            # 파일 이중화
+            os.makedirs('logs', exist_ok=True)
+            fname = f"logs/security_{_dt.utcnow().strftime('%Y%m%d')}.log"
+            with open(fname, 'a', encoding='utf-8') as f:
+                f.write(json.dumps(log_rec, ensure_ascii=False) + "\n")
+        except Exception:
             pass
         return False, "Invalid signature"
     
@@ -339,6 +356,16 @@ def healthz():
     except Exception as e:
         return jsonify({"status": "error", "message": str(e)}), 500
 
+@app.route('/sleep', methods=['GET'])
+def sleep_handler():
+    """요청 처리 중 종료 테스트용 핸들러"""
+    try:
+        ms = int(request.args.get('ms', '1000'))
+        sleep(max(0, ms) / 1000.0)
+        return jsonify({"status": "ok", "slept_ms": ms})
+    except Exception as e:
+        return jsonify({"status": "error", "message": str(e)}), 400
+
 if __name__ == '__main__':
     print("🚀 Notion 실행버튼 웹훅 서버 시작...")
     print("📍 서버 주소: http://localhost:8000")
@@ -351,4 +378,5 @@ if __name__ == '__main__':
     print("   - GET /healthz")
     print()
     
-    app.run(host='0.0.0.0', port=8000, debug=True)
+    port = int(os.environ.get('PORT', '8000'))
+    app.run(host='0.0.0.0', port=port, debug=True)
