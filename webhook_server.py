@@ -45,6 +45,15 @@ def validate_security(data, signature):
     ).hexdigest()
     
     if not hmac.compare_digest(signature, expected_sig):
+        try:
+            # 진단용 3쌍 로그 포인트(body_raw/canonical/sig)
+            body_raw = json.dumps(data, ensure_ascii=False)
+            body_canonical = json.dumps(data, ensure_ascii=False, separators=(",", ":"), sort_keys=True)
+            print("[sig-debug] body_raw=", body_raw[:512])
+            print("[sig-debug] body_canonical=", body_canonical[:512])
+            print("[sig-debug] provided_sig=", str(signature)[:128])
+        except Exception as _:
+            pass
         return False, "Invalid signature"
     
     # 4. nonce 사용 표시
@@ -303,12 +312,32 @@ def update_notion_page(page_id, result):
 
 @app.route('/health', methods=['GET'])
 def health_check():
-    """웹훅 서버 헬스체크"""
+    """웹훅 서버 헬스체크(구)"""
     return jsonify({
         'status': 'healthy',
         'timestamp': datetime.now().isoformat(),
         'server': 'Notion 실행버튼 웹훅 서버'
     })
+
+@app.route('/healthz', methods=['GET'])
+def healthz():
+    """프로브용 상세 헬스체크"""
+    try:
+        git_sha = os.environ.get("GIT_SHA", "dev")
+        version = os.environ.get("APP_VERSION", "0.0.1")
+        tz = "Asia/Seoul"
+        # NTP 오프셋은 추정치(미계산) 0으로 표기. 5-2에서 개선 가능
+        ntp_offset_ms = 0
+        return jsonify({
+            "status": "ok",
+            "sha": git_sha,
+            "version": version,
+            "ts": int(time.time()),
+            "tz": tz,
+            "ntp_offset_ms": ntp_offset_ms
+        })
+    except Exception as e:
+        return jsonify({"status": "error", "message": str(e)}), 500
 
 if __name__ == '__main__':
     print("🚀 Notion 실행버튼 웹훅 서버 시작...")
@@ -319,6 +348,7 @@ if __name__ == '__main__':
     print("   - POST /webhook/case3")
     print("   - POST /webhook/all")
     print("   - GET /health")
+    print("   - GET /healthz")
     print()
     
     app.run(host='0.0.0.0', port=8000, debug=True)
