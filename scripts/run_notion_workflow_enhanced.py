@@ -84,10 +84,10 @@ class EnhancedNotionWorkflow:
         import unicodedata
         import base64
         
-        # 1. 타임스탬프 유효성 검증 (10분)
+        # 1. 타임스탬프 유효성 검증 (±90초 윈도우)
         current_time = int(time.time())
         ts = str(payload.get('ts', 0))
-        if abs(current_time - int(ts)) > 600:
+        if abs(current_time - int(ts)) > 90:  # ±90초 = 90초
             raise TimestampExpiredError("Timestamp expired")
         
         # 2. nonce 재사용 차단

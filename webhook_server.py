@@ -27,29 +27,54 @@ SECRET_KEY = os.environ.get("WEBHOOK_SECRET_KEY", "default_secret_key")
 used_nonces = set()
 
 def validate_security(data, signature):
-    """보안 검증"""
-    # 1. 타임스탬프 유효성 (5분)
+    """보안 검증 - 4xx 응답 강화"""
+    # 1. 타임스탬프 유효성 (±90초 윈도우)
     current_time = int(time.time())
-    if abs(current_time - data.get('ts', 0)) > 300:
-        return False, "Timestamp expired"
+    timestamp = request.headers.get('X-Timestamp')
+    if not timestamp:
+        return False, "Missing timestamp"
+    try:
+        ts = int(timestamp)
+        if abs(current_time - ts) > 90:  # ±90초 = 90초
+            return False, "Timestamp expired"
+    except ValueError:
+        return False, "Invalid timestamp format"
     
-    # 2. nonce 재사용 차단
-    nonce = data.get('nonce')
+    # 2. nonce 재사용 차단 (10분 TTL)
+    nonce = request.headers.get('X-Nonce')
+    if not nonce:
+        return False, "Missing nonce"
     if nonce in used_nonces:
         return False, "Nonce already used"
     
-    # 3. 서명 검증
+    # 3. 서명 검증 (canonical JSON, NFC 정규화)
+    import unicodedata
+    import base64
+    
+    # canonical JSON 생성 (서명 제외)
+    payload_without_sig = {k: v for k, v in data.items() if k != 'sig'}
+    body_canonical = json.dumps(payload_without_sig, ensure_ascii=False, separators=(",", ":"), sort_keys=True)
+    body_canonical = unicodedata.normalize("NFC", body_canonical)
+    
+    # 서명 입력 문자열 생성: "{ts}.{nonce}.{body_canonical}"
+    # 헤더의 timestamp 사용 (JSON payload의 ts가 아닌)
+    ts = str(timestamp)
+    input_string = f"{ts}.{nonce}.{body_canonical}"
+    
+    # HMAC-SHA256 서명 계산
     expected_sig = hmac.new(
         SECRET_KEY.encode(),
-        json.dumps(data, sort_keys=True).encode(),
+        input_string.encode('utf-8'),
         hashlib.sha256
-    ).hexdigest()
+    ).digest()
     
-    if not hmac.compare_digest(signature, expected_sig):
+    # Base64URL 인코딩
+    expected_sig_b64 = base64.urlsafe_b64encode(expected_sig).decode('utf-8').rstrip('=')
+    
+    if not hmac.compare_digest(signature, expected_sig_b64):
         try:
             # 진단용 3쌍 로그 포인트(body_raw/canonical/sig) + 파일 이중화
             body_raw = json.dumps(data, ensure_ascii=False)
-            body_canonical = json.dumps(data, ensure_ascii=False, separators=(",", ":"), sort_keys=True)
             # 마스킹(길이 제한) 및 메타 포함
             from datetime import datetime as _dt
             log_rec = {
@@ -91,13 +116,14 @@ def handle_case1():
         if not all([signature, timestamp, nonce]):
             return jsonify({"status": "error", "message": "Missing security headers"}), 400
         
-        if not validate_security(data, signature):
-            return jsonify({"status": "error", "message": "Security validation failed"}), 401
+        is_valid, error_msg = validate_security(data, signature)
+        if not is_valid:
+            return jsonify({"status": "error", "message": f"Security validation failed: {error_msg}"}), 401
         
         target = data.get('target', 'Z062')
         notion_page_id = data.get('notion_page_id')
         
-        print(f"🔧 케이스1 실행버튼 처리: {target}")
+        print(f"[CASE1] 실행버튼 처리: {target}")
         
         # 케이스1 실행
         result = subprocess.run([
@@ -129,7 +155,7 @@ def handle_case1():
         })
         
     except Exception as e:
-        print(f"❌ 케이스1 실행 실패: {e}")
+        print(f"[ERROR] 케이스1 실행 실패: {e}")
         return jsonify({
             'status': 'error',
             'case': '케이스1',
@@ -149,13 +175,14 @@ def handle_case2():
         if not all([signature, timestamp, nonce]):
             return jsonify({"status": "error", "message": "Missing security headers"}), 400
         
-        if not validate_security(data, signature):
-            return jsonify({"status": "error", "message": "Security validation failed"}), 401
+        is_valid, error_msg = validate_security(data, signature)
+        if not is_valid:
+            return jsonify({"status": "error", "message": f"Security validation failed: {error_msg}"}), 401
         
         target = data.get('target', 'Z062')
         notion_page_id = data.get('notion_page_id')
         
-        print(f"🔧 케이스2 실행버튼 처리: {target}")
+        print(f"[CASE2] 실행버튼 처리: {target}")
         
         # 케이스2 실행
         result = subprocess.run([
@@ -187,7 +214,7 @@ def handle_case2():
         })
         
     except Exception as e:
-        print(f"❌ 케이스2 실행 실패: {e}")
+        print(f"[ERROR] 케이스2 실행 실패: {e}")
         return jsonify({
             'status': 'error',
             'case': '케이스2',
@@ -207,13 +234,14 @@ def handle_case3():
         if not all([signature, timestamp, nonce]):
             return jsonify({"status": "error", "message": "Missing security headers"}), 400
         
-        if not validate_security(data, signature):
-            return jsonify({"status": "error", "message": "Security validation failed"}), 401
+        is_valid, error_msg = validate_security(data, signature)
+        if not is_valid:
+            return jsonify({"status": "error", "message": f"Security validation failed: {error_msg}"}), 401
         
         target = data.get('target', 'Z062')
         notion_page_id = data.get('notion_page_id')
         
-        print(f"🔧 케이스3 실행버튼 처리: {target}")
+        print(f"[CASE3] 실행버튼 처리: {target}")
         
         # 케이스3 실행
         result = subprocess.run([
@@ -245,7 +273,7 @@ def handle_case3():
         })
         
     except Exception as e:
-        print(f"❌ 케이스3 실행 실패: {e}")
+        print(f"[ERROR] 케이스3 실행 실패: {e}")
         return jsonify({
             'status': 'error',
             'case': '케이스3',
@@ -260,7 +288,7 @@ def handle_all():
         target = data.get('target', 'Z062')
         notion_page_id = data.get('notion_page_id')
         
-        print(f"🚀 전체 워크플로우 실행버튼 처리: {target}")
+        print(f"[ALL] 전체 워크플로우 실행버튼 처리: {target}")
         
         # 전체 워크플로우 실행
         result = subprocess.run([
@@ -292,7 +320,7 @@ def handle_all():
         })
         
     except Exception as e:
-        print(f"❌ 전체 워크플로우 실행 실패: {e}")
+        print(f"[ERROR] 전체 워크플로우 실행 실패: {e}")
         return jsonify({
             'status': 'error',
             'case': '전체 워크플로우',
@@ -322,10 +350,10 @@ def update_notion_page(page_id, result):
         }
         
         client._req("PATCH", f"/pages/{page_id}", json={"properties": properties})
-        print(f"✅ Notion 페이지 업데이트 완료: {page_id}")
+        print(f"[OK] Notion 페이지 업데이트 완료: {page_id}")
         
     except Exception as e:
-        print(f"❌ Notion 페이지 업데이트 실패: {e}")
+        print(f"[ERROR] Notion 페이지 업데이트 실패: {e}")
 
 @app.route('/health', methods=['GET'])
 def health_check():
@@ -367,9 +395,10 @@ def sleep_handler():
         return jsonify({"status": "error", "message": str(e)}), 400
 
 if __name__ == '__main__':
-    print("🚀 Notion 실행버튼 웹훅 서버 시작...")
-    print("📍 서버 주소: http://localhost:8000")
-    print("🔧 사용 가능한 엔드포인트:")
+    port = int(os.environ.get('PORT', '8080'))
+    print("[BOOT] Notion 실행버튼 웹훅 서버 시작")
+    print(f"[BOOT] 서버 주소: http://localhost:{port}")
+    print("[BOOT] 사용 가능한 엔드포인트:")
     print("   - POST /webhook/case1")
     print("   - POST /webhook/case2") 
     print("   - POST /webhook/case3")
@@ -378,5 +407,4 @@ if __name__ == '__main__':
     print("   - GET /healthz")
     print()
     
-    port = int(os.environ.get('PORT', '8000'))
-    app.run(host='0.0.0.0', port=port, debug=True)
+    app.run(host='0.0.0.0', port=port, debug=False, use_reloader=False, threaded=True)
