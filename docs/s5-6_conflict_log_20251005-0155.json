@@ -1,0 +1,94 @@
+{
+  "conflict_logs": [
+    {
+      "ts": 1759596902,
+      "actor": "execution_scheduler_sim",
+      "task_id": "Z083_20251004165502",
+      "target": "Z083",
+      "reserved": true,
+      "conflict": true,
+      "skipped": true,
+      "unique_id": "Z083_20251004165502",
+      "status": "skipped",
+      "latency_ms": 0,
+      "conflict_reason": "running:Z083:202510041655 already exists"
+    },
+    {
+      "ts": 1759596903,
+      "actor": "execution_scheduler_sim",
+      "task_id": "Z083_20251004165503",
+      "target": "Z083",
+      "reserved": true,
+      "conflict": true,
+      "skipped": true,
+      "unique_id": "Z083_20251004165503",
+      "status": "skipped",
+      "latency_ms": 0,
+      "conflict_reason": "running:Z083:202510041655 already exists"
+    },
+    {
+      "ts": 1759596904,
+      "actor": "execution_scheduler_sim",
+      "task_id": "Z083_20251004165504",
+      "target": "Z083",
+      "reserved": true,
+      "conflict": true,
+      "skipped": true,
+      "unique_id": "Z083_20251004165504",
+      "status": "skipped",
+      "latency_ms": 0,
+      "conflict_reason": "running:Z083:202510041655 already exists"
+    },
+    {
+      "ts": 1759596905,
+      "actor": "execution_scheduler_sim",
+      "task_id": "Z083_20251004165505",
+      "target": "Z083",
+      "reserved": true,
+      "conflict": true,
+      "skipped": true,
+      "unique_id": "Z083_20251004165505",
+      "status": "skipped",
+      "latency_ms": 0,
+      "conflict_reason": "running:Z083:202510041655 already exists"
+    },
+    {
+      "ts": 1759596906,
+      "actor": "execution_scheduler_sim",
+      "task_id": "Z083_20251004165506",
+      "target": "Z083",
+      "reserved": true,
+      "conflict": true,
+      "skipped": true,
+      "unique_id": "Z083_20251004165506",
+      "status": "skipped",
+      "latency_ms": 0,
+      "conflict_reason": "running:Z083:202510041655 already exists"
+    }
+  ],
+  "conflict_summary": {
+    "total_conflicts": 5,
+    "resolved_conflicts": 5,
+    "unique_id_rate": "100%",
+    "conflict_target": "Z083",
+    "conflict_time_bucket": "202510041655",
+    "running_lock_key": "running:Z083:202510041655"
+  },
+  "pattern_validation": {
+    "regex_pattern": "^Zd{3}_.+$",
+    "total_ids": 6,
+    "matched_ids": 6,
+    "match_rate": "100%",
+    "valid_ids": [
+      "Z083_20251004165501",
+      "Z083_20251004165502", 
+      "Z083_20251004165503",
+      "Z083_20251004165504",
+      "Z083_20251004165505",
+      "Z083_20251004165506"
+    ]
+  },
+  "timestamp": "2025-10-05T01:55:06Z",
+  "test_type": "STAGE 5-6 엔드투엔드 테스트",
+  "status": "completed"
+}

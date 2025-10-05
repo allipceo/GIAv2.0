@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-10-04T14:51:17.727086",
+  "total_links": 3,
+  "success_count": 0,
+  "failed_count": 3,
+  "success_rate": 0.0,
+  "results": [
+    {
+      "name": "C2N2",
+      "url": "https://www.notion.so/Z062_-62d899af747846aa91630239e9120a22",
+      "status": "failed",
+      "status_code": 0,
+      "latency_ms": 0,
+      "error": "Session.request() got an unexpected keyword argument 'max_redirects'. Did you mean 'allow_redirects'?",
+      "verdict": "error",
+      "timestamp": "2025-10-04T14:51:17.722073"
+    },
+    {
+      "name": "C2N3",
+      "url": "https://www.notion.so/Z072_-e69469e716954b1ca7e3ded5736d1603",
+      "status": "failed",
+      "status_code": 0,
+      "latency_ms": 0,
+      "error": "Session.request() got an unexpected keyword argument 'max_redirects'. Did you mean 'allow_redirects'?",
+      "verdict": "error",
+      "timestamp": "2025-10-04T14:51:17.722499"
+    },
+    {
+      "name": "TEST",
+      "url": "https://example.com/test-link",
+      "status": "failed",
+      "status_code": 0,
+      "latency_ms": 0,
+      "error": "Session.request() got an unexpected keyword argument 'max_redirects'. Did you mean 'allow_redirects'?",
+      "verdict": "error",
+      "timestamp": "2025-10-04T14:51:17.722678"
+    }
+  ],
+  "consecutive_failures": 0
+}

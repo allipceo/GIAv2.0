@@ -1,0 +1,23 @@
+{
+  "48h_kpi": {
+    "success_rate": 95.2,
+    "p95_latency_ms": 1200,
+    "total_requests": 1500,
+    "failed_requests": 72,
+    "avg_latency_ms": 850,
+    "error_rate": 4.8
+  },
+  "7d_kpi": {
+    "success_rate": 94.8,
+    "p95_latency_ms": 1350,
+    "total_requests": 10500,
+    "failed_requests": 546,
+    "avg_latency_ms": 920,
+    "error_rate": 5.2
+  },
+  "last_updated": "2025-10-04T14:52:12.903873",
+  "trend": {
+    "success_rate": "↗️ 상승",
+    "p95_latency": "↗️ 개선"
+  }
+}
