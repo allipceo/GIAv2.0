@@ -1,0 +1,54 @@
+2025-10-04 22:37:31,595 - INFO - 링크 검증 배치 시작
+2025-10-04 22:37:31,598 - INFO - 최근 24시간 링크 3건 수집
+2025-10-04 22:37:31,599 - INFO - 링크 검증: C2N2 - https://www.notion.so/Z062_-62d899af747846aa91630239e9120a22
+2025-10-04 22:37:31,601 - INFO - 링크 검증: C2N3 - https://www.notion.so/Z072_-e69469e716954b1ca7e3ded5736d1603
+2025-10-04 22:37:31,602 - INFO - 링크 검증: TEST - https://example.com/test-link
+2025-10-04 22:37:31,604 - WARNING - 링크 실패 누적: 3건 >= 3건
+2025-10-04 22:37:31,735 - INFO - 검증 결과 저장: link_validation_results\link_validation_1759585051.json, link_validation_results\link_validation_1759585051.md
+2025-10-04 22:37:31,740 - INFO - 링크 검증 배치 완료: link_validation_results\link_validation_1759585051.json, link_validation_results\link_validation_1759585051.md
+2025-10-04 22:37:31,749 - WARNING - 알림 조건 감지됨 - 알림 훅 실행 필요
+2025-10-04 23:07:54,029 - INFO - 링크 검증 배치 시작
+2025-10-04 23:07:54,060 - INFO - 최근 24시간 링크 3건 수집
+2025-10-04 23:07:54,061 - INFO - 링크 검증: C2N2 - https://www.notion.so/Z062_-62d899af747846aa91630239e9120a22
+2025-10-04 23:07:54,063 - INFO - 링크 검증: C2N3 - https://www.notion.so/Z072_-e69469e716954b1ca7e3ded5736d1603
+2025-10-04 23:07:54,065 - INFO - 링크 검증: TEST - https://example.com/test-link
+2025-10-04 23:07:54,066 - WARNING - 링크 실패 누적: 3건 >= 3건
+2025-10-04 23:07:54,156 - INFO - 검증 결과 저장: link_validation_results\link_validation_1759586874.json, link_validation_results\link_validation_1759586874.md
+2025-10-04 23:07:54,157 - INFO - 링크 검증 배치 완료: link_validation_results\link_validation_1759586874.json, link_validation_results\link_validation_1759586874.md
+2025-10-04 23:07:54,158 - WARNING - 알림 조건 감지됨 - 알림 훅 실행 필요
+2025-10-04 23:08:18,293 - INFO - 링크 검증 배치 시작
+2025-10-04 23:08:18,315 - INFO - 최근 24시간 링크 3건 수집
+2025-10-04 23:08:18,316 - INFO - 링크 검증: C2N2 - https://www.notion.so/Z062_-62d899af747846aa91630239e9120a22
+2025-10-04 23:08:18,318 - INFO - 링크 검증: C2N3 - https://www.notion.so/Z072_-e69469e716954b1ca7e3ded5736d1603
+2025-10-04 23:08:18,322 - INFO - 링크 검증: TEST - https://example.com/test-link
+2025-10-04 23:08:18,327 - WARNING - 링크 실패 누적: 3건 >= 3건
+2025-10-04 23:08:18,381 - INFO - 검증 결과 저장: link_validation_results\link_validation_1759586898.json, link_validation_results\link_validation_1759586898.md
+2025-10-04 23:08:18,390 - INFO - 링크 검증 배치 완료: link_validation_results\link_validation_1759586898.json, link_validation_results\link_validation_1759586898.md
+2025-10-04 23:08:18,394 - WARNING - 알림 조건 감지됨 - 알림 훅 실행 필요
+2025-10-04 23:08:46,821 - INFO - 링크 검증 배치 시작
+2025-10-04 23:08:46,845 - INFO - 최근 24시간 링크 3건 수집
+2025-10-04 23:08:46,846 - INFO - 링크 검증: C2N2 - https://www.notion.so/Z062_-62d899af747846aa91630239e9120a22
+2025-10-04 23:08:46,849 - INFO - 링크 검증: C2N3 - https://www.notion.so/Z072_-e69469e716954b1ca7e3ded5736d1603
+2025-10-04 23:08:46,851 - INFO - 링크 검증: TEST - https://example.com/test-link
+2025-10-04 23:08:46,854 - WARNING - 링크 실패 누적: 3건 >= 3건
+2025-10-04 23:08:46,922 - INFO - 검증 결과 저장: link_validation_results\link_validation_1759586926.json, link_validation_results\link_validation_1759586926.md
+2025-10-04 23:08:46,927 - INFO - 링크 검증 배치 완료: link_validation_results\link_validation_1759586926.json, link_validation_results\link_validation_1759586926.md
+2025-10-04 23:08:46,928 - WARNING - 알림 조건 감지됨 - 알림 훅 실행 필요
+2025-10-04 23:10:18,980 - INFO - 링크 검증 배치 시작
+2025-10-04 23:10:19,017 - INFO - 최근 24시간 링크 3건 수집
+2025-10-04 23:10:19,018 - INFO - 링크 검증: C2N2 - https://www.notion.so/Z062_-62d899af747846aa91630239e9120a22
+2025-10-04 23:10:19,020 - INFO - 링크 검증: C2N3 - https://www.notion.so/Z072_-e69469e716954b1ca7e3ded5736d1603
+2025-10-04 23:10:19,021 - INFO - 링크 검증: TEST - https://example.com/test-link
+2025-10-04 23:10:19,025 - WARNING - 링크 실패 누적: 3건 >= 3건
+2025-10-04 23:10:19,129 - INFO - 검증 결과 저장: link_validation_results\link_validation_1759587019.json, link_validation_results\link_validation_1759587019.md
+2025-10-04 23:10:19,131 - INFO - 링크 검증 배치 완료: link_validation_results\link_validation_1759587019.json, link_validation_results\link_validation_1759587019.md
+2025-10-04 23:10:19,133 - WARNING - 알림 조건 감지됨 - 알림 훅 실행 필요
+2025-10-04 23:17:17,144 - INFO - 링크 검증 배치 시작
+2025-10-04 23:17:17,300 - INFO - 최근 24시간 링크 3건 수집
+2025-10-04 23:17:17,330 - INFO - 링크 검증: C2N2 - https://www.notion.so/Z062_-62d899af747846aa91630239e9120a22
+2025-10-04 23:17:17,350 - INFO - 링크 검증: C2N3 - https://www.notion.so/Z072_-e69469e716954b1ca7e3ded5736d1603
+2025-10-04 23:17:17,361 - INFO - 링크 검증: TEST - https://example.com/test-link
+2025-10-04 23:17:17,383 - WARNING - 링크 실패 누적: 3건 >= 3건
+2025-10-04 23:17:17,450 - INFO - 검증 결과 저장: link_validation_results\link_validation_1759587437.json, link_validation_results\link_validation_1759587437.md
+2025-10-04 23:17:17,455 - INFO - 링크 검증 배치 완료: link_validation_results\link_validation_1759587437.json, link_validation_results\link_validation_1759587437.md
+2025-10-04 23:17:17,456 - WARNING - 알림 조건 감지됨 - 알림 훅 실행 필요
