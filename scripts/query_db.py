@@ -27,7 +27,13 @@ def main():
     print("Z062 문서 식별 시작...")
     
     # 환경변수 로드
-    load_dotenv("config.env")
+    load_dotenv("config.env.temp")
+    
+    # 토큰 직접 설정 (임시)
+    if not os.environ.get("NOTION_TOKEN"):
+        os.environ["NOTION_TOKEN"] = "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"
+    if not os.environ.get("TARGET_DATABASE_ID"):
+        os.environ["TARGET_DATABASE_ID"] = "5d15b3aa0f174b04bceeb22107e06a03"
     
     token = os.environ.get("NOTION_TOKEN")
     if not token:
